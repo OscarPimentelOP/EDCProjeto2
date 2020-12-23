@@ -90,8 +90,8 @@ def write_pokemon_evolutions(pokemon_json, triples_file):
 
 
 def write_pokemon_official_art(pokemon_json, triples_file):
-    triples_file.write('<http://edcpokedex.org/pokemon/1> <http://edcpokedex.org/pred/art> %s .\n'
-                       % (pokemon_json['sprites']['other']['official-artwork']['front_default']))
+    triples_file.write('<http://edcpokedex.org/pokemon/%s> <http://edcpokedex.org/pred/art> %s .\n'
+                       % (pokemon_json['id'],pokemon_json['sprites']['other']['official-artwork']['front_default']))
 
 
 def convert_to_triples(json_path, triples_file):
