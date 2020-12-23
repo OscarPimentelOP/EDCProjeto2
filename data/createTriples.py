@@ -74,7 +74,7 @@ def write_pokemon_stats(pokemon_json, triples_file):
     for stat in pokemon_json['stats']:
         triples_file.write('<http://edcpokedex.org/pokemon/%s> '
                            '<http://edcpokedex.org/pred/%s> '
-                           '%s .\n' % (pokemon_json['id'], stat['stat']['name'], stat['base_stat']))
+                           '"%s" .\n' % (pokemon_json['id'], stat['stat']['name'], stat['base_stat']))
 
 
 def write_pokemon_evolutions(pokemon_json, triples_file):
