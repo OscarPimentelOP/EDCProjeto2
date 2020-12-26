@@ -1,0 +1,17 @@
+:root {
+    all:initial;
+    /* add color base on type */
+}
+
+* {
+    all: initial;
+}
+
+body {
+    all: initial;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
