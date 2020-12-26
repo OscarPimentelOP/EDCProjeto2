@@ -91,10 +91,10 @@ def write_pokemon_evolutions(pokemon_json, triples_file):
 
 def write_pokemon_official_art(pokemon_json, triples_file):
     triples_file.write('<http://edcpokedex.org/pokemon/%s> <http://edcpokedex.org/pred/art> %s .\n'
-                       % (pokemon_json['id'],pokemon_json['sprites']['other']['official-artwork']['front_default']))
+                       % (pokemon_json['id'], pokemon_json['sprites']['other']['official-artwork']['front_default']))
 
 
-def convert_to_triples(json_path, triples_file):
+def convert_pokemon_to_triples(json_path, triples_file):
     with open(json_path) as pokemon_json_file:
         pokemon_json = json.load(pokemon_json_file)
         write_pokemon_names(pokemon_json, triples_file)
@@ -108,8 +108,41 @@ def convert_to_triples(json_path, triples_file):
         write_pokemon_official_art(pokemon_json, triples_file)
 
 
+def convert_type_to_triples(triples_file):
+    with open('csv/types.csv', 'r', encoding='utf-8') as types_csv:
+        types_dict = csv.DictReader(types_csv)
+        types_list = list()
+
+        for type_row in types_dict:
+            types_list.append(type_row['identifier'])
+
+        for poke_type in types_list:
+            triples_file.write('<http://edcpokedex.org/type/%s> '
+                               '<http://edcpokedex.org/pred/name> '
+                               '%s .\n' % (poke_type, poke_type.capitalize()))
+
+            with open('csv/type_efficacy.csv', 'r', encoding='utf-8') as types_efficacy_csv:
+                types_efficacy_dict = csv.DictReader(types_efficacy_csv)
+
+                for efficacy_row in types_efficacy_dict:
+                    if types_list[int(efficacy_row['damage_type_id']) - 1] == poke_type:
+                        if int(efficacy_row['damage_factor']) > 100:
+                            triples_file.write('<http://edcpokedex.org/type/%s> '
+                                               '<http://edcpokedex.org/pred/isSuperEffective> '
+                                               '<http://edcpokedex.org/type/%s> .\n'
+                                               % (poke_type, types_list[int(efficacy_row['target_type_id']) - 1]))
+                        elif int(efficacy_row['damage_factor']) < 100:
+                            triples_file.write('<http://edcpokedex.org/type/%s> '
+                                               '<http://edcpokedex.org/pred/isWeak> '
+                                               '<http://edcpokedex.org/type/%s> .\n'
+                                               % (poke_type, types_list[int(efficacy_row['target_type_id']) - 1]))
+
+
 if __name__ == '__main__':
     with open('triples/pokemon.nt', 'w', encoding='utf-8') as poke_triples:
         for file in os.scandir("json/pokemon"):
             if file.path.endswith(".json"):
-                convert_to_triples(file.path, poke_triples)
+                convert_pokemon_to_triples(file.path, poke_triples)
+
+    with open('triples/types.nt', 'w', encoding='utf-8') as type_triples:
+        convert_type_to_triples(type_triples)
