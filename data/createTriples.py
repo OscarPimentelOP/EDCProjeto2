@@ -11,6 +11,10 @@ def write_pokemon_names(pokemon_json, triples_file):
                        '<http://edcpokedex.org/pred/name> '
                        '"%s" .\n'
                        % (pokemon_json['id'], pokemon_json['name'].capitalize()))
+    triples_file.write('<http://edcpokedex.org/pokemon/%s> '
+                       '<http://edcpokedex.org/pred/pokedex-entry> '
+                       '"%s" .\n'
+                       % (pokemon_json['id'], pokemon_json['id']))
 
 
 def write_pokemon_description(pokemon_json, triples_file):
@@ -78,14 +82,14 @@ def write_pokemon_stats(pokemon_json, triples_file):
 
 
 def write_pokemon_evolutions(pokemon_json, triples_file):
-    with open('csv/pokemon_evolution.csv', 'r', encoding='utf-8') as poke_evo_csv:
+    with open('csv/evolutions.csv', 'r', encoding='utf-8') as poke_evo_csv:
         poke_evo_dict = csv.DictReader(poke_evo_csv)
         for row in poke_evo_dict:
-            if str(row['id']) == str(pokemon_json['id']):
+            if str(row['evolves_from']) == str(pokemon_json['id']):
                 triples_file.write('<http://edcpokedex.org/pokemon/%s> '
                                    '<http://edcpokedex.org/pred/evolves-to> '
                                    '<http://edcpokedex.org/pokemon/%s> .\n'
-                                   % (pokemon_json['id'], row['evolved_species_id']))
+                                   % (pokemon_json['id'], row['id']))
                 break
 
 
