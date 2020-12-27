@@ -11,17 +11,14 @@
         <!-- next pokemon -->
     </header>
 
-    <section>
+    <section class="info">
 
-        <h1><b>Bulbassaur</b></h1>
+        <!-- <h1><b>Bulbassaur</b></h1> -->
 
         <div class="card-holder">
             <div class="image-holder">
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
                     alt="NOT FOUND">
-            </div>
-            <div class="pokename">
-                <h2>Bulbassaur</h2>
             </div>
         </div>
 
@@ -33,52 +30,189 @@
             </div>
 
             <div class="basic-info">
-                <div class="height">
-                    <h3>Height(centimeters)</h3>
+                <div class="slot">
+                    <h3>Height (centimeters)</h3>
                     <p>70</p>
                 </div>
-                <div class="weight">
-                    <h3>Weight(hectogram)</h3>
+                <div class="slot">
+                    <h3>Weight (hectogram)</h3>
                     <p>69</p>
                 </div>
-                <div class="category">
+                <div class="slot">
                     <h3>Category</h3>
                     <a href="Category?name=seed">Seed</a>
                 </div>
-                <div class="abilities">
-                    <ul>
-                        <li><a href="Ability?name=overgrow">Overgrow</a></li>
-                        <li><a href="Ability?name=chlorophyl">Chlorophyl</a></li>
+                <div class="slot habilites">
+                    <h3>Abilities</h3>
+
+                    <a href="Ability?name=overgrow">Overgrow</a>
+                    <a href="Ability?name=chlorophyl">Chlorophyl</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+
+        <div class="pokemon-stats-info">
+            <h3>Stats</h3>
+            <div class="stats">
+                <div class="stat">
+                    <ul class="value-list" data-value="45">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
+                    <span class="name">HP</span>
                 </div>
-                <div class="gender">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M16 2v2h3.586l-3.972 3.972c-1.54-1.231-3.489-1.972-5.614-1.972-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-2.125-.741-4.074-1.972-5.614l3.972-3.972v3.586h2v-7h-7zm-6 20c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M21 9c0-4.97-4.03-9-9-9s-9 4.03-9 9c0 4.632 3.501 8.443 8 8.941v2.059h-3v2h3v2h2v-2h3v-2h-3v-2.059c4.499-.498 8-4.309 8-8.941zm-16 0c0-3.86 3.14-7 7-7s7 3.14 7 7-3.14 7-7 7-7-3.14-7-7z" />
-                    </svg>
+                <div class="stat">
+                    <ul class="value-list" data-value="49">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="name">ATTACK</span>
+                </div>
+                <div class="stat">
+                    <ul class="value-list" data-value="49">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="name">DEFENSE</span>
+                </div>
+                <div class="stat">
+                    <ul class="value-list" data-value="65">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="name">SPECIAL ATTACK</span>
+                </div>
+                <div class="stat">
+                    <ul class="value-list" data-value="65">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="name">SPECIAL DEFENSE</span>
+                </div>
+                <div class="stat">
+                    <ul class="value-list" data-value="45">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <span class="name">SPEED</span>
                 </div>
             </div>
+            
 
-            <div class="types">
-
-            </div>
-
-            <div class="weaknesses">
-
-            </div>
 
         </div>
 
+        <div class="types">
+            <h3>Types</h3>
+            <div class="types-box">
+                <div class="type">
+                    <span>Grass</span>
+                </div>
+                <div class="type">
+                    <span>Poison</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="weaknesses">
+
+        </div>
     </section>
 
-    <section class="stats"></section>
+    <section class="info"></section>
 
-    <section class="evolution-line"></section>
-
+    <script type="text/javascript">
+        $(function(){
+            $('.value-list').each(function(key,bar){
+                var value = $(this).data('value');
+                $(this).animate({
+                    'height' : value*0.4 + '%'
+                }, 1500)
+            })
+        })
+    </script>
 
 </body>
 {% endblock %}

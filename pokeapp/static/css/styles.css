@@ -15,3 +15,197 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 100px);
+    width: 90vw;
+    background: rgba(0, 0, 0, 0.1);
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.info .card-holder{ 
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.card-holder .image-holder{
+    background: green;
+    border-radius: 15px;
+}
+
+
+.card-holder img{
+    width: 100%;
+    height: 100%;
+}
+
+.info .information{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info .information .description{
+    min-height: 150px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.info .information .description p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info .information .basic-info {
+    background: green;
+    border-radius: 25px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.basic-info .slot {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.basic-info .slot h3{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+.basic-info .slot p{
+    font-size: 1.5em;
+}
+
+.basic-info .slot a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.basic-info .slot.icons{
+    height: 100%;
+    grid-row: 3/4;
+    grid-column: 1/3;    
+}
+
+.basic-info .slot .icons h3{
+    text-align: center;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.types h3{
+    font-size: 2em;
+}
+
+.types .types-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.types-box .type{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    background: red;
+    border-radius: 25px;
+    color: white;
+}
+
+.pokemon-stats-info{
+    min-width: 650px;
+    min-height: 80vh;
+    background: white;
+    position: relative;
+}
+
+.pokemon-stats-info h3{
+    float: left;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.pokemon-stats-info .stats{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 80%;
+    background: transparent;
+    display: flex;
+}
+
+.pokemon-stats-info .stat{
+    position: relative;
+    flex: 1 ;
+    text-align: center;
+}
+
+.pokemon-stats-info .stat .name{
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    min-height: 40px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-stats-info .stat .value-list{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background: #9bcc50;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+
+.pokemon-stats-info .stat .value-list li{
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+    background: white;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
