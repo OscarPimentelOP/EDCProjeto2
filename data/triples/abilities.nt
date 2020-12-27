@@ -1,0 +1,710 @@
+<http://edcpokedex.org/ability/stench> <http://edcpokedex.org/pred/name> "Stench" .
+<http://edcpokedex.org/ability/stench> <http://edcpokedex.org/pred/description> "By releasing stench when attacking, this Pokémon
+may cause the target to flinch." .
+<http://edcpokedex.org/ability/drizzle> <http://edcpokedex.org/pred/name> "Drizzle" .
+<http://edcpokedex.org/ability/drizzle> <http://edcpokedex.org/pred/description> "The Pokémon makes it rain when it enters a battle." .
+<http://edcpokedex.org/ability/speed-boost> <http://edcpokedex.org/pred/name> "Speed Boost" .
+<http://edcpokedex.org/ability/speed-boost> <http://edcpokedex.org/pred/description> "Its Speed stat is boosted every turn." .
+<http://edcpokedex.org/ability/battle-armor> <http://edcpokedex.org/pred/name> "Battle Armor" .
+<http://edcpokedex.org/ability/battle-armor> <http://edcpokedex.org/pred/description> "Hard armor protects the Pokémon from critical hits." .
+<http://edcpokedex.org/ability/sturdy> <http://edcpokedex.org/pred/name> "Sturdy" .
+<http://edcpokedex.org/ability/sturdy> <http://edcpokedex.org/pred/description> "It cannot be knocked out with one hit. One-hit KO
+moves cannot knock it out, either." .
+<http://edcpokedex.org/ability/damp> <http://edcpokedex.org/pred/name> "Damp" .
+<http://edcpokedex.org/ability/damp> <http://edcpokedex.org/pred/description> "Prevents the use of explosive moves such as
+Self-Destruct by dampening its surroundings." .
+<http://edcpokedex.org/ability/limber> <http://edcpokedex.org/pred/name> "Limber" .
+<http://edcpokedex.org/ability/limber> <http://edcpokedex.org/pred/description> "Its limber body protects the Pokémon from paralysis." .
+<http://edcpokedex.org/ability/sand-veil> <http://edcpokedex.org/pred/name> "Sand Veil" .
+<http://edcpokedex.org/ability/sand-veil> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s evasion in a sandstorm." .
+<http://edcpokedex.org/ability/static> <http://edcpokedex.org/pred/name> "Static" .
+<http://edcpokedex.org/ability/static> <http://edcpokedex.org/pred/description> "The Pokémon is charged with static electricity, so
+contact with it may cause paralysis." .
+<http://edcpokedex.org/ability/volt-absorb> <http://edcpokedex.org/pred/name> "Volt Absorb" .
+<http://edcpokedex.org/ability/volt-absorb> <http://edcpokedex.org/pred/description> "Restores HP if hit by an Electric-type move, instead
+of taking damage." .
+<http://edcpokedex.org/ability/water-absorb> <http://edcpokedex.org/pred/name> "Water Absorb" .
+<http://edcpokedex.org/ability/water-absorb> <http://edcpokedex.org/pred/description> "Restores HP if hit by a Water-type move, instead of
+taking damage." .
+<http://edcpokedex.org/ability/oblivious> <http://edcpokedex.org/pred/name> "Oblivious" .
+<http://edcpokedex.org/ability/oblivious> <http://edcpokedex.org/pred/description> "The Pokémon is oblivious, and that keeps it from
+being infatuated or falling for taunts." .
+<http://edcpokedex.org/ability/cloud-nine> <http://edcpokedex.org/pred/name> "Cloud Nine" .
+<http://edcpokedex.org/ability/cloud-nine> <http://edcpokedex.org/pred/description> "Eliminates the effects of weather." .
+<http://edcpokedex.org/ability/compound-eyes> <http://edcpokedex.org/pred/name> "Compound Eyes" .
+<http://edcpokedex.org/ability/compound-eyes> <http://edcpokedex.org/pred/description> "The Pokémon’s compound eyes boost its accuracy." .
+<http://edcpokedex.org/ability/insomnia> <http://edcpokedex.org/pred/name> "Insomnia" .
+<http://edcpokedex.org/ability/insomnia> <http://edcpokedex.org/pred/description> "The Pokémon is suffering from insomnia and cannot
+fall asleep." .
+<http://edcpokedex.org/ability/color-change> <http://edcpokedex.org/pred/name> "Color Change" .
+<http://edcpokedex.org/ability/color-change> <http://edcpokedex.org/pred/description> "The Pokémon’s type becomes the type of the move
+used on it." .
+<http://edcpokedex.org/ability/immunity> <http://edcpokedex.org/pred/name> "Immunity" .
+<http://edcpokedex.org/ability/immunity> <http://edcpokedex.org/pred/description> "The immune system of the Pokémon prevents it from
+getting poisoned." .
+<http://edcpokedex.org/ability/flash-fire> <http://edcpokedex.org/pred/name> "Flash Fire" .
+<http://edcpokedex.org/ability/flash-fire> <http://edcpokedex.org/pred/description> "Powers up the Pokémon’s Fire-type moves if it’s hit
+by one." .
+<http://edcpokedex.org/ability/shield-dust> <http://edcpokedex.org/pred/name> "Shield Dust" .
+<http://edcpokedex.org/ability/shield-dust> <http://edcpokedex.org/pred/description> "This Pokémon’s dust blocks the additional effects of
+attacks taken." .
+<http://edcpokedex.org/ability/own-tempo> <http://edcpokedex.org/pred/name> "Own Tempo" .
+<http://edcpokedex.org/ability/own-tempo> <http://edcpokedex.org/pred/description> "This Pokémon has its own tempo, and that prevents
+it from becoming confused." .
+<http://edcpokedex.org/ability/suction-cups> <http://edcpokedex.org/pred/name> "Suction Cups" .
+<http://edcpokedex.org/ability/suction-cups> <http://edcpokedex.org/pred/description> "This Pokémon uses suction cups to stay in one spot
+to negate all moves and items that force
+switching out." .
+<http://edcpokedex.org/ability/intimidate> <http://edcpokedex.org/pred/name> "Intimidate" .
+<http://edcpokedex.org/ability/intimidate> <http://edcpokedex.org/pred/description> "The Pokémon intimidates opposing Pokémon upon
+entering battle, lowering their Attack stat." .
+<http://edcpokedex.org/ability/shadow-tag> <http://edcpokedex.org/pred/name> "Shadow Tag" .
+<http://edcpokedex.org/ability/shadow-tag> <http://edcpokedex.org/pred/description> "This Pokémon steps on the opposing Pokémon’s
+shadow to prevent it from escaping." .
+<http://edcpokedex.org/ability/rough-skin> <http://edcpokedex.org/pred/name> "Rough Skin" .
+<http://edcpokedex.org/ability/rough-skin> <http://edcpokedex.org/pred/description> "This Pokémon inflicts damage with its rough skin
+to the attacker on contact." .
+<http://edcpokedex.org/ability/wonder-guard> <http://edcpokedex.org/pred/name> "Wonder Guard" .
+<http://edcpokedex.org/ability/wonder-guard> <http://edcpokedex.org/pred/description> "Its mysterious power only lets supereffective moves
+hit the Pokémon." .
+<http://edcpokedex.org/ability/levitate> <http://edcpokedex.org/pred/name> "Levitate" .
+<http://edcpokedex.org/ability/levitate> <http://edcpokedex.org/pred/description> "By floating in the air, the Pokémon receives full
+immunity to all Ground-type moves." .
+<http://edcpokedex.org/ability/effect-spore> <http://edcpokedex.org/pred/name> "Effect Spore" .
+<http://edcpokedex.org/ability/effect-spore> <http://edcpokedex.org/pred/description> "Contact with the Pokémon may inflict poison, sleep,
+or paralysis on its attacker." .
+<http://edcpokedex.org/ability/synchronize> <http://edcpokedex.org/pred/name> "Synchronize" .
+<http://edcpokedex.org/ability/synchronize> <http://edcpokedex.org/pred/description> "The attacker will receive the same status condition if
+it inflicts a burn, poison, or paralysis to the Pokémon." .
+<http://edcpokedex.org/ability/clear-body> <http://edcpokedex.org/pred/name> "Clear Body" .
+<http://edcpokedex.org/ability/clear-body> <http://edcpokedex.org/pred/description> "Prevents other Pokémon’s moves or Abilities from
+lowering the Pokémon’s stats." .
+<http://edcpokedex.org/ability/natural-cure> <http://edcpokedex.org/pred/name> "Natural Cure" .
+<http://edcpokedex.org/ability/natural-cure> <http://edcpokedex.org/pred/description> "All status conditions heal when the Pokémon
+switches out." .
+<http://edcpokedex.org/ability/lightning-rod> <http://edcpokedex.org/pred/name> "Lightning Rod" .
+<http://edcpokedex.org/ability/lightning-rod> <http://edcpokedex.org/pred/description> "The Pokémon draws in all Electric-type moves. 
+Instead of being hit by Electric-type moves, 
+it boosts its Sp. Atk." .
+<http://edcpokedex.org/ability/serene-grace> <http://edcpokedex.org/pred/name> "Serene Grace" .
+<http://edcpokedex.org/ability/serene-grace> <http://edcpokedex.org/pred/description> "Boosts the likelihood of additional effects occurring 
+when attacking." .
+<http://edcpokedex.org/ability/swift-swim> <http://edcpokedex.org/pred/name> "Swift Swim" .
+<http://edcpokedex.org/ability/swift-swim> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Speed stat in rain." .
+<http://edcpokedex.org/ability/chlorophyll> <http://edcpokedex.org/pred/name> "Chlorophyll" .
+<http://edcpokedex.org/ability/chlorophyll> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Speed stat in harsh sunlight." .
+<http://edcpokedex.org/ability/illuminate> <http://edcpokedex.org/pred/name> "Illuminate" .
+<http://edcpokedex.org/ability/illuminate> <http://edcpokedex.org/pred/description> "Raises the likelihood of meeting wild Pokémon by
+illuminating the surroundings." .
+<http://edcpokedex.org/ability/trace> <http://edcpokedex.org/pred/name> "Trace" .
+<http://edcpokedex.org/ability/trace> <http://edcpokedex.org/pred/description> "When it enters a battle, the Pokémon copies an
+opposing Pokémon’s Ability." .
+<http://edcpokedex.org/ability/huge-power> <http://edcpokedex.org/pred/name> "Huge Power" .
+<http://edcpokedex.org/ability/huge-power> <http://edcpokedex.org/pred/description> "Doubles the Pokémon’s Attack stat." .
+<http://edcpokedex.org/ability/poison-point> <http://edcpokedex.org/pred/name> "Poison Point" .
+<http://edcpokedex.org/ability/poison-point> <http://edcpokedex.org/pred/description> "Contact with the Pokémon may poison the attacker." .
+<http://edcpokedex.org/ability/inner-focus> <http://edcpokedex.org/pred/name> "Inner Focus" .
+<http://edcpokedex.org/ability/inner-focus> <http://edcpokedex.org/pred/description> "The Pokémon’s intensely focused, and that protects
+the Pokémon from flinching." .
+<http://edcpokedex.org/ability/magma-armor> <http://edcpokedex.org/pred/name> "Magma Armor" .
+<http://edcpokedex.org/ability/magma-armor> <http://edcpokedex.org/pred/description> "The Pokémon is covered with hot magma, which
+prevents the Pokémon from becoming frozen." .
+<http://edcpokedex.org/ability/water-veil> <http://edcpokedex.org/pred/name> "Water Veil" .
+<http://edcpokedex.org/ability/water-veil> <http://edcpokedex.org/pred/description> "The Pokémon is covered with a water veil, which
+prevents the Pokémon from getting a burn." .
+<http://edcpokedex.org/ability/magnet-pull> <http://edcpokedex.org/pred/name> "Magnet Pull" .
+<http://edcpokedex.org/ability/magnet-pull> <http://edcpokedex.org/pred/description> "Prevents Steel-type Pokémon from escaping using
+its magnetic force." .
+<http://edcpokedex.org/ability/soundproof> <http://edcpokedex.org/pred/name> "Soundproof" .
+<http://edcpokedex.org/ability/soundproof> <http://edcpokedex.org/pred/description> "Soundproofing of the Pokémon itself gives full 
+immunity to all sound-based moves." .
+<http://edcpokedex.org/ability/rain-dish> <http://edcpokedex.org/pred/name> "Rain Dish" .
+<http://edcpokedex.org/ability/rain-dish> <http://edcpokedex.org/pred/description> "The Pokémon gradually regains HP in rain." .
+<http://edcpokedex.org/ability/sand-stream> <http://edcpokedex.org/pred/name> "Sand Stream" .
+<http://edcpokedex.org/ability/sand-stream> <http://edcpokedex.org/pred/description> "The Pokémon summons a sandstorm when it enters
+a battle." .
+<http://edcpokedex.org/ability/pressure> <http://edcpokedex.org/pred/name> "Pressure" .
+<http://edcpokedex.org/ability/pressure> <http://edcpokedex.org/pred/description> "By putting pressure on the opposing Pokémon, it
+raises their PP usage." .
+<http://edcpokedex.org/ability/thick-fat> <http://edcpokedex.org/pred/name> "Thick Fat" .
+<http://edcpokedex.org/ability/thick-fat> <http://edcpokedex.org/pred/description> "The Pokémon is protected by a layer of thick fat,
+which halves the damage taken from Fire- and
+Ice-type moves." .
+<http://edcpokedex.org/ability/early-bird> <http://edcpokedex.org/pred/name> "Early Bird" .
+<http://edcpokedex.org/ability/early-bird> <http://edcpokedex.org/pred/description> "The Pokémon awakens twice as fast as other
+Pokémon from sleep." .
+<http://edcpokedex.org/ability/flame-body> <http://edcpokedex.org/pred/name> "Flame Body" .
+<http://edcpokedex.org/ability/flame-body> <http://edcpokedex.org/pred/description> "Contact with the Pokémon may burn the attacker." .
+<http://edcpokedex.org/ability/run-away> <http://edcpokedex.org/pred/name> "Run Away" .
+<http://edcpokedex.org/ability/run-away> <http://edcpokedex.org/pred/description> "Enables a sure getaway from wild Pokémon." .
+<http://edcpokedex.org/ability/keen-eye> <http://edcpokedex.org/pred/name> "Keen Eye" .
+<http://edcpokedex.org/ability/keen-eye> <http://edcpokedex.org/pred/description> "Keen eyes prevent other Pokémon from lowering this
+Pokémon’s accuracy." .
+<http://edcpokedex.org/ability/hyper-cutter> <http://edcpokedex.org/pred/name> "Hyper Cutter" .
+<http://edcpokedex.org/ability/hyper-cutter> <http://edcpokedex.org/pred/description> "The Pokémon’s proud of its powerful pincers. They
+prevent other Pokémon from lowering its Attack stat." .
+<http://edcpokedex.org/ability/pickup> <http://edcpokedex.org/pred/name> "Pickup" .
+<http://edcpokedex.org/ability/pickup> <http://edcpokedex.org/pred/description> "The Pokémon may pick up the item an opposing
+Pokémon used during a battle. It may pick up items
+outside of battle, too." .
+<http://edcpokedex.org/ability/truant> <http://edcpokedex.org/pred/name> "Truant" .
+<http://edcpokedex.org/ability/truant> <http://edcpokedex.org/pred/description> "The Pokémon can’t use a move the following turn if it
+uses one." .
+<http://edcpokedex.org/ability/hustle> <http://edcpokedex.org/pred/name> "Hustle" .
+<http://edcpokedex.org/ability/hustle> <http://edcpokedex.org/pred/description> "Boosts the Attack stat, but lowers accuracy." .
+<http://edcpokedex.org/ability/cute-charm> <http://edcpokedex.org/pred/name> "Cute Charm" .
+<http://edcpokedex.org/ability/cute-charm> <http://edcpokedex.org/pred/description> "Contact with the Pokémon may cause infatuation." .
+<http://edcpokedex.org/ability/plus> <http://edcpokedex.org/pred/name> "Plus" .
+<http://edcpokedex.org/ability/plus> <http://edcpokedex.org/pred/description> "Boosts the Sp. Atk stat of the Pokémon if an ally
+with the Plus or Minus Ability is also in battle." .
+<http://edcpokedex.org/ability/minus> <http://edcpokedex.org/pred/name> "Minus" .
+<http://edcpokedex.org/ability/minus> <http://edcpokedex.org/pred/description> "Boosts the Sp. Atk stat of the Pokémon if an ally
+with the Plus or Minus Ability is also in battle." .
+<http://edcpokedex.org/ability/forecast> <http://edcpokedex.org/pred/name> "Forecast" .
+<http://edcpokedex.org/ability/forecast> <http://edcpokedex.org/pred/description> "The Pokémon transforms with the weather to change
+its type to Water, Fire, or Ice." .
+<http://edcpokedex.org/ability/sticky-hold> <http://edcpokedex.org/pred/name> "Sticky Hold" .
+<http://edcpokedex.org/ability/sticky-hold> <http://edcpokedex.org/pred/description> "Items held by the Pokémon are stuck fast and
+cannot be removed by other Pokémon." .
+<http://edcpokedex.org/ability/shed-skin> <http://edcpokedex.org/pred/name> "Shed Skin" .
+<http://edcpokedex.org/ability/shed-skin> <http://edcpokedex.org/pred/description> "The Pokémon may heal its own status conditions
+by shedding its skin." .
+<http://edcpokedex.org/ability/guts> <http://edcpokedex.org/pred/name> "Guts" .
+<http://edcpokedex.org/ability/guts> <http://edcpokedex.org/pred/description> "It’s so gutsy that having a status condition boosts
+the Pokémon’s Attack stat." .
+<http://edcpokedex.org/ability/marvel-scale> <http://edcpokedex.org/pred/name> "Marvel Scale" .
+<http://edcpokedex.org/ability/marvel-scale> <http://edcpokedex.org/pred/description> "The Pokémon’s marvelous scales boost the Defense
+stat if it has a status condition." .
+<http://edcpokedex.org/ability/liquid-ooze> <http://edcpokedex.org/pred/name> "Liquid Ooze" .
+<http://edcpokedex.org/ability/liquid-ooze> <http://edcpokedex.org/pred/description> "Oozed liquid has strong stench, which damages
+attackers using any draining move." .
+<http://edcpokedex.org/ability/overgrow> <http://edcpokedex.org/pred/name> "Overgrow" .
+<http://edcpokedex.org/ability/overgrow> <http://edcpokedex.org/pred/description> "Powers up Grass-type moves when the Pokémon’s
+HP is low." .
+<http://edcpokedex.org/ability/blaze> <http://edcpokedex.org/pred/name> "Blaze" .
+<http://edcpokedex.org/ability/blaze> <http://edcpokedex.org/pred/description> "Powers up Fire-type moves when the Pokémon’s HP
+is low." .
+<http://edcpokedex.org/ability/torrent> <http://edcpokedex.org/pred/name> "Torrent" .
+<http://edcpokedex.org/ability/torrent> <http://edcpokedex.org/pred/description> "Powers up Water-type moves when the Pokémon’s
+HP is low." .
+<http://edcpokedex.org/ability/swarm> <http://edcpokedex.org/pred/name> "Swarm" .
+<http://edcpokedex.org/ability/swarm> <http://edcpokedex.org/pred/description> "Powers up Bug-type moves when the Pokémon’s HP
+is low." .
+<http://edcpokedex.org/ability/rock-head> <http://edcpokedex.org/pred/name> "Rock Head" .
+<http://edcpokedex.org/ability/rock-head> <http://edcpokedex.org/pred/description> "Protects the Pokémon from recoil damage." .
+<http://edcpokedex.org/ability/drought> <http://edcpokedex.org/pred/name> "Drought" .
+<http://edcpokedex.org/ability/drought> <http://edcpokedex.org/pred/description> "Turns the sunlight harsh when the Pokémon enters
+a battle." .
+<http://edcpokedex.org/ability/arena-trap> <http://edcpokedex.org/pred/name> "Arena Trap" .
+<http://edcpokedex.org/ability/arena-trap> <http://edcpokedex.org/pred/description> "Prevents opposing Pokémon from fleeing." .
+<http://edcpokedex.org/ability/vital-spirit> <http://edcpokedex.org/pred/name> "Vital Spirit" .
+<http://edcpokedex.org/ability/vital-spirit> <http://edcpokedex.org/pred/description> "The Pokémon is full of vitality, and that prevents
+it from falling asleep." .
+<http://edcpokedex.org/ability/white-smoke> <http://edcpokedex.org/pred/name> "White Smoke" .
+<http://edcpokedex.org/ability/white-smoke> <http://edcpokedex.org/pred/description> "The Pokémon is protected by its white smoke, which
+prevents other Pokémon from lowering its stats." .
+<http://edcpokedex.org/ability/pure-power> <http://edcpokedex.org/pred/name> "Pure Power" .
+<http://edcpokedex.org/ability/pure-power> <http://edcpokedex.org/pred/description> "Using its pure power, the Pokémon doubles its
+Attack stat." .
+<http://edcpokedex.org/ability/shell-armor> <http://edcpokedex.org/pred/name> "Shell Armor" .
+<http://edcpokedex.org/ability/shell-armor> <http://edcpokedex.org/pred/description> "A hard shell protects the Pokémon from critical hits." .
+<http://edcpokedex.org/ability/air-lock> <http://edcpokedex.org/pred/name> "Air Lock" .
+<http://edcpokedex.org/ability/air-lock> <http://edcpokedex.org/pred/description> "Eliminates the effects of weather." .
+<http://edcpokedex.org/ability/tangled-feet> <http://edcpokedex.org/pred/name> "Tangled Feet" .
+<http://edcpokedex.org/ability/tangled-feet> <http://edcpokedex.org/pred/description> "Raises evasion if the Pokémon is confused." .
+<http://edcpokedex.org/ability/motor-drive> <http://edcpokedex.org/pred/name> "Motor Drive" .
+<http://edcpokedex.org/ability/motor-drive> <http://edcpokedex.org/pred/description> "Boosts its Speed stat if hit by an Electric-type move,
+instead of taking damage." .
+<http://edcpokedex.org/ability/rivalry> <http://edcpokedex.org/pred/name> "Rivalry" .
+<http://edcpokedex.org/ability/rivalry> <http://edcpokedex.org/pred/description> "Becomes competitive and deals more damage to
+Pokémon of the same gender, but deals less to
+Pokémon of the opposite gender." .
+<http://edcpokedex.org/ability/steadfast> <http://edcpokedex.org/pred/name> "Steadfast" .
+<http://edcpokedex.org/ability/steadfast> <http://edcpokedex.org/pred/description> "The Pokémon’s determination boosts the Speed
+stat each time the Pokémon flinches." .
+<http://edcpokedex.org/ability/snow-cloak> <http://edcpokedex.org/pred/name> "Snow Cloak" .
+<http://edcpokedex.org/ability/snow-cloak> <http://edcpokedex.org/pred/description> "Boosts evasion in a hailstorm." .
+<http://edcpokedex.org/ability/gluttony> <http://edcpokedex.org/pred/name> "Gluttony" .
+<http://edcpokedex.org/ability/gluttony> <http://edcpokedex.org/pred/description> "Makes the Pokémon eat a held Berry when its HP
+drops to half or less, which is sooner than usual." .
+<http://edcpokedex.org/ability/anger-point> <http://edcpokedex.org/pred/name> "Anger Point" .
+<http://edcpokedex.org/ability/anger-point> <http://edcpokedex.org/pred/description> "The Pokémon is angered when it takes a critical hit,
+and that maxes its Attack stat." .
+<http://edcpokedex.org/ability/unburden> <http://edcpokedex.org/pred/name> "Unburden" .
+<http://edcpokedex.org/ability/unburden> <http://edcpokedex.org/pred/description> "Boosts the Speed stat if the Pokémon’s held item is 
+used or lost." .
+<http://edcpokedex.org/ability/heatproof> <http://edcpokedex.org/pred/name> "Heatproof" .
+<http://edcpokedex.org/ability/heatproof> <http://edcpokedex.org/pred/description> "The heatproof body of the Pokémon halves the
+damage from Fire-type moves that hit it." .
+<http://edcpokedex.org/ability/simple> <http://edcpokedex.org/pred/name> "Simple" .
+<http://edcpokedex.org/ability/simple> <http://edcpokedex.org/pred/description> "The stat changes the Pokémon receives are doubled." .
+<http://edcpokedex.org/ability/dry-skin> <http://edcpokedex.org/pred/name> "Dry Skin" .
+<http://edcpokedex.org/ability/dry-skin> <http://edcpokedex.org/pred/description> "Restores HP in rain or when hit by Water-type
+moves. Reduces HP in harsh sunlight, and increases
+the damage received from Fire-type moves." .
+<http://edcpokedex.org/ability/download> <http://edcpokedex.org/pred/name> "Download" .
+<http://edcpokedex.org/ability/download> <http://edcpokedex.org/pred/description> "Compares an opposing Pokémon’s Defense and
+Sp. Def stats before raising its own Attack or
+Sp. Atk stat—whichever will be more effective." .
+<http://edcpokedex.org/ability/iron-fist> <http://edcpokedex.org/pred/name> "Iron Fist" .
+<http://edcpokedex.org/ability/iron-fist> <http://edcpokedex.org/pred/description> "Powers up punching moves." .
+<http://edcpokedex.org/ability/poison-heal> <http://edcpokedex.org/pred/name> "Poison Heal" .
+<http://edcpokedex.org/ability/poison-heal> <http://edcpokedex.org/pred/description> "Restores HP if the Pokémon is poisoned, instead of
+losing HP." .
+<http://edcpokedex.org/ability/adaptability> <http://edcpokedex.org/pred/name> "Adaptability" .
+<http://edcpokedex.org/ability/adaptability> <http://edcpokedex.org/pred/description> "Powers up moves of the same type as the Pokémon." .
+<http://edcpokedex.org/ability/skill-link> <http://edcpokedex.org/pred/name> "Skill Link" .
+<http://edcpokedex.org/ability/skill-link> <http://edcpokedex.org/pred/description> "Maximizes the number of times multi-strike
+moves hit." .
+<http://edcpokedex.org/ability/hydration> <http://edcpokedex.org/pred/name> "Hydration" .
+<http://edcpokedex.org/ability/hydration> <http://edcpokedex.org/pred/description> "Heals status conditions if it’s raining." .
+<http://edcpokedex.org/ability/solar-power> <http://edcpokedex.org/pred/name> "Solar Power" .
+<http://edcpokedex.org/ability/solar-power> <http://edcpokedex.org/pred/description> "Boosts the Sp. Atk stat in harsh sunlight, but HP
+decreases every turn." .
+<http://edcpokedex.org/ability/quick-feet> <http://edcpokedex.org/pred/name> "Quick Feet" .
+<http://edcpokedex.org/ability/quick-feet> <http://edcpokedex.org/pred/description> "Boosts the Speed stat if the Pokémon has a
+status condition." .
+<http://edcpokedex.org/ability/normalize> <http://edcpokedex.org/pred/name> "Normalize" .
+<http://edcpokedex.org/ability/normalize> <http://edcpokedex.org/pred/description> "All the Pokémon’s moves become Normal type.
+The power of those moves is boosted a little." .
+<http://edcpokedex.org/ability/sniper> <http://edcpokedex.org/pred/name> "Sniper" .
+<http://edcpokedex.org/ability/sniper> <http://edcpokedex.org/pred/description> "Powers up moves if they become critical hits
+when attacking." .
+<http://edcpokedex.org/ability/magic-guard> <http://edcpokedex.org/pred/name> "Magic Guard" .
+<http://edcpokedex.org/ability/magic-guard> <http://edcpokedex.org/pred/description> "The Pokémon only takes damage from attacks." .
+<http://edcpokedex.org/ability/no-guard> <http://edcpokedex.org/pred/name> "No Guard" .
+<http://edcpokedex.org/ability/no-guard> <http://edcpokedex.org/pred/description> "The Pokémon employs no-guard tactics to ensure
+incoming and outgoing attacks always land." .
+<http://edcpokedex.org/ability/stall> <http://edcpokedex.org/pred/name> "Stall" .
+<http://edcpokedex.org/ability/stall> <http://edcpokedex.org/pred/description> "The Pokémon moves after all other Pokémon do." .
+<http://edcpokedex.org/ability/technician> <http://edcpokedex.org/pred/name> "Technician" .
+<http://edcpokedex.org/ability/technician> <http://edcpokedex.org/pred/description> "Powers up the Pokémon’s weaker moves." .
+<http://edcpokedex.org/ability/leaf-guard> <http://edcpokedex.org/pred/name> "Leaf Guard" .
+<http://edcpokedex.org/ability/leaf-guard> <http://edcpokedex.org/pred/description> "Prevents status conditions in harsh sunlight." .
+<http://edcpokedex.org/ability/klutz> <http://edcpokedex.org/pred/name> "Klutz" .
+<http://edcpokedex.org/ability/klutz> <http://edcpokedex.org/pred/description> "The Pokémon can’t use any held items." .
+<http://edcpokedex.org/ability/mold-breaker> <http://edcpokedex.org/pred/name> "Mold Breaker" .
+<http://edcpokedex.org/ability/mold-breaker> <http://edcpokedex.org/pred/description> "Moves can be used on the target regardless of
+its Abilities." .
+<http://edcpokedex.org/ability/super-luck> <http://edcpokedex.org/pred/name> "Super Luck" .
+<http://edcpokedex.org/ability/super-luck> <http://edcpokedex.org/pred/description> "The Pokémon is so lucky that the critical-hit ratios
+of its moves are boosted." .
+<http://edcpokedex.org/ability/aftermath> <http://edcpokedex.org/pred/name> "Aftermath" .
+<http://edcpokedex.org/ability/aftermath> <http://edcpokedex.org/pred/description> "Damages the attacker if it contacts the Pokémon
+with a finishing hit." .
+<http://edcpokedex.org/ability/anticipation> <http://edcpokedex.org/pred/name> "Anticipation" .
+<http://edcpokedex.org/ability/anticipation> <http://edcpokedex.org/pred/description> "The Pokémon can sense an opposing Pokémon’s
+dangerous moves." .
+<http://edcpokedex.org/ability/forewarn> <http://edcpokedex.org/pred/name> "Forewarn" .
+<http://edcpokedex.org/ability/forewarn> <http://edcpokedex.org/pred/description> "When it enters a battle, the Pokémon can tell one of
+the moves an opposing Pokémon has." .
+<http://edcpokedex.org/ability/unaware> <http://edcpokedex.org/pred/name> "Unaware" .
+<http://edcpokedex.org/ability/unaware> <http://edcpokedex.org/pred/description> "When attacking, the Pokémon ignores the target
+Pokémon’s stat changes." .
+<http://edcpokedex.org/ability/tinted-lens> <http://edcpokedex.org/pred/name> "Tinted Lens" .
+<http://edcpokedex.org/ability/tinted-lens> <http://edcpokedex.org/pred/description> "The Pokémon can use “not very effective” moves
+to deal regular damage. " .
+<http://edcpokedex.org/ability/filter> <http://edcpokedex.org/pred/name> "Filter" .
+<http://edcpokedex.org/ability/filter> <http://edcpokedex.org/pred/description> "Reduces the power of supereffective attacks taken." .
+<http://edcpokedex.org/ability/slow-start> <http://edcpokedex.org/pred/name> "Slow Start" .
+<http://edcpokedex.org/ability/slow-start> <http://edcpokedex.org/pred/description> "For five turns, the Pokémon’s Attack and Speed
+stats are halved." .
+<http://edcpokedex.org/ability/scrappy> <http://edcpokedex.org/pred/name> "Scrappy" .
+<http://edcpokedex.org/ability/scrappy> <http://edcpokedex.org/pred/description> "The Pokémon can hit Ghost-type Pokémon with
+Normal- and Fighting-type moves." .
+<http://edcpokedex.org/ability/storm-drain> <http://edcpokedex.org/pred/name> "Storm Drain" .
+<http://edcpokedex.org/ability/storm-drain> <http://edcpokedex.org/pred/description> "Draws in all Water-type moves. Instead of being hit 
+by Water-type moves, it boosts its Sp. Atk." .
+<http://edcpokedex.org/ability/ice-body> <http://edcpokedex.org/pred/name> "Ice Body" .
+<http://edcpokedex.org/ability/ice-body> <http://edcpokedex.org/pred/description> "The Pokémon gradually regains HP in a hailstorm." .
+<http://edcpokedex.org/ability/solid-rock> <http://edcpokedex.org/pred/name> "Solid Rock" .
+<http://edcpokedex.org/ability/solid-rock> <http://edcpokedex.org/pred/description> "Reduces the power of supereffective attacks taken." .
+<http://edcpokedex.org/ability/snow-warning> <http://edcpokedex.org/pred/name> "Snow Warning" .
+<http://edcpokedex.org/ability/snow-warning> <http://edcpokedex.org/pred/description> "The Pokémon summons a hailstorm when it enters
+a battle." .
+<http://edcpokedex.org/ability/honey-gather> <http://edcpokedex.org/pred/name> "Honey Gather" .
+<http://edcpokedex.org/ability/honey-gather> <http://edcpokedex.org/pred/description> "The Pokémon may gather Honey after a battle." .
+<http://edcpokedex.org/ability/frisk> <http://edcpokedex.org/pred/name> "Frisk" .
+<http://edcpokedex.org/ability/frisk> <http://edcpokedex.org/pred/description> "When it enters a battle, the Pokémon can check an
+opposing Pokémon’s held item." .
+<http://edcpokedex.org/ability/reckless> <http://edcpokedex.org/pred/name> "Reckless" .
+<http://edcpokedex.org/ability/reckless> <http://edcpokedex.org/pred/description> "Powers up moves that have recoil damage." .
+<http://edcpokedex.org/ability/multitype> <http://edcpokedex.org/pred/name> "Multitype" .
+<http://edcpokedex.org/ability/multitype> <http://edcpokedex.org/pred/description> "Changes the Pokémon’s type to match the Plate or
+Z-Crystal it holds." .
+<http://edcpokedex.org/ability/flower-gift> <http://edcpokedex.org/pred/name> "Flower Gift" .
+<http://edcpokedex.org/ability/flower-gift> <http://edcpokedex.org/pred/description> "Boosts the Attack and Sp. Def stats of itself
+and allies in harsh sunlight." .
+<http://edcpokedex.org/ability/bad-dreams> <http://edcpokedex.org/pred/name> "Bad Dreams" .
+<http://edcpokedex.org/ability/bad-dreams> <http://edcpokedex.org/pred/description> "Reduces the HP of sleeping opposing Pokémon." .
+<http://edcpokedex.org/ability/pickpocket> <http://edcpokedex.org/pred/name> "Pickpocket" .
+<http://edcpokedex.org/ability/pickpocket> <http://edcpokedex.org/pred/description> "Steals an item from an attacker that made
+direct contact." .
+<http://edcpokedex.org/ability/sheer-force> <http://edcpokedex.org/pred/name> "Sheer Force" .
+<http://edcpokedex.org/ability/sheer-force> <http://edcpokedex.org/pred/description> "Removes additional effects to increase the power
+of moves when attacking." .
+<http://edcpokedex.org/ability/contrary> <http://edcpokedex.org/pred/name> "Contrary" .
+<http://edcpokedex.org/ability/contrary> <http://edcpokedex.org/pred/description> "Makes stat changes have an opposite effect." .
+<http://edcpokedex.org/ability/unnerve> <http://edcpokedex.org/pred/name> "Unnerve" .
+<http://edcpokedex.org/ability/unnerve> <http://edcpokedex.org/pred/description> "Unnerves opposing Pokémon and makes them unable
+to eat Berries." .
+<http://edcpokedex.org/ability/defiant> <http://edcpokedex.org/pred/name> "Defiant" .
+<http://edcpokedex.org/ability/defiant> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Attack stat sharply when its
+stats are lowered." .
+<http://edcpokedex.org/ability/defeatist> <http://edcpokedex.org/pred/name> "Defeatist" .
+<http://edcpokedex.org/ability/defeatist> <http://edcpokedex.org/pred/description> "Halves the Pokémon’s Attack and Sp. Atk stats
+when its HP becomes half or less." .
+<http://edcpokedex.org/ability/cursed-body> <http://edcpokedex.org/pred/name> "Cursed Body" .
+<http://edcpokedex.org/ability/cursed-body> <http://edcpokedex.org/pred/description> "May disable a move used on the Pokémon." .
+<http://edcpokedex.org/ability/healer> <http://edcpokedex.org/pred/name> "Healer" .
+<http://edcpokedex.org/ability/healer> <http://edcpokedex.org/pred/description> "Sometimes heals an ally’s status condition." .
+<http://edcpokedex.org/ability/friend-guard> <http://edcpokedex.org/pred/name> "Friend Guard" .
+<http://edcpokedex.org/ability/friend-guard> <http://edcpokedex.org/pred/description> "Reduces damage done to allies." .
+<http://edcpokedex.org/ability/weak-armor> <http://edcpokedex.org/pred/name> "Weak Armor" .
+<http://edcpokedex.org/ability/weak-armor> <http://edcpokedex.org/pred/description> "Physical attacks to the Pokémon lower its Defense
+stat but sharply raise its Speed stat." .
+<http://edcpokedex.org/ability/heavy-metal> <http://edcpokedex.org/pred/name> "Heavy Metal" .
+<http://edcpokedex.org/ability/heavy-metal> <http://edcpokedex.org/pred/description> "Doubles the Pokémon’s weight." .
+<http://edcpokedex.org/ability/light-metal> <http://edcpokedex.org/pred/name> "Light Metal" .
+<http://edcpokedex.org/ability/light-metal> <http://edcpokedex.org/pred/description> "Halves the Pokémon’s weight." .
+<http://edcpokedex.org/ability/multiscale> <http://edcpokedex.org/pred/name> "Multiscale" .
+<http://edcpokedex.org/ability/multiscale> <http://edcpokedex.org/pred/description> "Reduces the amount of damage the Pokémon takes
+when its HP is full." .
+<http://edcpokedex.org/ability/toxic-boost> <http://edcpokedex.org/pred/name> "Toxic Boost" .
+<http://edcpokedex.org/ability/toxic-boost> <http://edcpokedex.org/pred/description> "Powers up physical attacks when the Pokémon
+is poisoned." .
+<http://edcpokedex.org/ability/flare-boost> <http://edcpokedex.org/pred/name> "Flare Boost" .
+<http://edcpokedex.org/ability/flare-boost> <http://edcpokedex.org/pred/description> "Powers up special attacks when the Pokémon
+is burned." .
+<http://edcpokedex.org/ability/harvest> <http://edcpokedex.org/pred/name> "Harvest" .
+<http://edcpokedex.org/ability/harvest> <http://edcpokedex.org/pred/description> "May create another Berry after one is used." .
+<http://edcpokedex.org/ability/telepathy> <http://edcpokedex.org/pred/name> "Telepathy" .
+<http://edcpokedex.org/ability/telepathy> <http://edcpokedex.org/pred/description> "Anticipates an ally’s attack and dodges it." .
+<http://edcpokedex.org/ability/moody> <http://edcpokedex.org/pred/name> "Moody" .
+<http://edcpokedex.org/ability/moody> <http://edcpokedex.org/pred/description> "Raises one stat sharply and lowers another
+every turn." .
+<http://edcpokedex.org/ability/overcoat> <http://edcpokedex.org/pred/name> "Overcoat" .
+<http://edcpokedex.org/ability/overcoat> <http://edcpokedex.org/pred/description> "Protects the Pokémon from things like sand, hail,
+and powder." .
+<http://edcpokedex.org/ability/poison-touch> <http://edcpokedex.org/pred/name> "Poison Touch" .
+<http://edcpokedex.org/ability/poison-touch> <http://edcpokedex.org/pred/description> "May poison a target when the Pokémon
+makes contact." .
+<http://edcpokedex.org/ability/regenerator> <http://edcpokedex.org/pred/name> "Regenerator" .
+<http://edcpokedex.org/ability/regenerator> <http://edcpokedex.org/pred/description> "Restores a little HP when withdrawn from battle." .
+<http://edcpokedex.org/ability/big-pecks> <http://edcpokedex.org/pred/name> "Big Pecks" .
+<http://edcpokedex.org/ability/big-pecks> <http://edcpokedex.org/pred/description> "Protects the Pokémon from
+Defense-lowering effects." .
+<http://edcpokedex.org/ability/sand-rush> <http://edcpokedex.org/pred/name> "Sand Rush" .
+<http://edcpokedex.org/ability/sand-rush> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Speed stat in a sandstorm." .
+<http://edcpokedex.org/ability/wonder-skin> <http://edcpokedex.org/pred/name> "Wonder Skin" .
+<http://edcpokedex.org/ability/wonder-skin> <http://edcpokedex.org/pred/description> "Makes status moves more likely to miss." .
+<http://edcpokedex.org/ability/analytic> <http://edcpokedex.org/pred/name> "Analytic" .
+<http://edcpokedex.org/ability/analytic> <http://edcpokedex.org/pred/description> "Boosts move power when the Pokémon moves last." .
+<http://edcpokedex.org/ability/illusion> <http://edcpokedex.org/pred/name> "Illusion" .
+<http://edcpokedex.org/ability/illusion> <http://edcpokedex.org/pred/description> "Comes out disguised as the Pokémon in the party’s
+last spot." .
+<http://edcpokedex.org/ability/imposter> <http://edcpokedex.org/pred/name> "Imposter" .
+<http://edcpokedex.org/ability/imposter> <http://edcpokedex.org/pred/description> "The Pokémon transforms itself into the Pokémon
+it’s facing." .
+<http://edcpokedex.org/ability/infiltrator> <http://edcpokedex.org/pred/name> "Infiltrator" .
+<http://edcpokedex.org/ability/infiltrator> <http://edcpokedex.org/pred/description> "Passes through the opposing Pokémon’s barrier,
+substitute, and the like and strikes." .
+<http://edcpokedex.org/ability/mummy> <http://edcpokedex.org/pred/name> "Mummy" .
+<http://edcpokedex.org/ability/mummy> <http://edcpokedex.org/pred/description> "Contact with the Pokémon changes the attacker’s
+Ability to Mummy." .
+<http://edcpokedex.org/ability/moxie> <http://edcpokedex.org/pred/name> "Moxie" .
+<http://edcpokedex.org/ability/moxie> <http://edcpokedex.org/pred/description> "The Pokémon shows moxie, and that boosts the
+Attack stat after knocking out any Pokémon." .
+<http://edcpokedex.org/ability/justified> <http://edcpokedex.org/pred/name> "Justified" .
+<http://edcpokedex.org/ability/justified> <http://edcpokedex.org/pred/description> "Being hit by a Dark-type move boosts the Attack
+stat of the Pokémon, for justice." .
+<http://edcpokedex.org/ability/rattled> <http://edcpokedex.org/pred/name> "Rattled" .
+<http://edcpokedex.org/ability/rattled> <http://edcpokedex.org/pred/description> "Dark-, Ghost-, and Bug-type moves scare the
+Pokémon and boost its Speed stat." .
+<http://edcpokedex.org/ability/magic-bounce> <http://edcpokedex.org/pred/name> "Magic Bounce" .
+<http://edcpokedex.org/ability/magic-bounce> <http://edcpokedex.org/pred/description> "Reflects status moves, instead of getting hit
+by them." .
+<http://edcpokedex.org/ability/sap-sipper> <http://edcpokedex.org/pred/name> "Sap Sipper" .
+<http://edcpokedex.org/ability/sap-sipper> <http://edcpokedex.org/pred/description> "Boosts the Attack stat if hit by a Grass-type move,
+instead of taking damage." .
+<http://edcpokedex.org/ability/prankster> <http://edcpokedex.org/pred/name> "Prankster" .
+<http://edcpokedex.org/ability/prankster> <http://edcpokedex.org/pred/description> "Gives priority to a status move." .
+<http://edcpokedex.org/ability/sand-force> <http://edcpokedex.org/pred/name> "Sand Force" .
+<http://edcpokedex.org/ability/sand-force> <http://edcpokedex.org/pred/description> "Boosts the power of Rock-, Ground-, and Steel-type
+moves in a sandstorm." .
+<http://edcpokedex.org/ability/iron-barbs> <http://edcpokedex.org/pred/name> "Iron Barbs" .
+<http://edcpokedex.org/ability/iron-barbs> <http://edcpokedex.org/pred/description> "Inflicts damage to the attacker on contact with
+iron barbs." .
+<http://edcpokedex.org/ability/zen-mode> <http://edcpokedex.org/pred/name> "Zen Mode" .
+<http://edcpokedex.org/ability/zen-mode> <http://edcpokedex.org/pred/description> "Changes the Pokémon’s shape when HP is half
+or less." .
+<http://edcpokedex.org/ability/victory-star> <http://edcpokedex.org/pred/name> "Victory Star" .
+<http://edcpokedex.org/ability/victory-star> <http://edcpokedex.org/pred/description> "Boosts the accuracy of its allies and itself." .
+<http://edcpokedex.org/ability/turboblaze> <http://edcpokedex.org/pred/name> "Turboblaze" .
+<http://edcpokedex.org/ability/turboblaze> <http://edcpokedex.org/pred/description> "Moves can be used on the target regardless of
+its Abilities." .
+<http://edcpokedex.org/ability/teravolt> <http://edcpokedex.org/pred/name> "Teravolt" .
+<http://edcpokedex.org/ability/teravolt> <http://edcpokedex.org/pred/description> "Moves can be used on the target regardless of
+its Abilities." .
+<http://edcpokedex.org/ability/aroma-veil> <http://edcpokedex.org/pred/name> "Aroma Veil" .
+<http://edcpokedex.org/ability/aroma-veil> <http://edcpokedex.org/pred/description> "Protects itself and its allies from attacks that limit
+their move choices." .
+<http://edcpokedex.org/ability/flower-veil> <http://edcpokedex.org/pred/name> "Flower Veil" .
+<http://edcpokedex.org/ability/flower-veil> <http://edcpokedex.org/pred/description> "Ally Grass-type Pokémon are protected from
+status conditions and the lowering of their stats." .
+<http://edcpokedex.org/ability/cheek-pouch> <http://edcpokedex.org/pred/name> "Cheek Pouch" .
+<http://edcpokedex.org/ability/cheek-pouch> <http://edcpokedex.org/pred/description> "Restores HP as well when the Pokémon eats a Berry." .
+<http://edcpokedex.org/ability/protean> <http://edcpokedex.org/pred/name> "Protean" .
+<http://edcpokedex.org/ability/protean> <http://edcpokedex.org/pred/description> "Changes the Pokémon’s type to the type of the
+move it’s about to use." .
+<http://edcpokedex.org/ability/fur-coat> <http://edcpokedex.org/pred/name> "Fur Coat" .
+<http://edcpokedex.org/ability/fur-coat> <http://edcpokedex.org/pred/description> "Halves the damage from physical moves." .
+<http://edcpokedex.org/ability/magician> <http://edcpokedex.org/pred/name> "Magician" .
+<http://edcpokedex.org/ability/magician> <http://edcpokedex.org/pred/description> "The Pokémon steals the held item of a Pokémon it
+hits with a move." .
+<http://edcpokedex.org/ability/bulletproof> <http://edcpokedex.org/pred/name> "Bulletproof" .
+<http://edcpokedex.org/ability/bulletproof> <http://edcpokedex.org/pred/description> "Protects the Pokémon from some ball and
+bomb moves." .
+<http://edcpokedex.org/ability/competitive> <http://edcpokedex.org/pred/name> "Competitive" .
+<http://edcpokedex.org/ability/competitive> <http://edcpokedex.org/pred/description> "Boosts the Sp. Atk stat sharply when a stat
+is lowered." .
+<http://edcpokedex.org/ability/strong-jaw> <http://edcpokedex.org/pred/name> "Strong Jaw" .
+<http://edcpokedex.org/ability/strong-jaw> <http://edcpokedex.org/pred/description> "The Pokémon’s strong jaw boosts the power of its
+biting moves." .
+<http://edcpokedex.org/ability/refrigerate> <http://edcpokedex.org/pred/name> "Refrigerate" .
+<http://edcpokedex.org/ability/refrigerate> <http://edcpokedex.org/pred/description> "Normal-type moves become Ice-type moves.
+The power of those moves is boosted a little." .
+<http://edcpokedex.org/ability/sweet-veil> <http://edcpokedex.org/pred/name> "Sweet Veil" .
+<http://edcpokedex.org/ability/sweet-veil> <http://edcpokedex.org/pred/description> "Prevents itself and ally Pokémon from falling asleep." .
+<http://edcpokedex.org/ability/stance-change> <http://edcpokedex.org/pred/name> "Stance Change" .
+<http://edcpokedex.org/ability/stance-change> <http://edcpokedex.org/pred/description> "The Pokémon changes its form to Blade Forme when
+it uses an attack move, and changes to Shield Forme
+when it uses King’s Shield." .
+<http://edcpokedex.org/ability/gale-wings> <http://edcpokedex.org/pred/name> "Gale Wings" .
+<http://edcpokedex.org/ability/gale-wings> <http://edcpokedex.org/pred/description> "Gives priority to Flying-type moves when the 
+Pokémon’s HP is full." .
+<http://edcpokedex.org/ability/mega-launcher> <http://edcpokedex.org/pred/name> "Mega Launcher" .
+<http://edcpokedex.org/ability/mega-launcher> <http://edcpokedex.org/pred/description> "Powers up aura and pulse moves." .
+<http://edcpokedex.org/ability/grass-pelt> <http://edcpokedex.org/pred/name> "Grass Pelt" .
+<http://edcpokedex.org/ability/grass-pelt> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Defense stat in 
+Grassy Terrain." .
+<http://edcpokedex.org/ability/symbiosis> <http://edcpokedex.org/pred/name> "Symbiosis" .
+<http://edcpokedex.org/ability/symbiosis> <http://edcpokedex.org/pred/description> "The Pokémon passes its item to an ally that has
+used up an item." .
+<http://edcpokedex.org/ability/tough-claws> <http://edcpokedex.org/pred/name> "Tough Claws" .
+<http://edcpokedex.org/ability/tough-claws> <http://edcpokedex.org/pred/description> "Powers up moves that make direct contact." .
+<http://edcpokedex.org/ability/pixilate> <http://edcpokedex.org/pred/name> "Pixilate" .
+<http://edcpokedex.org/ability/pixilate> <http://edcpokedex.org/pred/description> "Normal-type moves become Fairy-type moves.
+The power of those moves is boosted a little." .
+<http://edcpokedex.org/ability/gooey> <http://edcpokedex.org/pred/name> "Gooey" .
+<http://edcpokedex.org/ability/gooey> <http://edcpokedex.org/pred/description> "Contact with the Pokémon lowers the attacker’s
+Speed stat." .
+<http://edcpokedex.org/ability/aerilate> <http://edcpokedex.org/pred/name> "Aerilate" .
+<http://edcpokedex.org/ability/aerilate> <http://edcpokedex.org/pred/description> "Normal-type moves become Flying-type moves.
+The power of those moves is boosted a little." .
+<http://edcpokedex.org/ability/parental-bond> <http://edcpokedex.org/pred/name> "Parental Bond" .
+<http://edcpokedex.org/ability/parental-bond> <http://edcpokedex.org/pred/description> "Parent and child each attacks." .
+<http://edcpokedex.org/ability/dark-aura> <http://edcpokedex.org/pred/name> "Dark Aura" .
+<http://edcpokedex.org/ability/dark-aura> <http://edcpokedex.org/pred/description> "Powers up each Pokémon’s Dark-type moves." .
+<http://edcpokedex.org/ability/fairy-aura> <http://edcpokedex.org/pred/name> "Fairy Aura" .
+<http://edcpokedex.org/ability/fairy-aura> <http://edcpokedex.org/pred/description> "Powers up each Pokémon’s Fairy-type moves." .
+<http://edcpokedex.org/ability/aura-break> <http://edcpokedex.org/pred/name> "Aura Break" .
+<http://edcpokedex.org/ability/aura-break> <http://edcpokedex.org/pred/description> "The effects of “Aura” Abilities are reversed
+to lower the power of affected moves." .
+<http://edcpokedex.org/ability/primordial-sea> <http://edcpokedex.org/pred/name> "Primordial Sea" .
+<http://edcpokedex.org/ability/primordial-sea> <http://edcpokedex.org/pred/description> "The Pokémon changes the weather to nullify
+Fire-type attacks." .
+<http://edcpokedex.org/ability/desolate-land> <http://edcpokedex.org/pred/name> "Desolate Land" .
+<http://edcpokedex.org/ability/desolate-land> <http://edcpokedex.org/pred/description> "The Pokémon changes the weather to nullify
+Water-type attacks." .
+<http://edcpokedex.org/ability/delta-stream> <http://edcpokedex.org/pred/name> "Delta Stream" .
+<http://edcpokedex.org/ability/delta-stream> <http://edcpokedex.org/pred/description> "The Pokémon changes the weather to eliminate all
+of the Flying type’s weaknesses." .
+<http://edcpokedex.org/ability/stamina> <http://edcpokedex.org/pred/name> "Stamina" .
+<http://edcpokedex.org/ability/stamina> <http://edcpokedex.org/pred/description> "Boosts the Defense stat when hit by an attack." .
+<http://edcpokedex.org/ability/wimp-out> <http://edcpokedex.org/pred/name> "Wimp Out" .
+<http://edcpokedex.org/ability/wimp-out> <http://edcpokedex.org/pred/description> "The Pokémon cowardly switches out when its HP
+becomes half or less." .
+<http://edcpokedex.org/ability/emergency-exit> <http://edcpokedex.org/pred/name> "Emergency Exit" .
+<http://edcpokedex.org/ability/emergency-exit> <http://edcpokedex.org/pred/description> "The Pokémon, sensing danger, switches out when its
+HP becomes half or less." .
+<http://edcpokedex.org/ability/water-compaction> <http://edcpokedex.org/pred/name> "Water Compaction" .
+<http://edcpokedex.org/ability/water-compaction> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Defense stat sharply when hit
+by a Water-type move." .
+<http://edcpokedex.org/ability/merciless> <http://edcpokedex.org/pred/name> "Merciless" .
+<http://edcpokedex.org/ability/merciless> <http://edcpokedex.org/pred/description> "The Pokémon’s attacks become critical hits if the
+target is poisoned." .
+<http://edcpokedex.org/ability/shields-down> <http://edcpokedex.org/pred/name> "Shields Down" .
+<http://edcpokedex.org/ability/shields-down> <http://edcpokedex.org/pred/description> "When its HP becomes half or less, the Pokémon’s
+shell breaks and it becomes aggressive." .
+<http://edcpokedex.org/ability/stakeout> <http://edcpokedex.org/pred/name> "Stakeout" .
+<http://edcpokedex.org/ability/stakeout> <http://edcpokedex.org/pred/description> "Doubles the damage dealt to the target’s
+replacement if the target switches out." .
+<http://edcpokedex.org/ability/water-bubble> <http://edcpokedex.org/pred/name> "Water Bubble" .
+<http://edcpokedex.org/ability/water-bubble> <http://edcpokedex.org/pred/description> "Lowers the power of Fire-type moves done to the
+Pokémon and prevents the Pokémon from getting
+a burn." .
+<http://edcpokedex.org/ability/steelworker> <http://edcpokedex.org/pred/name> "Steelworker" .
+<http://edcpokedex.org/ability/steelworker> <http://edcpokedex.org/pred/description> "Powers up Steel-type moves." .
+<http://edcpokedex.org/ability/berserk> <http://edcpokedex.org/pred/name> "Berserk" .
+<http://edcpokedex.org/ability/berserk> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Sp. Atk stat when it takes a 
+hit that causes its HP to become half or less." .
+<http://edcpokedex.org/ability/slush-rush> <http://edcpokedex.org/pred/name> "Slush Rush" .
+<http://edcpokedex.org/ability/slush-rush> <http://edcpokedex.org/pred/description> "Boosts the Pokémon’s Speed stat in a hailstorm." .
+<http://edcpokedex.org/ability/long-reach> <http://edcpokedex.org/pred/name> "Long Reach" .
+<http://edcpokedex.org/ability/long-reach> <http://edcpokedex.org/pred/description> "The Pokémon uses its moves without making contact
+with the target." .
+<http://edcpokedex.org/ability/liquid-voice> <http://edcpokedex.org/pred/name> "Liquid Voice" .
+<http://edcpokedex.org/ability/liquid-voice> <http://edcpokedex.org/pred/description> "All sound-based moves become Water-type moves." .
+<http://edcpokedex.org/ability/triage> <http://edcpokedex.org/pred/name> "Triage" .
+<http://edcpokedex.org/ability/triage> <http://edcpokedex.org/pred/description> "Gives priority to a healing move." .
+<http://edcpokedex.org/ability/galvanize> <http://edcpokedex.org/pred/name> "Galvanize" .
+<http://edcpokedex.org/ability/galvanize> <http://edcpokedex.org/pred/description> "Normal-type moves become Electric-type moves.
+The power of those moves is boosted a little." .
+<http://edcpokedex.org/ability/surge-surfer> <http://edcpokedex.org/pred/name> "Surge Surfer" .
+<http://edcpokedex.org/ability/surge-surfer> <http://edcpokedex.org/pred/description> "Doubles the Pokémon’s Speed stat on
+Electric Terrain." .
+<http://edcpokedex.org/ability/schooling> <http://edcpokedex.org/pred/name> "Schooling" .
+<http://edcpokedex.org/ability/schooling> <http://edcpokedex.org/pred/description> "When it has a lot of HP, the Pokémon forms a
+powerful school. It stops schooling when its HP
+is low." .
+<http://edcpokedex.org/ability/disguise> <http://edcpokedex.org/pred/name> "Disguise" .
+<http://edcpokedex.org/ability/disguise> <http://edcpokedex.org/pred/description> "Once per battle, the shroud that covers the
+Pokémon can protect it from an attack." .
+<http://edcpokedex.org/ability/battle-bond> <http://edcpokedex.org/pred/name> "Battle Bond" .
+<http://edcpokedex.org/ability/battle-bond> <http://edcpokedex.org/pred/description> "Defeating an opposing Pokémon strengthens the
+Pokémon’s bond with its Trainer, and it becomes
+Ash-Greninja. Water Shuriken gets more powerful." .
+<http://edcpokedex.org/ability/power-construct> <http://edcpokedex.org/pred/name> "Power Construct" .
+<http://edcpokedex.org/ability/power-construct> <http://edcpokedex.org/pred/description> "Other Cells gather to aid when its HP becomes
+half or less. Then the Pokémon changes
+its form to Complete Forme." .
+<http://edcpokedex.org/ability/corrosion> <http://edcpokedex.org/pred/name> "Corrosion" .
+<http://edcpokedex.org/ability/corrosion> <http://edcpokedex.org/pred/description> "The Pokémon can poison the target even if it’s
+a Steel or Poison type." .
+<http://edcpokedex.org/ability/comatose> <http://edcpokedex.org/pred/name> "Comatose" .
+<http://edcpokedex.org/ability/comatose> <http://edcpokedex.org/pred/description> "It’s always drowsing and will never wake up.
+It can attack without waking up." .
+<http://edcpokedex.org/ability/queenly-majesty> <http://edcpokedex.org/pred/name> "Queenly Majesty" .
+<http://edcpokedex.org/ability/queenly-majesty> <http://edcpokedex.org/pred/description> "Its majesty pressures the opposing Pokémon,
+making it unable to attack using priority moves." .
+<http://edcpokedex.org/ability/innards-out> <http://edcpokedex.org/pred/name> "Innards Out" .
+<http://edcpokedex.org/ability/innards-out> <http://edcpokedex.org/pred/description> "Damages the attacker landing the finishing hit
+by the amount equal to its last HP." .
+<http://edcpokedex.org/ability/dancer> <http://edcpokedex.org/pred/name> "Dancer" .
+<http://edcpokedex.org/ability/dancer> <http://edcpokedex.org/pred/description> "When another Pokémon uses a dance move,
+it can use a dance move following it regardless
+of its Speed." .
+<http://edcpokedex.org/ability/battery> <http://edcpokedex.org/pred/name> "Battery" .
+<http://edcpokedex.org/ability/battery> <http://edcpokedex.org/pred/description> "Powers up ally Pokémon’s special moves." .
+<http://edcpokedex.org/ability/fluffy> <http://edcpokedex.org/pred/name> "Fluffy" .
+<http://edcpokedex.org/ability/fluffy> <http://edcpokedex.org/pred/description> "Halves the damage taken from moves that make
+direct contact, but doubles that of Fire-type moves." .
+<http://edcpokedex.org/ability/dazzling> <http://edcpokedex.org/pred/name> "Dazzling" .
+<http://edcpokedex.org/ability/dazzling> <http://edcpokedex.org/pred/description> "Surprises the opposing Pokémon, making it unable
+to attack using priority moves." .
+<http://edcpokedex.org/ability/soul-heart> <http://edcpokedex.org/pred/name> "Soul-Heart" .
+<http://edcpokedex.org/ability/soul-heart> <http://edcpokedex.org/pred/description> "Boosts its Sp. Atk stat every time a Pokémon faints." .
+<http://edcpokedex.org/ability/tangling-hair> <http://edcpokedex.org/pred/name> "Tangling Hair" .
+<http://edcpokedex.org/ability/tangling-hair> <http://edcpokedex.org/pred/description> "Contact with the Pokémon lowers the attacker’s
+Speed stat." .
+<http://edcpokedex.org/ability/receiver> <http://edcpokedex.org/pred/name> "Receiver" .
+<http://edcpokedex.org/ability/receiver> <http://edcpokedex.org/pred/description> "The Pokémon copies the Ability of a defeated ally." .
+<http://edcpokedex.org/ability/power-of-alchemy> <http://edcpokedex.org/pred/name> "Power of Alchemy" .
+<http://edcpokedex.org/ability/power-of-alchemy> <http://edcpokedex.org/pred/description> "The Pokémon copies the Ability of a defeated ally." .
+<http://edcpokedex.org/ability/beast-boost> <http://edcpokedex.org/pred/name> "Beast Boost" .
+<http://edcpokedex.org/ability/beast-boost> <http://edcpokedex.org/pred/description> "The Pokémon boosts its most proficient stat each
+time it knocks out a Pokémon." .
+<http://edcpokedex.org/ability/rks-system> <http://edcpokedex.org/pred/name> "RKS System" .
+<http://edcpokedex.org/ability/rks-system> <http://edcpokedex.org/pred/description> "Changes the Pokémon’s type to match the
+memory disc it holds." .
+<http://edcpokedex.org/ability/electric-surge> <http://edcpokedex.org/pred/name> "Electric Surge" .
+<http://edcpokedex.org/ability/electric-surge> <http://edcpokedex.org/pred/description> "Turns the ground into Electric Terrain when the
+Pokémon enters a battle." .
+<http://edcpokedex.org/ability/psychic-surge> <http://edcpokedex.org/pred/name> "Psychic Surge" .
+<http://edcpokedex.org/ability/psychic-surge> <http://edcpokedex.org/pred/description> "Turns the ground into Psychic Terrain when
+the Pokémon enters a battle." .
+<http://edcpokedex.org/ability/misty-surge> <http://edcpokedex.org/pred/name> "Misty Surge" .
+<http://edcpokedex.org/ability/misty-surge> <http://edcpokedex.org/pred/description> "Turns the ground into Misty Terrain when
+the Pokémon enters a battle." .
+<http://edcpokedex.org/ability/grassy-surge> <http://edcpokedex.org/pred/name> "Grassy Surge" .
+<http://edcpokedex.org/ability/grassy-surge> <http://edcpokedex.org/pred/description> "Turns the ground into Grassy Terrain when
+the Pokémon enters a battle." .
+<http://edcpokedex.org/ability/full-metal-body> <http://edcpokedex.org/pred/name> "Full Metal Body" .
+<http://edcpokedex.org/ability/full-metal-body> <http://edcpokedex.org/pred/description> "Prevents other Pokémon’s moves or Abilities from
+lowering the Pokémon’s stats." .
+<http://edcpokedex.org/ability/shadow-shield> <http://edcpokedex.org/pred/name> "Shadow Shield" .
+<http://edcpokedex.org/ability/shadow-shield> <http://edcpokedex.org/pred/description> "Reduces the amount of damage the Pokémon takes
+while its HP is full." .
+<http://edcpokedex.org/ability/prism-armor> <http://edcpokedex.org/pred/name> "Prism Armor" .
+<http://edcpokedex.org/ability/prism-armor> <http://edcpokedex.org/pred/description> "Reduces the power of supereffective attacks taken." .
+<http://edcpokedex.org/ability/neuroforce> <http://edcpokedex.org/pred/name> "Neuroforce" .
+<http://edcpokedex.org/ability/neuroforce> <http://edcpokedex.org/pred/description> "Powers up moves that are super effective." .
+<http://edcpokedex.org/ability/intrepid-sword> <http://edcpokedex.org/pred/name> "Intrepid Sword" .
+<http://edcpokedex.org/ability/intrepid-sword> <http://edcpokedex.org/pred/description> "Boosts the Pokémon's Attack stat when the Pokémon enters a battle." .
+<http://edcpokedex.org/ability/dauntless-shield> <http://edcpokedex.org/pred/name> "Dauntless Shield" .
+<http://edcpokedex.org/ability/dauntless-shield> <http://edcpokedex.org/pred/description> "Boosts the Pokémon's Defense stat when the Pokémon enters a battle." .
+<http://edcpokedex.org/ability/libero> <http://edcpokedex.org/pred/name> "Libero" .
+<http://edcpokedex.org/ability/libero> <http://edcpokedex.org/pred/description> "Changes the Pokémon's type to the type of the move it's about to use." .
+<http://edcpokedex.org/ability/ball-fetch> <http://edcpokedex.org/pred/name> "Ball Fetch" .
+<http://edcpokedex.org/ability/ball-fetch> <http://edcpokedex.org/pred/description> "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle." .
+<http://edcpokedex.org/ability/cotton-down> <http://edcpokedex.org/pred/name> "Cotton Down" .
+<http://edcpokedex.org/ability/cotton-down> <http://edcpokedex.org/pred/description> "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself." .
+<http://edcpokedex.org/ability/propeller-tail> <http://edcpokedex.org/pred/name> "Propeller Tail" .
+<http://edcpokedex.org/ability/propeller-tail> <http://edcpokedex.org/pred/description> "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." .
+<http://edcpokedex.org/ability/mirror-armor> <http://edcpokedex.org/pred/name> "Mirror Armor" .
+<http://edcpokedex.org/ability/mirror-armor> <http://edcpokedex.org/pred/description> "Bounces back only the stat-lowering effects that the Pokémon receives." .
+<http://edcpokedex.org/ability/gulp-missile> <http://edcpokedex.org/pred/name> "Gulp Missile" .
+<http://edcpokedex.org/ability/gulp-missile> <http://edcpokedex.org/pred/description> "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack." .
+<http://edcpokedex.org/ability/stalwart> <http://edcpokedex.org/pred/name> "Stalwart" .
+<http://edcpokedex.org/ability/stalwart> <http://edcpokedex.org/pred/description> "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." .
+<http://edcpokedex.org/ability/steam-engine> <http://edcpokedex.org/pred/name> "Steam Engine" .
+<http://edcpokedex.org/ability/steam-engine> <http://edcpokedex.org/pred/description> "Boosts the Pokémon's Speed stat drastically if hit by a Fire- or Water-type move." .
+<http://edcpokedex.org/ability/punk-rock> <http://edcpokedex.org/pred/name> "Punk Rock" .
+<http://edcpokedex.org/ability/punk-rock> <http://edcpokedex.org/pred/description> "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves." .
+<http://edcpokedex.org/ability/sand-spit> <http://edcpokedex.org/pred/name> "Sand Spit" .
+<http://edcpokedex.org/ability/sand-spit> <http://edcpokedex.org/pred/description> "The Pokémon creates a sandstorm when it's hit by an attack." .
+<http://edcpokedex.org/ability/ice-scales> <http://edcpokedex.org/pred/name> "Ice Scales" .
+<http://edcpokedex.org/ability/ice-scales> <http://edcpokedex.org/pred/description> "The Pokémon is protected by ice scales, which halve the damage taken from special moves." .
+<http://edcpokedex.org/ability/ripen> <http://edcpokedex.org/pred/name> "Ripen" .
+<http://edcpokedex.org/ability/ripen> <http://edcpokedex.org/pred/description> "Ripens Berries and doubles their effect." .
+<http://edcpokedex.org/ability/ice-face> <http://edcpokedex.org/pred/name> "Ice Face" .
+<http://edcpokedex.org/ability/ice-face> <http://edcpokedex.org/pred/description> "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it hails." .
+<http://edcpokedex.org/ability/power-spot> <http://edcpokedex.org/pred/name> "Power Spot" .
+<http://edcpokedex.org/ability/power-spot> <http://edcpokedex.org/pred/description> "Just being next to the Pokémon powers up moves." .
+<http://edcpokedex.org/ability/mimicry> <http://edcpokedex.org/pred/name> "Mimicry" .
+<http://edcpokedex.org/ability/mimicry> <http://edcpokedex.org/pred/description> "Changes the Pokémon's type depending on the terrain." .
+<http://edcpokedex.org/ability/screen-cleaner> <http://edcpokedex.org/pred/name> "Screen Cleaner" .
+<http://edcpokedex.org/ability/screen-cleaner> <http://edcpokedex.org/pred/description> "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon." .
+<http://edcpokedex.org/ability/steely-spirit> <http://edcpokedex.org/pred/name> "Steely Spirit" .
+<http://edcpokedex.org/ability/steely-spirit> <http://edcpokedex.org/pred/description> "Powers up ally Pokémon's Steel-type moves." .
+<http://edcpokedex.org/ability/perish-body> <http://edcpokedex.org/pred/name> "Perish Body" .
+<http://edcpokedex.org/ability/perish-body> <http://edcpokedex.org/pred/description> "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle." .
+<http://edcpokedex.org/ability/wandering-spirit> <http://edcpokedex.org/pred/name> "Wandering Spirit" .
+<http://edcpokedex.org/ability/wandering-spirit> <http://edcpokedex.org/pred/description> "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact." .
+<http://edcpokedex.org/ability/gorilla-tactics> <http://edcpokedex.org/pred/name> "Gorilla Tactics" .
+<http://edcpokedex.org/ability/gorilla-tactics> <http://edcpokedex.org/pred/description> "Boosts the Pokémon's Attack stat but only allows the use of the first selected move." .
+<http://edcpokedex.org/ability/neutralizing-gas> <http://edcpokedex.org/pred/name> "Neutralizing Gas" .
+<http://edcpokedex.org/ability/neutralizing-gas> <http://edcpokedex.org/pred/description> "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon's Abilities will be nullified or will not be triggered." .
+<http://edcpokedex.org/ability/pastel-veil> <http://edcpokedex.org/pred/name> "Pastel Veil" .
+<http://edcpokedex.org/ability/pastel-veil> <http://edcpokedex.org/pred/description> "Protects the Pokémon and its ally Pokémon from being poisoned." .
+<http://edcpokedex.org/ability/hunger-switch> <http://edcpokedex.org/pred/name> "Hunger Switch" .
+<http://edcpokedex.org/ability/hunger-switch> <http://edcpokedex.org/pred/description> "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn." .
+<http://edcpokedex.org/ability/quick-draw> <http://edcpokedex.org/pred/name> "Quick Draw" .
+<http://edcpokedex.org/ability/quick-draw> <http://edcpokedex.org/pred/description> "Enables the Pokémon to move first occasionally." .
+<http://edcpokedex.org/ability/unseen-fist> <http://edcpokedex.org/pred/name> "Unseen Fist" .
+<http://edcpokedex.org/ability/unseen-fist> <http://edcpokedex.org/pred/description> "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself." .
+<http://edcpokedex.org/ability/curious-medicine> <http://edcpokedex.org/pred/name> "Curious Medicine" .
+<http://edcpokedex.org/ability/curious-medicine> <http://edcpokedex.org/pred/description> "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies." .
+<http://edcpokedex.org/ability/transistor> <http://edcpokedex.org/pred/name> "Transistor" .
+<http://edcpokedex.org/ability/transistor> <http://edcpokedex.org/pred/description> "Powers up Electric-type moves." .
+<http://edcpokedex.org/ability/dragons-maw> <http://edcpokedex.org/pred/name> "Dragon's Maw" .
+<http://edcpokedex.org/ability/dragons-maw> <http://edcpokedex.org/pred/description> "Powers up Dragon-type moves." .
+<http://edcpokedex.org/ability/chilling-neigh> <http://edcpokedex.org/pred/name> "Chilling Neigh" .
+<http://edcpokedex.org/ability/chilling-neigh> <http://edcpokedex.org/pred/description> "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat." .
+<http://edcpokedex.org/ability/grim-neigh> <http://edcpokedex.org/pred/name> "Grim Neigh" .
+<http://edcpokedex.org/ability/grim-neigh> <http://edcpokedex.org/pred/description> "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat." .
+<http://edcpokedex.org/ability/as-one> <http://edcpokedex.org/pred/name> "As One" .
+<http://edcpokedex.org/ability/as-one> <http://edcpokedex.org/pred/description> "This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability." .
+<http://edcpokedex.org/ability/as-one> <http://edcpokedex.org/pred/name> "As One" .
+<http://edcpokedex.org/ability/as-one> <http://edcpokedex.org/pred/description> "This Ability combines the effects of both Calyrex's Unnerve Ability and Spectrier's Grim Neigh Ability." .

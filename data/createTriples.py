@@ -119,7 +119,7 @@ def convert_type_to_triples(triples_file):
         for poke_type in types_list:
             triples_file.write('<http://edcpokedex.org/type/%s> '
                                '<http://edcpokedex.org/pred/name> '
-                               '%s .\n' % (poke_type, poke_type.capitalize()))
+                               '"%s" .\n' % (poke_type, poke_type.capitalize()))
 
             with open('csv/type_efficacy.csv', 'r', encoding='utf-8') as types_efficacy_csv:
                 types_efficacy_dict = csv.DictReader(types_efficacy_csv)
@@ -138,11 +138,53 @@ def convert_type_to_triples(triples_file):
                                                % (poke_type, types_list[int(efficacy_row['target_type_id']) - 1]))
 
 
+def convert_abilities_to_triples(triples_file):
+    abilities_list = list()
+    abilities_names_list = list()
+    abilities_flavor_list = list()
+
+    with open("csv/abilities.csv", 'r', encoding='utf-8') as abilities_csv:
+        abilities_dict = csv.DictReader(abilities_csv)
+        for row in abilities_dict:
+            if int(row['id']) < 10000:
+                abilities_list.append(row['identifier'])
+
+    with open("csv/ability_names.csv", 'r', encoding='utf-8') as abilities_names_csv:
+        abilities_names_dict = csv.DictReader(abilities_names_csv)
+        for row in abilities_names_dict:
+            if int(row['ability_id']) < 10000:
+                if row['local_language_id'] == language_id:
+                    abilities_names_list.append(row['name'])
+
+    with open("csv/ability_flavor_text.csv", 'r', encoding='utf-8') as abilities_flavor_csv:
+        abilities_flavor_dict = csv.DictReader(abilities_flavor_csv)
+        for row in abilities_flavor_dict:
+            if row['version_group_id'] == '18' or row['version_group_id'] == '20':
+                if row['language_id'] == language_id:
+                    abilities_flavor_list.append(row['flavor_text'])
+
+    count = 0
+
+    for ability in abilities_list:
+        triples_file.write('<http://edcpokedex.org/ability/%s> '
+                           '<http://edcpokedex.org/pred/name> '
+                           '"%s" .\n'
+                           % (ability, abilities_names_list[count]))
+        triples_file.write('<http://edcpokedex.org/ability/%s> '
+                           '<http://edcpokedex.org/pred/description> '
+                           '"%s" .\n'
+                           % (ability, abilities_flavor_list[count]))
+        count += 1
+
+
 if __name__ == '__main__':
-    with open('triples/pokemon.nt', 'w', encoding='utf-8') as poke_triples:
-        for file in os.scandir("json/pokemon"):
-            if file.path.endswith(".json"):
-                convert_pokemon_to_triples(file.path, poke_triples)
+    #with open('triples/pokemon.nt', 'w', encoding='utf-8') as poke_triples:
+    #    for file in os.scandir("json/pokemon"):
+    #        if file.path.endswith(".json"):
+    #            convert_pokemon_to_triples(file.path, poke_triples)
 
     with open('triples/types.nt', 'w', encoding='utf-8') as type_triples:
         convert_type_to_triples(type_triples)
+
+    with open('triples/abilities.nt', 'w', encoding='utf-8') as ability_triples:
+        convert_abilities_to_triples(ability_triples)
