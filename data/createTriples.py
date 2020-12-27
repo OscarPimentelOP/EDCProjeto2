@@ -173,7 +173,7 @@ def convert_abilities_to_triples(triples_file):
         triples_file.write('<http://edcpokedex.org/ability/%s> '
                            '<http://edcpokedex.org/pred/description> '
                            '"%s" .\n'
-                           % (ability, abilities_flavor_list[count]))
+                           % (ability, abilities_flavor_list[count].replace("\n", " ")))
         count += 1
 
 
