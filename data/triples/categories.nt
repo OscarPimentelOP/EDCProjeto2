@@ -1,0 +1,645 @@
+<http://edcpokedex.org/category/seed> <http://edcpokedex.org/pred/name> "Seed Pokémon" .
+<http://edcpokedex.org/category/lizard> <http://edcpokedex.org/pred/name> "Lizard Pokémon" .
+<http://edcpokedex.org/category/flame> <http://edcpokedex.org/pred/name> "Flame Pokémon" .
+<http://edcpokedex.org/category/tiny-turtle> <http://edcpokedex.org/pred/name> "Tiny Turtle Pokémon" .
+<http://edcpokedex.org/category/turtle> <http://edcpokedex.org/pred/name> "Turtle Pokémon" .
+<http://edcpokedex.org/category/shellfish> <http://edcpokedex.org/pred/name> "Shellfish Pokémon" .
+<http://edcpokedex.org/category/worm> <http://edcpokedex.org/pred/name> "Worm Pokémon" .
+<http://edcpokedex.org/category/cocoon> <http://edcpokedex.org/pred/name> "Cocoon Pokémon" .
+<http://edcpokedex.org/category/butterfly> <http://edcpokedex.org/pred/name> "Butterfly Pokémon" .
+<http://edcpokedex.org/category/hairy-bug> <http://edcpokedex.org/pred/name> "Hairy Bug Pokémon" .
+<http://edcpokedex.org/category/poison-bee> <http://edcpokedex.org/pred/name> "Poison Bee Pokémon" .
+<http://edcpokedex.org/category/tiny-bird> <http://edcpokedex.org/pred/name> "Tiny Bird Pokémon" .
+<http://edcpokedex.org/category/bird> <http://edcpokedex.org/pred/name> "Bird Pokémon" .
+<http://edcpokedex.org/category/mouse> <http://edcpokedex.org/pred/name> "Mouse Pokémon" .
+<http://edcpokedex.org/category/beak> <http://edcpokedex.org/pred/name> "Beak Pokémon" .
+<http://edcpokedex.org/category/snake> <http://edcpokedex.org/pred/name> "Snake Pokémon" .
+<http://edcpokedex.org/category/cobra> <http://edcpokedex.org/pred/name> "Cobra Pokémon" .
+<http://edcpokedex.org/category/poison-pin> <http://edcpokedex.org/pred/name> "Poison Pin Pokémon" .
+<http://edcpokedex.org/category/drill> <http://edcpokedex.org/pred/name> "Drill Pokémon" .
+<http://edcpokedex.org/category/fairy> <http://edcpokedex.org/pred/name> "Fairy Pokémon" .
+<http://edcpokedex.org/category/fox> <http://edcpokedex.org/pred/name> "Fox Pokémon" .
+<http://edcpokedex.org/category/balloon> <http://edcpokedex.org/pred/name> "Balloon Pokémon" .
+<http://edcpokedex.org/category/bat> <http://edcpokedex.org/pred/name> "Bat Pokémon" .
+<http://edcpokedex.org/category/weed> <http://edcpokedex.org/pred/name> "Weed Pokémon" .
+<http://edcpokedex.org/category/flower> <http://edcpokedex.org/pred/name> "Flower Pokémon" .
+<http://edcpokedex.org/category/mushroom> <http://edcpokedex.org/pred/name> "Mushroom Pokémon" .
+<http://edcpokedex.org/category/insect> <http://edcpokedex.org/pred/name> "Insect Pokémon" .
+<http://edcpokedex.org/category/poison-moth> <http://edcpokedex.org/pred/name> "Poison Moth Pokémon" .
+<http://edcpokedex.org/category/mole> <http://edcpokedex.org/pred/name> "Mole Pokémon" .
+<http://edcpokedex.org/category/scratch-cat> <http://edcpokedex.org/pred/name> "Scratch Cat Pokémon" .
+<http://edcpokedex.org/category/classy-cat> <http://edcpokedex.org/pred/name> "Classy Cat Pokémon" .
+<http://edcpokedex.org/category/duck> <http://edcpokedex.org/pred/name> "Duck Pokémon" .
+<http://edcpokedex.org/category/pig-monkey> <http://edcpokedex.org/pred/name> "Pig Monkey Pokémon" .
+<http://edcpokedex.org/category/puppy> <http://edcpokedex.org/pred/name> "Puppy Pokémon" .
+<http://edcpokedex.org/category/legendary> <http://edcpokedex.org/pred/name> "Legendary Pokémon" .
+<http://edcpokedex.org/category/tadpole> <http://edcpokedex.org/pred/name> "Tadpole Pokémon" .
+<http://edcpokedex.org/category/psi> <http://edcpokedex.org/pred/name> "Psi Pokémon" .
+<http://edcpokedex.org/category/superpower> <http://edcpokedex.org/pred/name> "Superpower Pokémon" .
+<http://edcpokedex.org/category/flycatcher> <http://edcpokedex.org/pred/name> "Flycatcher Pokémon" .
+<http://edcpokedex.org/category/jellyfish> <http://edcpokedex.org/pred/name> "Jellyfish Pokémon" .
+<http://edcpokedex.org/category/rock> <http://edcpokedex.org/pred/name> "Rock Pokémon" .
+<http://edcpokedex.org/category/megaton> <http://edcpokedex.org/pred/name> "Megaton Pokémon" .
+<http://edcpokedex.org/category/fire-horse> <http://edcpokedex.org/pred/name> "Fire Horse Pokémon" .
+<http://edcpokedex.org/category/dopey> <http://edcpokedex.org/pred/name> "Dopey Pokémon" .
+<http://edcpokedex.org/category/hermit-crab> <http://edcpokedex.org/pred/name> "Hermit Crab Pokémon" .
+<http://edcpokedex.org/category/magnet> <http://edcpokedex.org/pred/name> "Magnet Pokémon" .
+<http://edcpokedex.org/category/wild-duck> <http://edcpokedex.org/pred/name> "Wild Duck Pokémon" .
+<http://edcpokedex.org/category/twin-bird> <http://edcpokedex.org/pred/name> "Twin Bird Pokémon" .
+<http://edcpokedex.org/category/triple-bird> <http://edcpokedex.org/pred/name> "Triple Bird Pokémon" .
+<http://edcpokedex.org/category/sea-lion> <http://edcpokedex.org/pred/name> "Sea Lion Pokémon" .
+<http://edcpokedex.org/category/sludge> <http://edcpokedex.org/pred/name> "Sludge Pokémon" .
+<http://edcpokedex.org/category/bivalve> <http://edcpokedex.org/pred/name> "Bivalve Pokémon" .
+<http://edcpokedex.org/category/gas> <http://edcpokedex.org/pred/name> "Gas Pokémon" .
+<http://edcpokedex.org/category/shadow> <http://edcpokedex.org/pred/name> "Shadow Pokémon" .
+<http://edcpokedex.org/category/rock-snake> <http://edcpokedex.org/pred/name> "Rock Snake Pokémon" .
+<http://edcpokedex.org/category/hypnosis> <http://edcpokedex.org/pred/name> "Hypnosis Pokémon" .
+<http://edcpokedex.org/category/river-crab> <http://edcpokedex.org/pred/name> "River Crab Pokémon" .
+<http://edcpokedex.org/category/pincer> <http://edcpokedex.org/pred/name> "Pincer Pokémon" .
+<http://edcpokedex.org/category/ball> <http://edcpokedex.org/pred/name> "Ball Pokémon" .
+<http://edcpokedex.org/category/egg> <http://edcpokedex.org/pred/name> "Egg Pokémon" .
+<http://edcpokedex.org/category/coconut> <http://edcpokedex.org/pred/name> "Coconut Pokémon" .
+<http://edcpokedex.org/category/lonely> <http://edcpokedex.org/pred/name> "Lonely Pokémon" .
+<http://edcpokedex.org/category/bone-keeper> <http://edcpokedex.org/pred/name> "Bone Keeper Pokémon" .
+<http://edcpokedex.org/category/kicking> <http://edcpokedex.org/pred/name> "Kicking Pokémon" .
+<http://edcpokedex.org/category/punching> <http://edcpokedex.org/pred/name> "Punching Pokémon" .
+<http://edcpokedex.org/category/licking> <http://edcpokedex.org/pred/name> "Licking Pokémon" .
+<http://edcpokedex.org/category/poison-gas> <http://edcpokedex.org/pred/name> "Poison Gas Pokémon" .
+<http://edcpokedex.org/category/spikes> <http://edcpokedex.org/pred/name> "Spikes Pokémon" .
+<http://edcpokedex.org/category/vine> <http://edcpokedex.org/pred/name> "Vine Pokémon" .
+<http://edcpokedex.org/category/parent> <http://edcpokedex.org/pred/name> "Parent Pokémon" .
+<http://edcpokedex.org/category/dragon> <http://edcpokedex.org/pred/name> "Dragon Pokémon" .
+<http://edcpokedex.org/category/goldfish> <http://edcpokedex.org/pred/name> "Goldfish Pokémon" .
+<http://edcpokedex.org/category/star-shape> <http://edcpokedex.org/pred/name> "Star Shape Pokémon" .
+<http://edcpokedex.org/category/mysterious> <http://edcpokedex.org/pred/name> "Mysterious Pokémon" .
+<http://edcpokedex.org/category/barrier> <http://edcpokedex.org/pred/name> "Barrier Pokémon" .
+<http://edcpokedex.org/category/mantis> <http://edcpokedex.org/pred/name> "Mantis Pokémon" .
+<http://edcpokedex.org/category/human-shape> <http://edcpokedex.org/pred/name> "Human Shape Pokémon" .
+<http://edcpokedex.org/category/electric> <http://edcpokedex.org/pred/name> "Electric Pokémon" .
+<http://edcpokedex.org/category/spitfire> <http://edcpokedex.org/pred/name> "Spitfire Pokémon" .
+<http://edcpokedex.org/category/stag-beetle> <http://edcpokedex.org/pred/name> "Stag Beetle Pokémon" .
+<http://edcpokedex.org/category/wild-bull> <http://edcpokedex.org/pred/name> "Wild Bull Pokémon" .
+<http://edcpokedex.org/category/fish> <http://edcpokedex.org/pred/name> "Fish Pokémon" .
+<http://edcpokedex.org/category/atrocious> <http://edcpokedex.org/pred/name> "Atrocious Pokémon" .
+<http://edcpokedex.org/category/transport> <http://edcpokedex.org/pred/name> "Transport Pokémon" .
+<http://edcpokedex.org/category/transform> <http://edcpokedex.org/pred/name> "Transform Pokémon" .
+<http://edcpokedex.org/category/evolution> <http://edcpokedex.org/pred/name> "Evolution Pokémon" .
+<http://edcpokedex.org/category/bubble-jet> <http://edcpokedex.org/pred/name> "Bubble Jet Pokémon" .
+<http://edcpokedex.org/category/lightning> <http://edcpokedex.org/pred/name> "Lightning Pokémon" .
+<http://edcpokedex.org/category/virtual> <http://edcpokedex.org/pred/name> "Virtual Pokémon" .
+<http://edcpokedex.org/category/spiral> <http://edcpokedex.org/pred/name> "Spiral Pokémon" .
+<http://edcpokedex.org/category/fossil> <http://edcpokedex.org/pred/name> "Fossil Pokémon" .
+<http://edcpokedex.org/category/sleeping> <http://edcpokedex.org/pred/name> "Sleeping Pokémon" .
+<http://edcpokedex.org/category/freeze> <http://edcpokedex.org/pred/name> "Freeze Pokémon" .
+<http://edcpokedex.org/category/genetic> <http://edcpokedex.org/pred/name> "Genetic Pokémon" .
+<http://edcpokedex.org/category/new-species> <http://edcpokedex.org/pred/name> "New Species Pokémon" .
+<http://edcpokedex.org/category/leaf> <http://edcpokedex.org/pred/name> "Leaf Pokémon" .
+<http://edcpokedex.org/category/herb> <http://edcpokedex.org/pred/name> "Herb Pokémon" .
+<http://edcpokedex.org/category/fire-mouse> <http://edcpokedex.org/pred/name> "Fire Mouse Pokémon" .
+<http://edcpokedex.org/category/volcano> <http://edcpokedex.org/pred/name> "Volcano Pokémon" .
+<http://edcpokedex.org/category/big-jaw> <http://edcpokedex.org/pred/name> "Big Jaw Pokémon" .
+<http://edcpokedex.org/category/scout> <http://edcpokedex.org/pred/name> "Scout Pokémon" .
+<http://edcpokedex.org/category/long-body> <http://edcpokedex.org/pred/name> "Long Body Pokémon" .
+<http://edcpokedex.org/category/owl> <http://edcpokedex.org/pred/name> "Owl Pokémon" .
+<http://edcpokedex.org/category/five-star> <http://edcpokedex.org/pred/name> "Five Star Pokémon" .
+<http://edcpokedex.org/category/string-spit> <http://edcpokedex.org/pred/name> "String Spit Pokémon" .
+<http://edcpokedex.org/category/long-leg> <http://edcpokedex.org/pred/name> "Long Leg Pokémon" .
+<http://edcpokedex.org/category/angler> <http://edcpokedex.org/pred/name> "Angler Pokémon" .
+<http://edcpokedex.org/category/light> <http://edcpokedex.org/pred/name> "Light Pokémon" .
+<http://edcpokedex.org/category/tiny-mouse> <http://edcpokedex.org/pred/name> "Tiny Mouse Pokémon" .
+<http://edcpokedex.org/category/spike-ball> <http://edcpokedex.org/pred/name> "Spike Ball Pokémon" .
+<http://edcpokedex.org/category/happiness> <http://edcpokedex.org/pred/name> "Happiness Pokémon" .
+<http://edcpokedex.org/category/mystic> <http://edcpokedex.org/pred/name> "Mystic Pokémon" .
+<http://edcpokedex.org/category/wool> <http://edcpokedex.org/pred/name> "Wool Pokémon" .
+<http://edcpokedex.org/category/aqua-mouse> <http://edcpokedex.org/pred/name> "Aqua Mouse Pokémon" .
+<http://edcpokedex.org/category/aqua-rabbit> <http://edcpokedex.org/pred/name> "Aqua Rabbit Pokémon" .
+<http://edcpokedex.org/category/imitation> <http://edcpokedex.org/pred/name> "Imitation Pokémon" .
+<http://edcpokedex.org/category/frog> <http://edcpokedex.org/pred/name> "Frog Pokémon" .
+<http://edcpokedex.org/category/cottonweed> <http://edcpokedex.org/pred/name> "Cottonweed Pokémon" .
+<http://edcpokedex.org/category/long-tail> <http://edcpokedex.org/pred/name> "Long Tail Pokémon" .
+<http://edcpokedex.org/category/sun> <http://edcpokedex.org/pred/name> "Sun Pokémon" .
+<http://edcpokedex.org/category/clear-wing> <http://edcpokedex.org/pred/name> "Clear Wing Pokémon" .
+<http://edcpokedex.org/category/water-fish> <http://edcpokedex.org/pred/name> "Water Fish Pokémon" .
+<http://edcpokedex.org/category/moonlight> <http://edcpokedex.org/pred/name> "Moonlight Pokémon" .
+<http://edcpokedex.org/category/darkness> <http://edcpokedex.org/pred/name> "Darkness Pokémon" .
+<http://edcpokedex.org/category/royal> <http://edcpokedex.org/pred/name> "Royal Pokémon" .
+<http://edcpokedex.org/category/screech> <http://edcpokedex.org/pred/name> "Screech Pokémon" .
+<http://edcpokedex.org/category/symbol> <http://edcpokedex.org/pred/name> "Symbol Pokémon" .
+<http://edcpokedex.org/category/patient> <http://edcpokedex.org/pred/name> "Patient Pokémon" .
+<http://edcpokedex.org/category/long-neck> <http://edcpokedex.org/pred/name> "Long Neck Pokémon" .
+<http://edcpokedex.org/category/bagworm> <http://edcpokedex.org/pred/name> "Bagworm Pokémon" .
+<http://edcpokedex.org/category/land-snake> <http://edcpokedex.org/pred/name> "Land Snake Pokémon" .
+<http://edcpokedex.org/category/fly-scorpion> <http://edcpokedex.org/pred/name> "Fly Scorpion Pokémon" .
+<http://edcpokedex.org/category/iron-snake> <http://edcpokedex.org/pred/name> "Iron Snake Pokémon" .
+<http://edcpokedex.org/category/mold> <http://edcpokedex.org/pred/name> "Mold Pokémon" .
+<http://edcpokedex.org/category/single-horn> <http://edcpokedex.org/pred/name> "Single Horn Pokémon" .
+<http://edcpokedex.org/category/sharp-claw> <http://edcpokedex.org/pred/name> "Sharp Claw Pokémon" .
+<http://edcpokedex.org/category/little-bear> <http://edcpokedex.org/pred/name> "Little Bear Pokémon" .
+<http://edcpokedex.org/category/hibernator> <http://edcpokedex.org/pred/name> "Hibernator Pokémon" .
+<http://edcpokedex.org/category/lava> <http://edcpokedex.org/pred/name> "Lava Pokémon" .
+<http://edcpokedex.org/category/pig> <http://edcpokedex.org/pred/name> "Pig Pokémon" .
+<http://edcpokedex.org/category/swine> <http://edcpokedex.org/pred/name> "Swine Pokémon" .
+<http://edcpokedex.org/category/coral> <http://edcpokedex.org/pred/name> "Coral Pokémon" .
+<http://edcpokedex.org/category/jet> <http://edcpokedex.org/pred/name> "Jet Pokémon" .
+<http://edcpokedex.org/category/delivery> <http://edcpokedex.org/pred/name> "Delivery Pokémon" .
+<http://edcpokedex.org/category/kite> <http://edcpokedex.org/pred/name> "Kite Pokémon" .
+<http://edcpokedex.org/category/armor-bird> <http://edcpokedex.org/pred/name> "Armor Bird Pokémon" .
+<http://edcpokedex.org/category/dark> <http://edcpokedex.org/pred/name> "Dark Pokémon" .
+<http://edcpokedex.org/category/long-nose> <http://edcpokedex.org/pred/name> "Long Nose Pokémon" .
+<http://edcpokedex.org/category/armor> <http://edcpokedex.org/pred/name> "Armor Pokémon" .
+<http://edcpokedex.org/category/big-horn> <http://edcpokedex.org/pred/name> "Big Horn Pokémon" .
+<http://edcpokedex.org/category/painter> <http://edcpokedex.org/pred/name> "Painter Pokémon" .
+<http://edcpokedex.org/category/scuffle> <http://edcpokedex.org/pred/name> "Scuffle Pokémon" .
+<http://edcpokedex.org/category/handstand> <http://edcpokedex.org/pred/name> "Handstand Pokémon" .
+<http://edcpokedex.org/category/kiss> <http://edcpokedex.org/pred/name> "Kiss Pokémon" .
+<http://edcpokedex.org/category/live-coal> <http://edcpokedex.org/pred/name> "Live Coal Pokémon" .
+<http://edcpokedex.org/category/milk-cow> <http://edcpokedex.org/pred/name> "Milk Cow Pokémon" .
+<http://edcpokedex.org/category/thunder> <http://edcpokedex.org/pred/name> "Thunder Pokémon" .
+<http://edcpokedex.org/category/aurora> <http://edcpokedex.org/pred/name> "Aurora Pokémon" .
+<http://edcpokedex.org/category/rock-skin> <http://edcpokedex.org/pred/name> "Rock Skin Pokémon" .
+<http://edcpokedex.org/category/hard-shell> <http://edcpokedex.org/pred/name> "Hard Shell Pokémon" .
+<http://edcpokedex.org/category/diving> <http://edcpokedex.org/pred/name> "Diving Pokémon" .
+<http://edcpokedex.org/category/rainbow> <http://edcpokedex.org/pred/name> "Rainbow Pokémon" .
+<http://edcpokedex.org/category/time-travel> <http://edcpokedex.org/pred/name> "Time Travel Pokémon" .
+<http://edcpokedex.org/category/wood-gecko> <http://edcpokedex.org/pred/name> "Wood Gecko Pokémon" .
+<http://edcpokedex.org/category/forest> <http://edcpokedex.org/pred/name> "Forest Pokémon" .
+<http://edcpokedex.org/category/chick> <http://edcpokedex.org/pred/name> "Chick Pokémon" .
+<http://edcpokedex.org/category/young-fowl> <http://edcpokedex.org/pred/name> "Young Fowl Pokémon" .
+<http://edcpokedex.org/category/blaze> <http://edcpokedex.org/pred/name> "Blaze Pokémon" .
+<http://edcpokedex.org/category/mud-fish> <http://edcpokedex.org/pred/name> "Mud Fish Pokémon" .
+<http://edcpokedex.org/category/bite> <http://edcpokedex.org/pred/name> "Bite Pokémon" .
+<http://edcpokedex.org/category/tiny-raccoon> <http://edcpokedex.org/pred/name> "Tiny Raccoon Pokémon" .
+<http://edcpokedex.org/category/rushing> <http://edcpokedex.org/pred/name> "Rushing Pokémon" .
+<http://edcpokedex.org/category/water-weed> <http://edcpokedex.org/pred/name> "Water Weed Pokémon" .
+<http://edcpokedex.org/category/jolly> <http://edcpokedex.org/pred/name> "Jolly Pokémon" .
+<http://edcpokedex.org/category/carefree> <http://edcpokedex.org/pred/name> "Carefree Pokémon" .
+<http://edcpokedex.org/category/acorn> <http://edcpokedex.org/pred/name> "Acorn Pokémon" .
+<http://edcpokedex.org/category/wily> <http://edcpokedex.org/pred/name> "Wily Pokémon" .
+<http://edcpokedex.org/category/wicked> <http://edcpokedex.org/pred/name> "Wicked Pokémon" .
+<http://edcpokedex.org/category/tiny-swallow> <http://edcpokedex.org/pred/name> "Tiny Swallow Pokémon" .
+<http://edcpokedex.org/category/swallow> <http://edcpokedex.org/pred/name> "Swallow Pokémon" .
+<http://edcpokedex.org/category/seagull> <http://edcpokedex.org/pred/name> "Seagull Pokémon" .
+<http://edcpokedex.org/category/water-bird> <http://edcpokedex.org/pred/name> "Water Bird Pokémon" .
+<http://edcpokedex.org/category/feeling> <http://edcpokedex.org/pred/name> "Feeling Pokémon" .
+<http://edcpokedex.org/category/emotion> <http://edcpokedex.org/pred/name> "Emotion Pokémon" .
+<http://edcpokedex.org/category/embrace> <http://edcpokedex.org/pred/name> "Embrace Pokémon" .
+<http://edcpokedex.org/category/pond-skater> <http://edcpokedex.org/pred/name> "Pond Skater Pokémon" .
+<http://edcpokedex.org/category/eyeball> <http://edcpokedex.org/pred/name> "Eyeball Pokémon" .
+<http://edcpokedex.org/category/slacker> <http://edcpokedex.org/pred/name> "Slacker Pokémon" .
+<http://edcpokedex.org/category/wild-monkey> <http://edcpokedex.org/pred/name> "Wild Monkey Pokémon" .
+<http://edcpokedex.org/category/lazy> <http://edcpokedex.org/pred/name> "Lazy Pokémon" .
+<http://edcpokedex.org/category/trainee> <http://edcpokedex.org/pred/name> "Trainee Pokémon" .
+<http://edcpokedex.org/category/ninja> <http://edcpokedex.org/pred/name> "Ninja Pokémon" .
+<http://edcpokedex.org/category/shed> <http://edcpokedex.org/pred/name> "Shed Pokémon" .
+<http://edcpokedex.org/category/whisper> <http://edcpokedex.org/pred/name> "Whisper Pokémon" .
+<http://edcpokedex.org/category/big-voice> <http://edcpokedex.org/pred/name> "Big Voice Pokémon" .
+<http://edcpokedex.org/category/loud-noise> <http://edcpokedex.org/pred/name> "Loud Noise Pokémon" .
+<http://edcpokedex.org/category/guts> <http://edcpokedex.org/pred/name> "Guts Pokémon" .
+<http://edcpokedex.org/category/arm-thrust> <http://edcpokedex.org/pred/name> "Arm Thrust Pokémon" .
+<http://edcpokedex.org/category/polka-dot> <http://edcpokedex.org/pred/name> "Polka Dot Pokémon" .
+<http://edcpokedex.org/category/compass> <http://edcpokedex.org/pred/name> "Compass Pokémon" .
+<http://edcpokedex.org/category/kitten> <http://edcpokedex.org/pred/name> "Kitten Pokémon" .
+<http://edcpokedex.org/category/prim> <http://edcpokedex.org/pred/name> "Prim Pokémon" .
+<http://edcpokedex.org/category/deceiver> <http://edcpokedex.org/pred/name> "Deceiver Pokémon" .
+<http://edcpokedex.org/category/iron-armor> <http://edcpokedex.org/pred/name> "Iron Armor Pokémon" .
+<http://edcpokedex.org/category/meditate> <http://edcpokedex.org/pred/name> "Meditate Pokémon" .
+<http://edcpokedex.org/category/discharge> <http://edcpokedex.org/pred/name> "Discharge Pokémon" .
+<http://edcpokedex.org/category/cheering> <http://edcpokedex.org/pred/name> "Cheering Pokémon" .
+<http://edcpokedex.org/category/firefly> <http://edcpokedex.org/pred/name> "Firefly Pokémon" .
+<http://edcpokedex.org/category/thorn> <http://edcpokedex.org/pred/name> "Thorn Pokémon" .
+<http://edcpokedex.org/category/stomach> <http://edcpokedex.org/pred/name> "Stomach Pokémon" .
+<http://edcpokedex.org/category/poison-bag> <http://edcpokedex.org/pred/name> "Poison Bag Pokémon" .
+<http://edcpokedex.org/category/savage> <http://edcpokedex.org/pred/name> "Savage Pokémon" .
+<http://edcpokedex.org/category/brutal> <http://edcpokedex.org/pred/name> "Brutal Pokémon" .
+<http://edcpokedex.org/category/ball-whale> <http://edcpokedex.org/pred/name> "Ball Whale Pokémon" .
+<http://edcpokedex.org/category/float-whale> <http://edcpokedex.org/pred/name> "Float Whale Pokémon" .
+<http://edcpokedex.org/category/numb> <http://edcpokedex.org/pred/name> "Numb Pokémon" .
+<http://edcpokedex.org/category/eruption> <http://edcpokedex.org/pred/name> "Eruption Pokémon" .
+<http://edcpokedex.org/category/coal> <http://edcpokedex.org/pred/name> "Coal Pokémon" .
+<http://edcpokedex.org/category/bounce> <http://edcpokedex.org/pred/name> "Bounce Pokémon" .
+<http://edcpokedex.org/category/manipulate> <http://edcpokedex.org/pred/name> "Manipulate Pokémon" .
+<http://edcpokedex.org/category/spot-panda> <http://edcpokedex.org/pred/name> "Spot Panda Pokémon" .
+<http://edcpokedex.org/category/ant-pit> <http://edcpokedex.org/pred/name> "Ant Pit Pokémon" .
+<http://edcpokedex.org/category/vibration> <http://edcpokedex.org/pred/name> "Vibration Pokémon" .
+<http://edcpokedex.org/category/cactus> <http://edcpokedex.org/pred/name> "Cactus Pokémon" .
+<http://edcpokedex.org/category/scarecrow> <http://edcpokedex.org/pred/name> "Scarecrow Pokémon" .
+<http://edcpokedex.org/category/cotton-bird> <http://edcpokedex.org/pred/name> "Cotton Bird Pokémon" .
+<http://edcpokedex.org/category/humming> <http://edcpokedex.org/pred/name> "Humming Pokémon" .
+<http://edcpokedex.org/category/cat-ferret> <http://edcpokedex.org/pred/name> "Cat Ferret Pokémon" .
+<http://edcpokedex.org/category/fang-snake> <http://edcpokedex.org/pred/name> "Fang Snake Pokémon" .
+<http://edcpokedex.org/category/meteorite> <http://edcpokedex.org/pred/name> "Meteorite Pokémon" .
+<http://edcpokedex.org/category/whiskers> <http://edcpokedex.org/pred/name> "Whiskers Pokémon" .
+<http://edcpokedex.org/category/ruffian> <http://edcpokedex.org/pred/name> "Ruffian Pokémon" .
+<http://edcpokedex.org/category/rogue> <http://edcpokedex.org/pred/name> "Rogue Pokémon" .
+<http://edcpokedex.org/category/clay-doll> <http://edcpokedex.org/pred/name> "Clay Doll Pokémon" .
+<http://edcpokedex.org/category/sea-lily> <http://edcpokedex.org/pred/name> "Sea Lily Pokémon" .
+<http://edcpokedex.org/category/barnacle> <http://edcpokedex.org/pred/name> "Barnacle Pokémon" .
+<http://edcpokedex.org/category/old-shrimp> <http://edcpokedex.org/pred/name> "Old Shrimp Pokémon" .
+<http://edcpokedex.org/category/plate> <http://edcpokedex.org/pred/name> "Plate Pokémon" .
+<http://edcpokedex.org/category/tender> <http://edcpokedex.org/pred/name> "Tender Pokémon" .
+<http://edcpokedex.org/category/weather> <http://edcpokedex.org/pred/name> "Weather Pokémon" .
+<http://edcpokedex.org/category/color-swap> <http://edcpokedex.org/pred/name> "Color Swap Pokémon" .
+<http://edcpokedex.org/category/puppet> <http://edcpokedex.org/pred/name> "Puppet Pokémon" .
+<http://edcpokedex.org/category/marionette> <http://edcpokedex.org/pred/name> "Marionette Pokémon" .
+<http://edcpokedex.org/category/requiem> <http://edcpokedex.org/pred/name> "Requiem Pokémon" .
+<http://edcpokedex.org/category/beckon> <http://edcpokedex.org/pred/name> "Beckon Pokémon" .
+<http://edcpokedex.org/category/fruit> <http://edcpokedex.org/pred/name> "Fruit Pokémon" .
+<http://edcpokedex.org/category/wind-chime> <http://edcpokedex.org/pred/name> "Wind Chime Pokémon" .
+<http://edcpokedex.org/category/disaster> <http://edcpokedex.org/pred/name> "Disaster Pokémon" .
+<http://edcpokedex.org/category/bright> <http://edcpokedex.org/pred/name> "Bright Pokémon" .
+<http://edcpokedex.org/category/snow-hat> <http://edcpokedex.org/pred/name> "Snow Hat Pokémon" .
+<http://edcpokedex.org/category/face> <http://edcpokedex.org/pred/name> "Face Pokémon" .
+<http://edcpokedex.org/category/clap> <http://edcpokedex.org/pred/name> "Clap Pokémon" .
+<http://edcpokedex.org/category/ball-roll> <http://edcpokedex.org/pred/name> "Ball Roll Pokémon" .
+<http://edcpokedex.org/category/ice-break> <http://edcpokedex.org/pred/name> "Ice Break Pokémon" .
+<http://edcpokedex.org/category/deep-sea> <http://edcpokedex.org/pred/name> "Deep Sea Pokémon" .
+<http://edcpokedex.org/category/south-sea> <http://edcpokedex.org/pred/name> "South Sea Pokémon" .
+<http://edcpokedex.org/category/longevity> <http://edcpokedex.org/pred/name> "Longevity Pokémon" .
+<http://edcpokedex.org/category/rendezvous> <http://edcpokedex.org/pred/name> "Rendezvous Pokémon" .
+<http://edcpokedex.org/category/rock-head> <http://edcpokedex.org/pred/name> "Rock Head Pokémon" .
+<http://edcpokedex.org/category/endurance> <http://edcpokedex.org/pred/name> "Endurance Pokémon" .
+<http://edcpokedex.org/category/iron-ball> <http://edcpokedex.org/pred/name> "Iron Ball Pokémon" .
+<http://edcpokedex.org/category/iron-claw> <http://edcpokedex.org/pred/name> "Iron Claw Pokémon" .
+<http://edcpokedex.org/category/iron-leg> <http://edcpokedex.org/pred/name> "Iron Leg Pokémon" .
+<http://edcpokedex.org/category/rock-peak> <http://edcpokedex.org/pred/name> "Rock Peak Pokémon" .
+<http://edcpokedex.org/category/iceberg> <http://edcpokedex.org/pred/name> "Iceberg Pokémon" .
+<http://edcpokedex.org/category/iron> <http://edcpokedex.org/pred/name> "Iron Pokémon" .
+<http://edcpokedex.org/category/eon> <http://edcpokedex.org/pred/name> "Eon Pokémon" .
+<http://edcpokedex.org/category/sea-basin> <http://edcpokedex.org/pred/name> "Sea Basin Pokémon" .
+<http://edcpokedex.org/category/continent> <http://edcpokedex.org/pred/name> "Continent Pokémon" .
+<http://edcpokedex.org/category/sky-high> <http://edcpokedex.org/pred/name> "Sky High Pokémon" .
+<http://edcpokedex.org/category/wish> <http://edcpokedex.org/pred/name> "Wish Pokémon" .
+<http://edcpokedex.org/category/dna> <http://edcpokedex.org/pred/name> "DNA Pokémon" .
+<http://edcpokedex.org/category/tiny-leaf> <http://edcpokedex.org/pred/name> "Tiny Leaf Pokémon" .
+<http://edcpokedex.org/category/grove> <http://edcpokedex.org/pred/name> "Grove Pokémon" .
+<http://edcpokedex.org/category/chimp> <http://edcpokedex.org/pred/name> "Chimp Pokémon" .
+<http://edcpokedex.org/category/playful> <http://edcpokedex.org/pred/name> "Playful Pokémon" .
+<http://edcpokedex.org/category/penguin> <http://edcpokedex.org/pred/name> "Penguin Pokémon" .
+<http://edcpokedex.org/category/emperor> <http://edcpokedex.org/pred/name> "Emperor Pokémon" .
+<http://edcpokedex.org/category/starling> <http://edcpokedex.org/pred/name> "Starling Pokémon" .
+<http://edcpokedex.org/category/predator> <http://edcpokedex.org/pred/name> "Predator Pokémon" .
+<http://edcpokedex.org/category/plump-mouse> <http://edcpokedex.org/pred/name> "Plump Mouse Pokémon" .
+<http://edcpokedex.org/category/beaver> <http://edcpokedex.org/pred/name> "Beaver Pokémon" .
+<http://edcpokedex.org/category/cricket> <http://edcpokedex.org/pred/name> "Cricket Pokémon" .
+<http://edcpokedex.org/category/flash> <http://edcpokedex.org/pred/name> "Flash Pokémon" .
+<http://edcpokedex.org/category/spark> <http://edcpokedex.org/pred/name> "Spark Pokémon" .
+<http://edcpokedex.org/category/gleam-eyes> <http://edcpokedex.org/pred/name> "Gleam Eyes Pokémon" .
+<http://edcpokedex.org/category/bud> <http://edcpokedex.org/pred/name> "Bud Pokémon" .
+<http://edcpokedex.org/category/bouquet> <http://edcpokedex.org/pred/name> "Bouquet Pokémon" .
+<http://edcpokedex.org/category/head-butt> <http://edcpokedex.org/pred/name> "Head Butt Pokémon" .
+<http://edcpokedex.org/category/shield> <http://edcpokedex.org/pred/name> "Shield Pokémon" .
+<http://edcpokedex.org/category/moth> <http://edcpokedex.org/pred/name> "Moth Pokémon" .
+<http://edcpokedex.org/category/tiny-bee> <http://edcpokedex.org/pred/name> "Tiny Bee Pokémon" .
+<http://edcpokedex.org/category/beehive> <http://edcpokedex.org/pred/name> "Beehive Pokémon" .
+<http://edcpokedex.org/category/elesquirrel> <http://edcpokedex.org/pred/name> "EleSquirrel Pokémon" .
+<http://edcpokedex.org/category/sea-weasel> <http://edcpokedex.org/pred/name> "Sea Weasel Pokémon" .
+<http://edcpokedex.org/category/cherry> <http://edcpokedex.org/pred/name> "Cherry Pokémon" .
+<http://edcpokedex.org/category/blossom> <http://edcpokedex.org/pred/name> "Blossom Pokémon" .
+<http://edcpokedex.org/category/sea-slug> <http://edcpokedex.org/pred/name> "Sea Slug Pokémon" .
+<http://edcpokedex.org/category/blimp> <http://edcpokedex.org/pred/name> "Blimp Pokémon" .
+<http://edcpokedex.org/category/rabbit> <http://edcpokedex.org/pred/name> "Rabbit Pokémon" .
+<http://edcpokedex.org/category/magical> <http://edcpokedex.org/pred/name> "Magical Pokémon" .
+<http://edcpokedex.org/category/big-boss> <http://edcpokedex.org/pred/name> "Big Boss Pokémon" .
+<http://edcpokedex.org/category/catty> <http://edcpokedex.org/pred/name> "Catty Pokémon" .
+<http://edcpokedex.org/category/tiger-cat> <http://edcpokedex.org/pred/name> "Tiger Cat Pokémon" .
+<http://edcpokedex.org/category/bell> <http://edcpokedex.org/pred/name> "Bell Pokémon" .
+<http://edcpokedex.org/category/skunk> <http://edcpokedex.org/pred/name> "Skunk Pokémon" .
+<http://edcpokedex.org/category/bronze> <http://edcpokedex.org/pred/name> "Bronze Pokémon" .
+<http://edcpokedex.org/category/bronze-bell> <http://edcpokedex.org/pred/name> "Bronze Bell Pokémon" .
+<http://edcpokedex.org/category/bonsai> <http://edcpokedex.org/pred/name> "Bonsai Pokémon" .
+<http://edcpokedex.org/category/mime> <http://edcpokedex.org/pred/name> "Mime Pokémon" .
+<http://edcpokedex.org/category/playhouse> <http://edcpokedex.org/pred/name> "Playhouse Pokémon" .
+<http://edcpokedex.org/category/music-note> <http://edcpokedex.org/pred/name> "Music Note Pokémon" .
+<http://edcpokedex.org/category/forbidden> <http://edcpokedex.org/pred/name> "Forbidden Pokémon" .
+<http://edcpokedex.org/category/land-shark> <http://edcpokedex.org/pred/name> "Land Shark Pokémon" .
+<http://edcpokedex.org/category/cave> <http://edcpokedex.org/pred/name> "Cave Pokémon" .
+<http://edcpokedex.org/category/mach> <http://edcpokedex.org/pred/name> "Mach Pokémon" .
+<http://edcpokedex.org/category/big-eater> <http://edcpokedex.org/pred/name> "Big Eater Pokémon" .
+<http://edcpokedex.org/category/emanation> <http://edcpokedex.org/pred/name> "Emanation Pokémon" .
+<http://edcpokedex.org/category/aura> <http://edcpokedex.org/pred/name> "Aura Pokémon" .
+<http://edcpokedex.org/category/hippo> <http://edcpokedex.org/pred/name> "Hippo Pokémon" .
+<http://edcpokedex.org/category/heavyweight> <http://edcpokedex.org/pred/name> "Heavyweight Pokémon" .
+<http://edcpokedex.org/category/scorpion> <http://edcpokedex.org/pred/name> "Scorpion Pokémon" .
+<http://edcpokedex.org/category/ogre-scorpion> <http://edcpokedex.org/pred/name> "Ogre Scorpion Pokémon" .
+<http://edcpokedex.org/category/toxic-mouth> <http://edcpokedex.org/pred/name> "Toxic Mouth Pokémon" .
+<http://edcpokedex.org/category/bug-catcher> <http://edcpokedex.org/pred/name> "Bug Catcher Pokémon" .
+<http://edcpokedex.org/category/wing-fish> <http://edcpokedex.org/pred/name> "Wing Fish Pokémon" .
+<http://edcpokedex.org/category/neon> <http://edcpokedex.org/pred/name> "Neon Pokémon" .
+<http://edcpokedex.org/category/frost-tree> <http://edcpokedex.org/pred/name> "Frost Tree Pokémon" .
+<http://edcpokedex.org/category/magnet-area> <http://edcpokedex.org/pred/name> "Magnet Area Pokémon" .
+<http://edcpokedex.org/category/thunderbolt> <http://edcpokedex.org/pred/name> "Thunderbolt Pokémon" .
+<http://edcpokedex.org/category/blast> <http://edcpokedex.org/pred/name> "Blast Pokémon" .
+<http://edcpokedex.org/category/jubilee> <http://edcpokedex.org/pred/name> "Jubilee Pokémon" .
+<http://edcpokedex.org/category/ogre-darner> <http://edcpokedex.org/pred/name> "Ogre Darner Pokémon" .
+<http://edcpokedex.org/category/verdant> <http://edcpokedex.org/pred/name> "Verdant Pokémon" .
+<http://edcpokedex.org/category/fresh-snow> <http://edcpokedex.org/pred/name> "Fresh Snow Pokémon" .
+<http://edcpokedex.org/category/fang-scorpion> <http://edcpokedex.org/pred/name> "Fang Scorpion Pokémon" .
+<http://edcpokedex.org/category/twin-tusk> <http://edcpokedex.org/pred/name> "Twin Tusk Pokémon" .
+<http://edcpokedex.org/category/blade> <http://edcpokedex.org/pred/name> "Blade Pokémon" .
+<http://edcpokedex.org/category/gripper> <http://edcpokedex.org/pred/name> "Gripper Pokémon" .
+<http://edcpokedex.org/category/snow-land> <http://edcpokedex.org/pred/name> "Snow Land Pokémon" .
+<http://edcpokedex.org/category/plasma> <http://edcpokedex.org/pred/name> "Plasma Pokémon" .
+<http://edcpokedex.org/category/knowledge> <http://edcpokedex.org/pred/name> "Knowledge Pokémon" .
+<http://edcpokedex.org/category/willpower> <http://edcpokedex.org/pred/name> "Willpower Pokémon" .
+<http://edcpokedex.org/category/temporal> <http://edcpokedex.org/pred/name> "Temporal Pokémon" .
+<http://edcpokedex.org/category/spatial> <http://edcpokedex.org/pred/name> "Spatial Pokémon" .
+<http://edcpokedex.org/category/lava-dome> <http://edcpokedex.org/pred/name> "Lava Dome Pokémon" .
+<http://edcpokedex.org/category/colossal> <http://edcpokedex.org/pred/name> "Colossal Pokémon" .
+<http://edcpokedex.org/category/renegade> <http://edcpokedex.org/pred/name> "Renegade Pokémon" .
+<http://edcpokedex.org/category/lunar> <http://edcpokedex.org/pred/name> "Lunar Pokémon" .
+<http://edcpokedex.org/category/sea-drifter> <http://edcpokedex.org/pred/name> "Sea Drifter Pokémon" .
+<http://edcpokedex.org/category/seafaring> <http://edcpokedex.org/pred/name> "Seafaring Pokémon" .
+<http://edcpokedex.org/category/pitch-black> <http://edcpokedex.org/pred/name> "Pitch-Black Pokémon" .
+<http://edcpokedex.org/category/gratitude> <http://edcpokedex.org/pred/name> "Gratitude Pokémon" .
+<http://edcpokedex.org/category/alpha> <http://edcpokedex.org/pred/name> "Alpha Pokémon" .
+<http://edcpokedex.org/category/victory> <http://edcpokedex.org/pred/name> "Victory Pokémon" .
+<http://edcpokedex.org/category/grass-snake> <http://edcpokedex.org/pred/name> "Grass Snake Pokémon" .
+<http://edcpokedex.org/category/regal> <http://edcpokedex.org/pred/name> "Regal Pokémon" .
+<http://edcpokedex.org/category/fire-pig> <http://edcpokedex.org/pred/name> "Fire Pig Pokémon" .
+<http://edcpokedex.org/category/mega-fire-pig> <http://edcpokedex.org/pred/name> "Mega Fire Pig Pokémon" .
+<http://edcpokedex.org/category/sea-otter> <http://edcpokedex.org/pred/name> "Sea Otter Pokémon" .
+<http://edcpokedex.org/category/discipline> <http://edcpokedex.org/pred/name> "Discipline Pokémon" .
+<http://edcpokedex.org/category/formidable> <http://edcpokedex.org/pred/name> "Formidable Pokémon" .
+<http://edcpokedex.org/category/lookout> <http://edcpokedex.org/pred/name> "Lookout Pokémon" .
+<http://edcpokedex.org/category/loyal-dog> <http://edcpokedex.org/pred/name> "Loyal Dog Pokémon" .
+<http://edcpokedex.org/category/big-hearted> <http://edcpokedex.org/pred/name> "Big-Hearted Pokémon" .
+<http://edcpokedex.org/category/devious> <http://edcpokedex.org/pred/name> "Devious Pokémon" .
+<http://edcpokedex.org/category/cruel> <http://edcpokedex.org/pred/name> "Cruel Pokémon" .
+<http://edcpokedex.org/category/grass-monkey> <http://edcpokedex.org/pred/name> "Grass Monkey Pokémon" .
+<http://edcpokedex.org/category/thorn-monkey> <http://edcpokedex.org/pred/name> "Thorn Monkey Pokémon" .
+<http://edcpokedex.org/category/high-temp> <http://edcpokedex.org/pred/name> "High Temp Pokémon" .
+<http://edcpokedex.org/category/ember> <http://edcpokedex.org/pred/name> "Ember Pokémon" .
+<http://edcpokedex.org/category/spray> <http://edcpokedex.org/pred/name> "Spray Pokémon" .
+<http://edcpokedex.org/category/geyser> <http://edcpokedex.org/pred/name> "Geyser Pokémon" .
+<http://edcpokedex.org/category/dream-eater> <http://edcpokedex.org/pred/name> "Dream Eater Pokémon" .
+<http://edcpokedex.org/category/drowsing> <http://edcpokedex.org/pred/name> "Drowsing Pokémon" .
+<http://edcpokedex.org/category/tiny-pigeon> <http://edcpokedex.org/pred/name> "Tiny Pigeon Pokémon" .
+<http://edcpokedex.org/category/wild-pigeon> <http://edcpokedex.org/pred/name> "Wild Pigeon Pokémon" .
+<http://edcpokedex.org/category/proud> <http://edcpokedex.org/pred/name> "Proud Pokémon" .
+<http://edcpokedex.org/category/electrified> <http://edcpokedex.org/pred/name> "Electrified Pokémon" .
+<http://edcpokedex.org/category/mantle> <http://edcpokedex.org/pred/name> "Mantle Pokémon" .
+<http://edcpokedex.org/category/ore> <http://edcpokedex.org/pred/name> "Ore Pokémon" .
+<http://edcpokedex.org/category/compressed> <http://edcpokedex.org/pred/name> "Compressed Pokémon" .
+<http://edcpokedex.org/category/courting> <http://edcpokedex.org/pred/name> "Courting Pokémon" .
+<http://edcpokedex.org/category/subterrene> <http://edcpokedex.org/pred/name> "Subterrene Pokémon" .
+<http://edcpokedex.org/category/hearing> <http://edcpokedex.org/pred/name> "Hearing Pokémon" .
+<http://edcpokedex.org/category/muscular> <http://edcpokedex.org/pred/name> "Muscular Pokémon" .
+<http://edcpokedex.org/category/judo> <http://edcpokedex.org/pred/name> "Judo Pokémon" .
+<http://edcpokedex.org/category/karate> <http://edcpokedex.org/pred/name> "Karate Pokémon" .
+<http://edcpokedex.org/category/sewing> <http://edcpokedex.org/pred/name> "Sewing Pokémon" .
+<http://edcpokedex.org/category/leaf-wrapped> <http://edcpokedex.org/pred/name> "Leaf-Wrapped Pokémon" .
+<http://edcpokedex.org/category/nurturing> <http://edcpokedex.org/pred/name> "Nurturing Pokémon" .
+<http://edcpokedex.org/category/centipede> <http://edcpokedex.org/pred/name> "Centipede Pokémon" .
+<http://edcpokedex.org/category/curlipede> <http://edcpokedex.org/pred/name> "Curlipede Pokémon" .
+<http://edcpokedex.org/category/megapede> <http://edcpokedex.org/pred/name> "Megapede Pokémon" .
+<http://edcpokedex.org/category/cotton-puff> <http://edcpokedex.org/pred/name> "Cotton Puff Pokémon" .
+<http://edcpokedex.org/category/windveiled> <http://edcpokedex.org/pred/name> "Windveiled Pokémon" .
+<http://edcpokedex.org/category/bulb> <http://edcpokedex.org/pred/name> "Bulb Pokémon" .
+<http://edcpokedex.org/category/flowering> <http://edcpokedex.org/pred/name> "Flowering Pokémon" .
+<http://edcpokedex.org/category/hostile> <http://edcpokedex.org/pred/name> "Hostile Pokémon" .
+<http://edcpokedex.org/category/desert-croc> <http://edcpokedex.org/pred/name> "Desert Croc Pokémon" .
+<http://edcpokedex.org/category/intimidation> <http://edcpokedex.org/pred/name> "Intimidation Pokémon" .
+<http://edcpokedex.org/category/zen-charm> <http://edcpokedex.org/pred/name> "Zen Charm Pokémon" .
+<http://edcpokedex.org/category/blazing> <http://edcpokedex.org/pred/name> "Blazing Pokémon" .
+<http://edcpokedex.org/category/rock-inn> <http://edcpokedex.org/pred/name> "Rock Inn Pokémon" .
+<http://edcpokedex.org/category/stone-home> <http://edcpokedex.org/pred/name> "Stone Home Pokémon" .
+<http://edcpokedex.org/category/shedding> <http://edcpokedex.org/pred/name> "Shedding Pokémon" .
+<http://edcpokedex.org/category/hoodlum> <http://edcpokedex.org/pred/name> "Hoodlum Pokémon" .
+<http://edcpokedex.org/category/avianoid> <http://edcpokedex.org/pred/name> "Avianoid Pokémon" .
+<http://edcpokedex.org/category/spirit> <http://edcpokedex.org/pred/name> "Spirit Pokémon" .
+<http://edcpokedex.org/category/coffin> <http://edcpokedex.org/pred/name> "Coffin Pokémon" .
+<http://edcpokedex.org/category/prototurtle> <http://edcpokedex.org/pred/name> "Prototurtle Pokémon" .
+<http://edcpokedex.org/category/first-bird> <http://edcpokedex.org/pred/name> "First Bird Pokémon" .
+<http://edcpokedex.org/category/trash-bag> <http://edcpokedex.org/pred/name> "Trash Bag Pokémon" .
+<http://edcpokedex.org/category/trash-heap> <http://edcpokedex.org/pred/name> "Trash Heap Pokémon" .
+<http://edcpokedex.org/category/tricky-fox> <http://edcpokedex.org/pred/name> "Tricky Fox Pokémon" .
+<http://edcpokedex.org/category/illusion-fox> <http://edcpokedex.org/pred/name> "Illusion Fox Pokémon" .
+<http://edcpokedex.org/category/chinchilla> <http://edcpokedex.org/pred/name> "Chinchilla Pokémon" .
+<http://edcpokedex.org/category/scarf> <http://edcpokedex.org/pred/name> "Scarf Pokémon" .
+<http://edcpokedex.org/category/fixation> <http://edcpokedex.org/pred/name> "Fixation Pokémon" .
+<http://edcpokedex.org/category/astral-body> <http://edcpokedex.org/pred/name> "Astral Body Pokémon" .
+<http://edcpokedex.org/category/cell> <http://edcpokedex.org/pred/name> "Cell Pokémon" .
+<http://edcpokedex.org/category/mitosis> <http://edcpokedex.org/pred/name> "Mitosis Pokémon" .
+<http://edcpokedex.org/category/multiplying> <http://edcpokedex.org/pred/name> "Multiplying Pokémon" .
+<http://edcpokedex.org/category/white-bird> <http://edcpokedex.org/pred/name> "White Bird Pokémon" .
+<http://edcpokedex.org/category/icy-snow> <http://edcpokedex.org/pred/name> "Icy Snow Pokémon" .
+<http://edcpokedex.org/category/snowstorm> <http://edcpokedex.org/pred/name> "Snowstorm Pokémon" .
+<http://edcpokedex.org/category/season> <http://edcpokedex.org/pred/name> "Season Pokémon" .
+<http://edcpokedex.org/category/sky-squirrel> <http://edcpokedex.org/pred/name> "Sky Squirrel Pokémon" .
+<http://edcpokedex.org/category/clamping> <http://edcpokedex.org/pred/name> "Clamping Pokémon" .
+<http://edcpokedex.org/category/cavalry> <http://edcpokedex.org/pred/name> "Cavalry Pokémon" .
+<http://edcpokedex.org/category/floating> <http://edcpokedex.org/pred/name> "Floating Pokémon" .
+<http://edcpokedex.org/category/caring> <http://edcpokedex.org/pred/name> "Caring Pokémon" .
+<http://edcpokedex.org/category/attaching> <http://edcpokedex.org/pred/name> "Attaching Pokémon" .
+<http://edcpokedex.org/category/elespider> <http://edcpokedex.org/pred/name> "EleSpider Pokémon" .
+<http://edcpokedex.org/category/thorn-seed> <http://edcpokedex.org/pred/name> "Thorn Seed Pokémon" .
+<http://edcpokedex.org/category/thorn-pod> <http://edcpokedex.org/pred/name> "Thorn Pod Pokémon" .
+<http://edcpokedex.org/category/gear> <http://edcpokedex.org/pred/name> "Gear Pokémon" .
+<http://edcpokedex.org/category/elefish> <http://edcpokedex.org/pred/name> "EleFish Pokémon" .
+<http://edcpokedex.org/category/cerebral> <http://edcpokedex.org/pred/name> "Cerebral Pokémon" .
+<http://edcpokedex.org/category/candle> <http://edcpokedex.org/pred/name> "Candle Pokémon" .
+<http://edcpokedex.org/category/lamp> <http://edcpokedex.org/pred/name> "Lamp Pokémon" .
+<http://edcpokedex.org/category/luring> <http://edcpokedex.org/pred/name> "Luring Pokémon" .
+<http://edcpokedex.org/category/tusk> <http://edcpokedex.org/pred/name> "Tusk Pokémon" .
+<http://edcpokedex.org/category/axe-jaw> <http://edcpokedex.org/pred/name> "Axe Jaw Pokémon" .
+<http://edcpokedex.org/category/chill> <http://edcpokedex.org/pred/name> "Chill Pokémon" .
+<http://edcpokedex.org/category/freezing> <http://edcpokedex.org/pred/name> "Freezing Pokémon" .
+<http://edcpokedex.org/category/crystallizing> <http://edcpokedex.org/pred/name> "Crystallizing Pokémon" .
+<http://edcpokedex.org/category/snail> <http://edcpokedex.org/pred/name> "Snail Pokémon" .
+<http://edcpokedex.org/category/shell-out> <http://edcpokedex.org/pred/name> "Shell Out Pokémon" .
+<http://edcpokedex.org/category/trap> <http://edcpokedex.org/pred/name> "Trap Pokémon" .
+<http://edcpokedex.org/category/martial-arts> <http://edcpokedex.org/pred/name> "Martial Arts Pokémon" .
+<http://edcpokedex.org/category/automaton> <http://edcpokedex.org/pred/name> "Automaton Pokémon" .
+<http://edcpokedex.org/category/sharp-blade> <http://edcpokedex.org/pred/name> "Sharp Blade Pokémon" .
+<http://edcpokedex.org/category/sword-blade> <http://edcpokedex.org/pred/name> "Sword Blade Pokémon" .
+<http://edcpokedex.org/category/bash-buffalo> <http://edcpokedex.org/pred/name> "Bash Buffalo Pokémon" .
+<http://edcpokedex.org/category/eaglet> <http://edcpokedex.org/pred/name> "Eaglet Pokémon" .
+<http://edcpokedex.org/category/valiant> <http://edcpokedex.org/pred/name> "Valiant Pokémon" .
+<http://edcpokedex.org/category/diapered> <http://edcpokedex.org/pred/name> "Diapered Pokémon" .
+<http://edcpokedex.org/category/bone-vulture> <http://edcpokedex.org/pred/name> "Bone Vulture Pokémon" .
+<http://edcpokedex.org/category/anteater> <http://edcpokedex.org/pred/name> "Anteater Pokémon" .
+<http://edcpokedex.org/category/iron-ant> <http://edcpokedex.org/pred/name> "Iron Ant Pokémon" .
+<http://edcpokedex.org/category/irate> <http://edcpokedex.org/pred/name> "Irate Pokémon" .
+<http://edcpokedex.org/category/torch> <http://edcpokedex.org/pred/name> "Torch Pokémon" .
+<http://edcpokedex.org/category/iron-will> <http://edcpokedex.org/pred/name> "Iron Will Pokémon" .
+<http://edcpokedex.org/category/cavern> <http://edcpokedex.org/pred/name> "Cavern Pokémon" .
+<http://edcpokedex.org/category/grassland> <http://edcpokedex.org/pred/name> "Grassland Pokémon" .
+<http://edcpokedex.org/category/cyclone> <http://edcpokedex.org/pred/name> "Cyclone Pokémon" .
+<http://edcpokedex.org/category/bolt-strike> <http://edcpokedex.org/pred/name> "Bolt Strike Pokémon" .
+<http://edcpokedex.org/category/vast-white> <http://edcpokedex.org/pred/name> "Vast White Pokémon" .
+<http://edcpokedex.org/category/deep-black> <http://edcpokedex.org/pred/name> "Deep Black Pokémon" .
+<http://edcpokedex.org/category/abundance> <http://edcpokedex.org/pred/name> "Abundance Pokémon" .
+<http://edcpokedex.org/category/boundary> <http://edcpokedex.org/pred/name> "Boundary Pokémon" .
+<http://edcpokedex.org/category/colt> <http://edcpokedex.org/pred/name> "Colt Pokémon" .
+<http://edcpokedex.org/category/melody> <http://edcpokedex.org/pred/name> "Melody Pokémon" .
+<http://edcpokedex.org/category/paleozoic> <http://edcpokedex.org/pred/name> "Paleozoic Pokémon" .
+<http://edcpokedex.org/category/spiny-nut> <http://edcpokedex.org/pred/name> "Spiny Nut Pokémon" .
+<http://edcpokedex.org/category/spiny-armor> <http://edcpokedex.org/pred/name> "Spiny Armor Pokémon" .
+<http://edcpokedex.org/category/bubble-frog> <http://edcpokedex.org/pred/name> "Bubble Frog Pokémon" .
+<http://edcpokedex.org/category/digging> <http://edcpokedex.org/pred/name> "Digging Pokémon" .
+<http://edcpokedex.org/category/tiny-robin> <http://edcpokedex.org/pred/name> "Tiny Robin Pokémon" .
+<http://edcpokedex.org/category/scorching> <http://edcpokedex.org/pred/name> "Scorching Pokémon" .
+<http://edcpokedex.org/category/scatterdust> <http://edcpokedex.org/pred/name> "Scatterdust Pokémon" .
+<http://edcpokedex.org/category/scale> <http://edcpokedex.org/pred/name> "Scale Pokémon" .
+<http://edcpokedex.org/category/lion-cub> <http://edcpokedex.org/pred/name> "Lion Cub Pokémon" .
+<http://edcpokedex.org/category/single-bloom> <http://edcpokedex.org/pred/name> "Single Bloom Pokémon" .
+<http://edcpokedex.org/category/garden> <http://edcpokedex.org/pred/name> "Garden Pokémon" .
+<http://edcpokedex.org/category/mount> <http://edcpokedex.org/pred/name> "Mount Pokémon" .
+<http://edcpokedex.org/category/daunting> <http://edcpokedex.org/pred/name> "Daunting Pokémon" .
+<http://edcpokedex.org/category/poodle> <http://edcpokedex.org/pred/name> "Poodle Pokémon" .
+<http://edcpokedex.org/category/restraint> <http://edcpokedex.org/pred/name> "Restraint Pokémon" .
+<http://edcpokedex.org/category/constraint> <http://edcpokedex.org/pred/name> "Constraint Pokémon" .
+<http://edcpokedex.org/category/sword> <http://edcpokedex.org/pred/name> "Sword Pokémon" .
+<http://edcpokedex.org/category/royal-sword> <http://edcpokedex.org/pred/name> "Royal Sword Pokémon" .
+<http://edcpokedex.org/category/perfume> <http://edcpokedex.org/pred/name> "Perfume Pokémon" .
+<http://edcpokedex.org/category/fragrance> <http://edcpokedex.org/pred/name> "Fragrance Pokémon" .
+<http://edcpokedex.org/category/cotton-candy> <http://edcpokedex.org/pred/name> "Cotton Candy Pokémon" .
+<http://edcpokedex.org/category/meringue> <http://edcpokedex.org/pred/name> "Meringue Pokémon" .
+<http://edcpokedex.org/category/revolving> <http://edcpokedex.org/pred/name> "Revolving Pokémon" .
+<http://edcpokedex.org/category/overturning> <http://edcpokedex.org/pred/name> "Overturning Pokémon" .
+<http://edcpokedex.org/category/two-handed> <http://edcpokedex.org/pred/name> "Two-Handed Pokémon" .
+<http://edcpokedex.org/category/collective> <http://edcpokedex.org/pred/name> "Collective Pokémon" .
+<http://edcpokedex.org/category/mock-kelp> <http://edcpokedex.org/pred/name> "Mock Kelp Pokémon" .
+<http://edcpokedex.org/category/water-gun> <http://edcpokedex.org/pred/name> "Water Gun Pokémon" .
+<http://edcpokedex.org/category/howitzer> <http://edcpokedex.org/pred/name> "Howitzer Pokémon" .
+<http://edcpokedex.org/category/generator> <http://edcpokedex.org/pred/name> "Generator Pokémon" .
+<http://edcpokedex.org/category/royal-heir> <http://edcpokedex.org/pred/name> "Royal Heir Pokémon" .
+<http://edcpokedex.org/category/despot> <http://edcpokedex.org/pred/name> "Despot Pokémon" .
+<http://edcpokedex.org/category/tundra> <http://edcpokedex.org/pred/name> "Tundra Pokémon" .
+<http://edcpokedex.org/category/intertwining> <http://edcpokedex.org/pred/name> "Intertwining Pokémon" .
+<http://edcpokedex.org/category/wrestling> <http://edcpokedex.org/pred/name> "Wrestling Pokémon" .
+<http://edcpokedex.org/category/antenna> <http://edcpokedex.org/pred/name> "Antenna Pokémon" .
+<http://edcpokedex.org/category/jewel> <http://edcpokedex.org/pred/name> "Jewel Pokémon" .
+<http://edcpokedex.org/category/soft-tissue> <http://edcpokedex.org/pred/name> "Soft Tissue Pokémon" .
+<http://edcpokedex.org/category/key-ring> <http://edcpokedex.org/pred/name> "Key Ring Pokémon" .
+<http://edcpokedex.org/category/stump> <http://edcpokedex.org/pred/name> "Stump Pokémon" .
+<http://edcpokedex.org/category/elder-tree> <http://edcpokedex.org/pred/name> "Elder Tree Pokémon" .
+<http://edcpokedex.org/category/pumpkin> <http://edcpokedex.org/pred/name> "Pumpkin Pokémon" .
+<http://edcpokedex.org/category/ice-chunk> <http://edcpokedex.org/pred/name> "Ice Chunk Pokémon" .
+<http://edcpokedex.org/category/sound-wave> <http://edcpokedex.org/pred/name> "Sound Wave Pokémon" .
+<http://edcpokedex.org/category/life> <http://edcpokedex.org/pred/name> "Life Pokémon" .
+<http://edcpokedex.org/category/destruction> <http://edcpokedex.org/pred/name> "Destruction Pokémon" .
+<http://edcpokedex.org/category/order> <http://edcpokedex.org/pred/name> "Order Pokémon" .
+<http://edcpokedex.org/category/mischief> <http://edcpokedex.org/pred/name> "Mischief Pokémon" .
+<http://edcpokedex.org/category/steam> <http://edcpokedex.org/pred/name> "Steam Pokémon" .
+<http://edcpokedex.org/category/grass-quill> <http://edcpokedex.org/pred/name> "Grass Quill Pokémon" .
+<http://edcpokedex.org/category/blade-quill> <http://edcpokedex.org/pred/name> "Blade Quill Pokémon" .
+<http://edcpokedex.org/category/arrow-quill> <http://edcpokedex.org/pred/name> "Arrow Quill Pokémon" .
+<http://edcpokedex.org/category/fire-cat> <http://edcpokedex.org/pred/name> "Fire Cat Pokémon" .
+<http://edcpokedex.org/category/heel> <http://edcpokedex.org/pred/name> "Heel Pokémon" .
+<http://edcpokedex.org/category/pop-star> <http://edcpokedex.org/pred/name> "Pop Star Pokémon" .
+<http://edcpokedex.org/category/soloist> <http://edcpokedex.org/pred/name> "Soloist Pokémon" .
+<http://edcpokedex.org/category/woodpecker> <http://edcpokedex.org/pred/name> "Woodpecker Pokémon" .
+<http://edcpokedex.org/category/bugle-beak> <http://edcpokedex.org/pred/name> "Bugle Beak Pokémon" .
+<http://edcpokedex.org/category/cannon> <http://edcpokedex.org/pred/name> "Cannon Pokémon" .
+<http://edcpokedex.org/category/loitering> <http://edcpokedex.org/pred/name> "Loitering Pokémon" .
+<http://edcpokedex.org/category/stakeout> <http://edcpokedex.org/pred/name> "Stakeout Pokémon" .
+<http://edcpokedex.org/category/larva> <http://edcpokedex.org/pred/name> "Larva Pokémon" .
+<http://edcpokedex.org/category/battery> <http://edcpokedex.org/pred/name> "Battery Pokémon" .
+<http://edcpokedex.org/category/boxing> <http://edcpokedex.org/pred/name> "Boxing Pokémon" .
+<http://edcpokedex.org/category/woolly-crab> <http://edcpokedex.org/pred/name> "Woolly Crab Pokémon" .
+<http://edcpokedex.org/category/dancing> <http://edcpokedex.org/pred/name> "Dancing Pokémon" .
+<http://edcpokedex.org/category/bee-fly> <http://edcpokedex.org/pred/name> "Bee Fly Pokémon" .
+<http://edcpokedex.org/category/wolf> <http://edcpokedex.org/pred/name> "Wolf Pokémon" .
+<http://edcpokedex.org/category/small-fry> <http://edcpokedex.org/pred/name> "Small Fry Pokémon" .
+<http://edcpokedex.org/category/brutal-star> <http://edcpokedex.org/pred/name> "Brutal Star Pokémon" .
+<http://edcpokedex.org/category/donkey> <http://edcpokedex.org/pred/name> "Donkey Pokémon" .
+<http://edcpokedex.org/category/draft-horse> <http://edcpokedex.org/pred/name> "Draft Horse Pokémon" .
+<http://edcpokedex.org/category/water-bubble> <http://edcpokedex.org/pred/name> "Water Bubble Pokémon" .
+<http://edcpokedex.org/category/sickle-grass> <http://edcpokedex.org/pred/name> "Sickle Grass Pokémon" .
+<http://edcpokedex.org/category/bloom-sickle> <http://edcpokedex.org/pred/name> "Bloom Sickle Pokémon" .
+<http://edcpokedex.org/category/illuminating> <http://edcpokedex.org/pred/name> "Illuminating Pokémon" .
+<http://edcpokedex.org/category/toxic-lizard> <http://edcpokedex.org/pred/name> "Toxic Lizard Pokémon" .
+<http://edcpokedex.org/category/flailing> <http://edcpokedex.org/pred/name> "Flailing Pokémon" .
+<http://edcpokedex.org/category/strong-arm> <http://edcpokedex.org/pred/name> "Strong Arm Pokémon" .
+<http://edcpokedex.org/category/posy-picker> <http://edcpokedex.org/pred/name> "Posy Picker Pokémon" .
+<http://edcpokedex.org/category/sage> <http://edcpokedex.org/pred/name> "Sage Pokémon" .
+<http://edcpokedex.org/category/teamwork> <http://edcpokedex.org/pred/name> "Teamwork Pokémon" .
+<http://edcpokedex.org/category/turn-tail> <http://edcpokedex.org/pred/name> "Turn Tail Pokémon" .
+<http://edcpokedex.org/category/hard-scale> <http://edcpokedex.org/pred/name> "Hard Scale Pokémon" .
+<http://edcpokedex.org/category/sand-heap> <http://edcpokedex.org/pred/name> "Sand Heap Pokémon" .
+<http://edcpokedex.org/category/sand-castle> <http://edcpokedex.org/pred/name> "Sand Castle Pokémon" .
+<http://edcpokedex.org/category/sea-cucumber> <http://edcpokedex.org/pred/name> "Sea Cucumber Pokémon" .
+<http://edcpokedex.org/category/synthetic> <http://edcpokedex.org/pred/name> "Synthetic Pokémon" .
+<http://edcpokedex.org/category/meteor> <http://edcpokedex.org/pred/name> "Meteor Pokémon" .
+<http://edcpokedex.org/category/blast-turtle> <http://edcpokedex.org/pred/name> "Blast Turtle Pokémon" .
+<http://edcpokedex.org/category/roly-poly> <http://edcpokedex.org/pred/name> "Roly-Poly Pokémon" .
+<http://edcpokedex.org/category/disguise> <http://edcpokedex.org/pred/name> "Disguise Pokémon" .
+<http://edcpokedex.org/category/gnash-teeth> <http://edcpokedex.org/pred/name> "Gnash Teeth Pokémon" .
+<http://edcpokedex.org/category/placid> <http://edcpokedex.org/pred/name> "Placid Pokémon" .
+<http://edcpokedex.org/category/sea-creeper> <http://edcpokedex.org/pred/name> "Sea Creeper Pokémon" .
+<http://edcpokedex.org/category/scaly> <http://edcpokedex.org/pred/name> "Scaly Pokémon" .
+<http://edcpokedex.org/category/land-spirit> <http://edcpokedex.org/pred/name> "Land Spirit Pokémon" .
+<http://edcpokedex.org/category/nebula> <http://edcpokedex.org/pred/name> "Nebula Pokémon" .
+<http://edcpokedex.org/category/protostar> <http://edcpokedex.org/pred/name> "Protostar Pokémon" .
+<http://edcpokedex.org/category/sunne> <http://edcpokedex.org/pred/name> "Sunne Pokémon" .
+<http://edcpokedex.org/category/moone> <http://edcpokedex.org/pred/name> "Moone Pokémon" .
+<http://edcpokedex.org/category/parasite> <http://edcpokedex.org/pred/name> "Parasite Pokémon" .
+<http://edcpokedex.org/category/swollen> <http://edcpokedex.org/pred/name> "Swollen Pokémon" .
+<http://edcpokedex.org/category/lissome> <http://edcpokedex.org/pred/name> "Lissome Pokémon" .
+<http://edcpokedex.org/category/glowing> <http://edcpokedex.org/pred/name> "Glowing Pokémon" .
+<http://edcpokedex.org/category/launch> <http://edcpokedex.org/pred/name> "Launch Pokémon" .
+<http://edcpokedex.org/category/drawn-sword> <http://edcpokedex.org/pred/name> "Drawn Sword Pokémon" .
+<http://edcpokedex.org/category/junkivore> <http://edcpokedex.org/pred/name> "Junkivore Pokémon" .
+<http://edcpokedex.org/category/prism> <http://edcpokedex.org/pred/name> "Prism Pokémon" .
+<http://edcpokedex.org/category/artificial> <http://edcpokedex.org/pred/name> "Artificial Pokémon" .
+<http://edcpokedex.org/category/gloomdweller> <http://edcpokedex.org/pred/name> "Gloomdweller Pokémon" .
+<http://edcpokedex.org/category/rampart> <http://edcpokedex.org/pred/name> "Rampart Pokémon" .
+<http://edcpokedex.org/category/fireworks> <http://edcpokedex.org/pred/name> "Fireworks Pokémon" .
+<http://edcpokedex.org/category/thunderclap> <http://edcpokedex.org/pred/name> "Thunderclap Pokémon" .
+<http://edcpokedex.org/category/hex-nut> <http://edcpokedex.org/pred/name> "Hex Nut Pokémon" .
+<http://edcpokedex.org/category/beat> <http://edcpokedex.org/pred/name> "Beat Pokémon" .
+<http://edcpokedex.org/category/drummer> <http://edcpokedex.org/pred/name> "Drummer Pokémon" .
+<http://edcpokedex.org/category/striker> <http://edcpokedex.org/pred/name> "Striker Pokémon" .
+<http://edcpokedex.org/category/water-lizard> <http://edcpokedex.org/pred/name> "Water Lizard Pokémon" .
+<http://edcpokedex.org/category/secret-agent> <http://edcpokedex.org/pred/name> "Secret Agent Pokémon" .
+<http://edcpokedex.org/category/cheeky> <http://edcpokedex.org/pred/name> "Cheeky Pokémon" .
+<http://edcpokedex.org/category/greedy> <http://edcpokedex.org/pred/name> "Greedy Pokémon" .
+<http://edcpokedex.org/category/raven> <http://edcpokedex.org/pred/name> "Raven Pokémon" .
+<http://edcpokedex.org/category/radome> <http://edcpokedex.org/pred/name> "Radome Pokémon" .
+<http://edcpokedex.org/category/seven-spot> <http://edcpokedex.org/pred/name> "Seven Spot Pokémon" .
+<http://edcpokedex.org/category/cotton-bloom> <http://edcpokedex.org/pred/name> "Cotton Bloom Pokémon" .
+<http://edcpokedex.org/category/sheep> <http://edcpokedex.org/pred/name> "Sheep Pokémon" .
+<http://edcpokedex.org/category/snapping> <http://edcpokedex.org/pred/name> "Snapping Pokémon" .
+<http://edcpokedex.org/category/dog> <http://edcpokedex.org/pred/name> "Dog Pokémon" .
+<http://edcpokedex.org/category/apple-core> <http://edcpokedex.org/pred/name> "Apple Core Pokémon" .
+<http://edcpokedex.org/category/apple-wing> <http://edcpokedex.org/pred/name> "Apple Wing Pokémon" .
+<http://edcpokedex.org/category/apple-nectar> <http://edcpokedex.org/pred/name> "Apple Nectar Pokémon" .
+<http://edcpokedex.org/category/sand-snake> <http://edcpokedex.org/pred/name> "Sand Snake Pokémon" .
+<http://edcpokedex.org/category/gulp> <http://edcpokedex.org/pred/name> "Gulp Pokémon" .
+<http://edcpokedex.org/category/rush> <http://edcpokedex.org/pred/name> "Rush Pokémon" .
+<http://edcpokedex.org/category/skewer> <http://edcpokedex.org/pred/name> "Skewer Pokémon" .
+<http://edcpokedex.org/category/baby> <http://edcpokedex.org/pred/name> "Baby Pokémon" .
+<http://edcpokedex.org/category/punk> <http://edcpokedex.org/pred/name> "Punk Pokémon" .
+<http://edcpokedex.org/category/radiator> <http://edcpokedex.org/pred/name> "Radiator Pokémon" .
+<http://edcpokedex.org/category/tantrum> <http://edcpokedex.org/pred/name> "Tantrum Pokémon" .
+<http://edcpokedex.org/category/jujitsu> <http://edcpokedex.org/pred/name> "Jujitsu Pokémon" .
+<http://edcpokedex.org/category/black-tea> <http://edcpokedex.org/pred/name> "Black Tea Pokémon" .
+<http://edcpokedex.org/category/calm> <http://edcpokedex.org/pred/name> "Calm Pokémon" .
+<http://edcpokedex.org/category/serene> <http://edcpokedex.org/pred/name> "Serene Pokémon" .
+<http://edcpokedex.org/category/silent> <http://edcpokedex.org/pred/name> "Silent Pokémon" .
+<http://edcpokedex.org/category/bulk-up> <http://edcpokedex.org/pred/name> "Bulk Up Pokémon" .
+<http://edcpokedex.org/category/blocking> <http://edcpokedex.org/pred/name> "Blocking Pokémon" .
+<http://edcpokedex.org/category/viking> <http://edcpokedex.org/pred/name> "Viking Pokémon" .
+<http://edcpokedex.org/category/comedian> <http://edcpokedex.org/pred/name> "Comedian Pokémon" .
+<http://edcpokedex.org/category/grudge> <http://edcpokedex.org/pred/name> "Grudge Pokémon" .
+<http://edcpokedex.org/category/cream> <http://edcpokedex.org/pred/name> "Cream Pokémon" .
+<http://edcpokedex.org/category/formation> <http://edcpokedex.org/pred/name> "Formation Pokémon" .
+<http://edcpokedex.org/category/sea-urchin> <http://edcpokedex.org/pred/name> "Sea Urchin Pokémon" .
+<http://edcpokedex.org/category/frost-moth> <http://edcpokedex.org/pred/name> "Frost Moth Pokémon" .
+<http://edcpokedex.org/category/big-rock> <http://edcpokedex.org/pred/name> "Big Rock Pokémon" .
+<http://edcpokedex.org/category/two-sided> <http://edcpokedex.org/pred/name> "Two-Sided Pokémon" .
+<http://edcpokedex.org/category/copperderm> <http://edcpokedex.org/pred/name> "Copperderm Pokémon" .
+<http://edcpokedex.org/category/alloy> <http://edcpokedex.org/pred/name> "Alloy Pokémon" .
+<http://edcpokedex.org/category/lingering> <http://edcpokedex.org/pred/name> "Lingering Pokémon" .
+<http://edcpokedex.org/category/caretaker> <http://edcpokedex.org/pred/name> "Caretaker Pokémon" .
+<http://edcpokedex.org/category/stealth> <http://edcpokedex.org/pred/name> "Stealth Pokémon" .
+<http://edcpokedex.org/category/warrior> <http://edcpokedex.org/pred/name> "Warrior Pokémon" .
+<http://edcpokedex.org/category/gigantic> <http://edcpokedex.org/pred/name> "Gigantic Pokémon" .
+<http://edcpokedex.org/category/wushu> <http://edcpokedex.org/pred/name> "Wushu Pokémon" .
+<http://edcpokedex.org/category/rogue-monkey> <http://edcpokedex.org/pred/name> "Rogue Monkey Pokémon" .
+<http://edcpokedex.org/category/electron> <http://edcpokedex.org/pred/name> "Electron Pokémon" .
+<http://edcpokedex.org/category/dragon-orb> <http://edcpokedex.org/pred/name> "Dragon Orb Pokémon" .
+<http://edcpokedex.org/category/wild-horse> <http://edcpokedex.org/pred/name> "Wild Horse Pokémon" .
+<http://edcpokedex.org/category/swift-horse> <http://edcpokedex.org/pred/name> "Swift Horse Pokémon" .
+<http://edcpokedex.org/category/king> <http://edcpokedex.org/pred/name> "King Pokémon" .

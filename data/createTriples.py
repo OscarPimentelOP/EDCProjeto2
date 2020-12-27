@@ -177,14 +177,36 @@ def convert_abilities_to_triples(triples_file):
         count += 1
 
 
+def convert_category_to_triples(triples_file):
+    category_list = list()
+    with open('csv/pokemon_species_names.csv', 'r', encoding='utf-8') as poke_cat_csv:
+        poke_cat_dict = csv.DictReader(poke_cat_csv)
+        for row in poke_cat_dict:
+            if row['local_language_id'] == language_id:
+                category_list.append(row['genus'])
+
+    category_list = list(dict.fromkeys(category_list))
+
+    for category in category_list:
+        poke_cat_split = category.split(' Pokémon')
+        poke_cat = poke_cat_split[0].replace(' ', '-').lower()
+        triples_file.write('<http://edcpokedex.org/category/%s> '
+                           '<http://edcpokedex.org/pred/name> '
+                           '"%s" .\n'
+                           % (poke_cat, category))
+
+
 if __name__ == '__main__':
-    #with open('triples/pokemon.nt', 'w', encoding='utf-8') as poke_triples:
-    #    for file in os.scandir("json/pokemon"):
-    #        if file.path.endswith(".json"):
-    #            convert_pokemon_to_triples(file.path, poke_triples)
+    with open('triples/pokemon.nt', 'w', encoding='utf-8') as poke_triples:
+        for file in os.scandir("json/pokemon"):
+            if file.path.endswith(".json"):
+                convert_pokemon_to_triples(file.path, poke_triples)
 
     with open('triples/types.nt', 'w', encoding='utf-8') as type_triples:
         convert_type_to_triples(type_triples)
 
     with open('triples/abilities.nt', 'w', encoding='utf-8') as ability_triples:
         convert_abilities_to_triples(ability_triples)
+
+    with open('triples/categories.nt', 'w', encoding='utf-8') as categories_triples:
+        convert_category_to_triples(categories_triples)
