@@ -82,3 +82,14 @@ def getEvolutionLine(pokemon): #to be finished, test with 3 evolutionary stage p
      ?secondEvo pok:art ?secondPic .
      ?secondEvo pok:pokedex-entry ?secondNumber .
     }   """
+
+def listPokedex():
+    return """
+    prefix pok: <http://edcpokedex.org/pred/>
+
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    select ?pokemonobj ?name where { 
+        ?pokemonobj pok:pokedex-entry ?number FILTER (xsd:integer(?number)<=721) .
+        ?pokemonobj pok:name ?name .
+    } order by asc(xsd:integer(?number))     
+    """
