@@ -72,7 +72,7 @@ def getEvolutionLine(pokemon): #to be finished, test with 3 evolutionary stage p
     prefix pok: <http://edcpokedex.org/pred/>
     
     select ?name ?evolvesTo ?evoName ?pic ?number ?secondEvo ?secondEvoName ?secondPic ?secondNumber where {
-     ?name pok:name "Warotrtle".
+     ?name pok:name """+"\""+str(pokemon)+"\""+""".
      ?name pok:evolves-to ?evolvesTo .
      ?evolvesTo pok:name ?evoName .
      ?evolvesTo pok:art ?pic .
