@@ -2,217 +2,210 @@
 {% load static %}
 {% block content %}
 
+<header class="poke-nav">
+    <!-- previus pokemon -->
 
-<body>
+    <!-- next pokemon -->
+</header>
 
-    <header class="poke-nav">
-        <!-- previus pokemon -->
+<section class="info">
 
-        <!-- next pokemon -->
-    </header>
+    <!-- <h1><b>Bulbassaur</b></h1> -->
 
-    <section class="info">
+    <div class="card-holder">
+        <div class="image-holder">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+                alt="NOT FOUND">
+        </div>
+    </div>
 
-        <!-- <h1><b>Bulbassaur</b></h1> -->
-
-        <div class="card-holder">
-            <div class="image-holder">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-                    alt="NOT FOUND">
-            </div>
+    <div class="information">
+        <div class="description">
+            <p>
+                A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.
+            </p>
         </div>
 
-        <div class="information">
-            <div class="description">
-                <p>
-                    A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.
-                </p>
+        <div class="basic-info">
+            <div class="slot">
+                <h3>Height (centimeters)</h3>
+                <p>70</p>
             </div>
+            <div class="slot">
+                <h3>Weight (hectogram)</h3>
+                <p>69</p>
+            </div>
+            <div class="slot">
+                <h3>Category</h3>
+                <a href="Category?name=seed">Seed</a>
+            </div>
+            <div class="slot habilites">
+                <h3>Abilities</h3>
 
-            <div class="basic-info">
-                <div class="slot">
-                    <h3>Height (centimeters)</h3>
-                    <p>70</p>
-                </div>
-                <div class="slot">
-                    <h3>Weight (hectogram)</h3>
-                    <p>69</p>
-                </div>
-                <div class="slot">
-                    <h3>Category</h3>
-                    <a href="Category?name=seed">Seed</a>
-                </div>
-                <div class="slot habilites">
-                    <h3>Abilities</h3>
+                <a href="Ability?name=overgrow">Overgrow</a>
+                <a href="Ability?name=chlorophyl">Chlorophyl</a>
 
-                    <a href="Ability?name=overgrow">Overgrow</a>
-                    <a href="Ability?name=chlorophyl">Chlorophyl</a>
-
-                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="info">
-
-        <div class="pokemon-stats-info">
-            <h3>Stats</h3>
-            <div class="stats">
-                <div class="stat">
-                    <ul class="value-list" data-value="45">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">HP</span>
+    <div class="pokemon-stats">
+        <h3>Stats</h3>
+        <div class="stats">
+            <div class="stat">
+                <div class="value-list" data-value="45">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
                 </div>
-                <div class="stat">
-                    <ul class="value-list" data-value="49">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">ATTACK</span>
-                </div>
-                <div class="stat">
-                    <ul class="value-list" data-value="49">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">DEFENSE</span>
-                </div>
-                <div class="stat">
-                    <ul class="value-list" data-value="65">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">SPECIAL ATTACK</span>
-                </div>
-                <div class="stat">
-                    <ul class="value-list" data-value="65">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">SPECIAL DEFENSE</span>
-                </div>
-                <div class="stat">
-                    <ul class="value-list" data-value="45">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <span class="name">SPEED</span>
-                </div>
+                <span class="name">HP</span>
             </div>
-            
-
-
-        </div>
-
-        <div class="types">
-            <h3>Types</h3>
-            <div class="types-box">
-                <div class="type">
-                    <span>Grass</span>
+            <div class="stat">
+                <div class="value-list" data-value="49">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
                 </div>
-                <div class="type">
-                    <span>Poison</span>
+                <span class="name">ATTACK</span>
+            </div>
+            <div class="stat">
+                <div class="value-list" data-value="49">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
                 </div>
+                <span class="name">DEFENSE</span>
+            </div>
+            <div class="stat">
+                <div class="value-list" data-value="65">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                </div>
+                <span class="name">SPECIAL ATTACK</span>
+            </div>
+            <div class="stat">
+                <div class="value-list" data-value="65">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                </div>
+                <span class="name">SPECIAL DEFENSE</span>
+            </div>
+            <div class="stat">
+                <div class="value-list" data-value="45">
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                    <span class="value"></span>
+                </div>
+                <span class="name">SPEED</span>
             </div>
         </div>
+    </div>
 
-        <div class="weaknesses">
-
+    <div class="types">
+        <h3>Types</h3>
+        <div class="types-box">
+            <div class="type">
+                <span>Grass</span>
+            </div>
+            <div class="type">
+                <span>Poison</span>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="info"></section>
+<!-- <section class="info">
+    <div class="weaknesses">
 
-    <script type="text/javascript">
-        $(function(){
-            $('.value-list').each(function(key,bar){
-                var value = $(this).data('value');
-                $(this).animate({
-                    'height' : value*0.4 + '%'
-                }, 1500)
-            })
+    </div>
+</section> -->
+
+<script type="text/javascript">
+    $('.value-list').each(function (key, bar) {
+        var value = $(this).data('value');
+        var result = Math.ceil(value * 0.06);
+        $(this).children().each(function (key, bar) {   
+                if (key < result) {
+                    $(bar).delay(200*key).animate(
+                        { opacity: 1 },
+                    )
+                };
         })
-    </script>
+    })
+</script>
 
-</body>
 {% endblock %}

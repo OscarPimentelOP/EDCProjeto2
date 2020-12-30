@@ -3,9 +3,6 @@
     /* add color base on type */
 }
 
-* {
-    all: initial;
-}
 
 body {
     all: initial;
@@ -17,7 +14,8 @@ body {
 }
 
 .info{
-    margin-top: 20px;
+    position: relative;
+    margin-top: 75px;
     display: flex;
     flex-wrap: wrap;
     min-height: calc(100vh - 100px);
@@ -30,7 +28,7 @@ body {
 .info .card-holder{ 
     display: flex;
     flex-direction: column;
-    width: 500px;
+    max-width: 25%;
 }
 
 .card-holder .image-holder{
@@ -45,7 +43,7 @@ body {
 }
 
 .info .information{
-    width: 500px;
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,29 +51,27 @@ body {
 }
 
 .info .information .description{
-    min-height: 150px;
-    max-height: 200px;
+    max-height: 50%;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .info .information .description p{
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
 }
 
 .info .information .basic-info {
     background: green;
     border-radius: 25px;
-    height: 350px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,0.5fr);
+    grid-template-rows: repeat(2,0.5fr);
 }
 
 .basic-info .slot {
-    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,18 +105,87 @@ body {
     text-align: center;
 }
 
-.types {
+.info .pokemon-stats{
+    position: relative;
+    min-width: 60%;
+    min-height: 300px;
+    background: red;
+}
+
+.info .pokemon-stats h3{
+    position: relative;
+    font-size: 1.5em;
+    top: 5%;
+    left: 2%;
+}
+
+.pokemon-stats .stats{
+    position: absolute;
+    min-width: 100%;
+    min-height: 90%;
+    bottom: 0;
+    background: transparent;
+    display: flex;
+}
+
+.info .pokemon-stats .stat{
+    position: relative;
+    flex: 1 ; 
+    text-align: center;
+}
+
+.info .pokemon-stats .stat .name{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    font-size: 0.9em;
+}
+
+.info .pokemon-stats .stat .value-list{
+    position: absolute;
+    width: 30%;
+    min-height: 90%;
+    background: red;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-180deg);
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .pokemon-stats .stat .value-list .value{
+    width: 100%;
+    height: 10px;
+    background: #9bcc50;
+    opacity: 0;
+} 
+
+.info .types {
+    min-width: 35%;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background: red;
 }
 
 .types h3{
     font-size: 2em;
+    color: white;
 }
 
 .types .types-box{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -133,71 +198,11 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    background: red;
+    background: blue;
     border-radius: 25px;
     color: white;
 }
 
-.pokemon-stats-info{
-    min-width: 650px;
-    min-height: 80vh;
-    background: white;
-    position: relative;
-}
-
-.pokemon-stats-info h3{
-    float: left;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-.pokemon-stats-info .stats{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 80%;
-    background: transparent;
-    display: flex;
-}
-
-.pokemon-stats-info .stat{
-    position: relative;
-    flex: 1 ;
-    text-align: center;
-}
-
-.pokemon-stats-info .stat .name{
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    min-height: 40px;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pokemon-stats-info .stat .value-list{
-    position: absolute;
-    width: 70%;
-    height: 100%;
-    background: #9bcc50;
-    top: -5%;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-}
-
-.pokemon-stats-info .stat .value-list li{
-    width: 100%;
-    height: 20px;
-    margin-top: 15px;
-    background: white;
-    display: block;
-}
 
 
 
