@@ -39,19 +39,14 @@ def pokeGlobalInfo(pokemon_id):
 
 def getAbilityDescription(pokemon_id):
     query = """
-   prefix pok: <http://edcpokedex.org/pred/>
-   select ?p ?o ?oname ?desc
-    where {
-    {
-        select ?s ?p ?o
-        where{
-             ?s pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
-             ?s ?p ?o .
-       }
-   }
-    ?o pok:name ?oname .
-    ?o pok:description ?desc
-    }  """
+    prefix pok: <http://edcpokedex.org/pred/>
+
+    select ?abilityname ?description where { 
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
+        ?pokemon pok:ability ?ability .
+        ?ability pok:name ?abilityname .
+        ?ability pok:description ?description .
+}   """
     return execute_select_query(query)
 
 
