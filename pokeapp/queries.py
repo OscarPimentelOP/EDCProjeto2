@@ -20,24 +20,25 @@ def execute_select_query(query):
     return res
 
 
-def pokeGlobalInfo(pokemon):
+def pokeGlobalInfo(pokemon_id):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/
+    prefix pok: <http://edcpokedex.org/pred/>
     
-    select ?p ?o ?oname 
+    select ?p ?o
     where {{
         select ?s ?p ?o
         where{
-             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
+             ?s pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
             ?s ?p ?o .
        }
    }
     
     }"""
+    print(query)
     return execute_select_query(query)
 
 
-def getAbilityDescription(pokemon):
+def getAbilityDescription(pokemon_id):
     query = """
    prefix pok: <http://edcpokedex.org/pred/>
    select ?p ?o ?oname ?desc
@@ -45,7 +46,7 @@ def getAbilityDescription(pokemon):
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
+             ?s pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
              ?s ?p ?o .
        }
    }
@@ -55,7 +56,7 @@ def getAbilityDescription(pokemon):
     return execute_select_query(query)
 
 
-def getPokemonWeaknesses(pokemon):
+def getPokemonWeaknesses(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
@@ -64,7 +65,7 @@ def getPokemonWeaknesses(pokemon):
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
+             ?s pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
              ?s ?p ?o .
        }
    }
@@ -76,7 +77,7 @@ def getPokemonWeaknesses(pokemon):
     return execute_select_query(query)
 
 
-def getPokemonStrengths(pokemon):
+def getPokemonStrengths(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
@@ -85,7 +86,7 @@ def getPokemonStrengths(pokemon):
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
+             ?s pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
              ?s ?p ?o .
        }
    }
