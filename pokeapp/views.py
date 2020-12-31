@@ -37,8 +37,6 @@ def pokemon(request, poke_id):
     for elem in pokemon_strengths_raw['results']['bindings']:
         pokemon_strengths_list.append(elem['strong']['value'])
 
-    print(pokemon_general_info_dict)
-
     tparams = {'general_info': pokemon_general_info_dict,
                'abilities': pokemon_abilities_list,
                'weaknesses': pokemon_weaknesses_list,
