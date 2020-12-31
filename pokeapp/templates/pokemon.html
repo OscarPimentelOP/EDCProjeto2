@@ -37,7 +37,7 @@
             </div>
             <div class="slot">
                 <h3>Category</h3>
-                <a href="Category?name=seed" property="pok:category">Seed</a>
+                <a href="Category?name=seed" property="pok:category">{{ category }}</a>
             </div>
             <div class="slot habilites">
                 <h3>Abilities</h3>
@@ -179,12 +179,11 @@
     <div class="types">
         <h3>Types</h3>
         <div class="types-box">
-            <div class="type">
-                <span>Grass</span>
-            </div>
-            <div class="type">
-                <span>Poison</span>
-            </div>
+            {% for type in types %}
+                <div class="type">
+                    <span property="pok:type">{{ type }}</span>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>

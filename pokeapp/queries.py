@@ -109,6 +109,7 @@ def getEvolutionLine(pokemon):  # to be finished, test with 3 evolutionary stage
     }   """
     return execute_select_query(query)
 
+
 def getPokemonCategory(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
@@ -119,6 +120,7 @@ def getPokemonCategory(pokemon_id):
         ?category pok:name ?categoryname .
     } """
     return execute_select_query(query)
+
 
 def getPokemonType(pokemon_id):
     query = """
@@ -131,6 +133,7 @@ def getPokemonType(pokemon_id):
     }"""
     return execute_select_query(query)
 
+
 def getPreEvo(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
@@ -141,6 +144,7 @@ def getPreEvo(pokemon_id):
          ?preEvo pok:pokedex-entry ?preEvoNumber .    
     }"""
     return execute_select_query(query)
+
 
 def getEvo(pokemon_id):
     query = """
@@ -153,6 +157,7 @@ def getEvo(pokemon_id):
     }"""
     return execute_select_query(query)
 
+
 def getPokemonNumber(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
@@ -163,9 +168,9 @@ def getPokemonNumber(pokemon_id):
     """
     return execute_select_query(query)
 
-evoLine = []
 
 def getEvolutionLine(pokemon_id):
+    evoLine = []
 
     pre_evo_raw = getPreEvo(pokemon_id)
     pre_evo_list = list()
@@ -208,5 +213,6 @@ def listPokedex():
     """
     return query
 
+
 if __name__ == '__main__':
-    print(getEvolutionLine(8))
+    print(getEvolutionLine(134))
