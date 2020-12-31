@@ -118,6 +118,7 @@ def getPokemonCategory(pokemon_id):
         ?pokemon pok:category ?category .
         ?category pok:name ?categoryname .
 } """
+    return execute_select_query(query)
 
 def getPokemonType(pokemon_id):
     query = """
@@ -128,6 +129,7 @@ def getPokemonType(pokemon_id):
         ?pokemon pok:type ?type .
         ?type pok:name ?typename .
 }"""
+    return execute_select_query(query)
 
 def getPreEvo(pokemon_id):
     query = """
@@ -137,6 +139,7 @@ def getPreEvo(pokemon_id):
         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ . 
         ?preEvo pok:name ?preEvoName .    
 }"""
+    return execute_select_query(query)
 
 def getEvo(pokemon_id):
     query = """
@@ -146,6 +149,7 @@ def getEvo(pokemon_id):
         ?pok pok:evolves-to ?evolvesTo .
         ?evolvesTo pok:name ?evoName .  
 }"""
+    return execute_select_query(query)
 
 
 def listPokedex():
