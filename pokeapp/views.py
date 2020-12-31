@@ -23,7 +23,7 @@ def pokemon(request, poke_id):
 
     for elem in pokemon_general_info_raw['results']['bindings']:
         new_dict_val = elem['o']['value']
-        new_dict_key = _get_last_word_from_url(elem['p']['value'])
+        new_dict_key = _get_last_word_from_url(elem['p']['value']).replace('-', '_')
         pokemon_general_info_dict[new_dict_key] = new_dict_val
 
     for elem in pokemon_abilities_raw['results']['bindings']:
@@ -37,7 +37,7 @@ def pokemon(request, poke_id):
     for elem in pokemon_strengths_raw['results']['bindings']:
         pokemon_strengths_list.append(elem['strong']['value'])
 
-    print(pokemon_strengths_raw)
+    print(pokemon_general_info_dict)
 
     tparams = {'general_info': pokemon_general_info_dict,
                'abilities': pokemon_abilities_list,

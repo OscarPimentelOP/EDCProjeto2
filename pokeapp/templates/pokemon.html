@@ -14,7 +14,7 @@
 
     <div class="card-holder">
         <div class="image-holder">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+            <img src="{{ general_info.art }}"
                 alt="NOT FOUND">
         </div>
     </div>
@@ -22,18 +22,18 @@
     <div class="information">
         <div class="description">
             <p>
-                A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.
+                {{ general_info.description }}
             </p>
         </div>
 
         <div class="basic-info">
             <div class="slot">
                 <h3>Height (centimeters)</h3>
-                <p>70</p>
+                <p>{{ general_info.height }}</p>
             </div>
             <div class="slot">
                 <h3>Weight (hectogram)</h3>
-                <p>69</p>
+                <p>{{ general_info.weight }}</p>
             </div>
             <div class="slot">
                 <h3>Category</h3>
@@ -42,8 +42,9 @@
             <div class="slot habilites">
                 <h3>Abilities</h3>
 
-                <a href="Ability?name=overgrow">Overgrow</a>
-                <a href="Ability?name=chlorophyl">Chlorophyl</a>
+                {% for ability in abilities %}
+                    <a href="Ability?name={{ ability.name }}">{{ ability.name }}</a>
+                {% endfor %}
 
             </div>
         </div>
@@ -53,7 +54,7 @@
         <h3>Stats</h3>
         <div class="stats">
             <div class="stat">
-                <div class="value-list" data-value="45">
+                <div class="value-list" data-value="{{ general_info.hp }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -73,7 +74,7 @@
                 <span class="name">HP</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="49">
+                <div class="value-list" data-value="{{ general_info.attack }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -93,7 +94,7 @@
                 <span class="name">ATTACK</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="49">
+                <div class="value-list" data-value="{{ general_info.defense }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -113,7 +114,7 @@
                 <span class="name">DEFENSE</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="65">
+                <div class="value-list" data-value="{{ general_info.special_attack }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -133,7 +134,7 @@
                 <span class="name">SPECIAL ATTACK</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="65">
+                <div class="value-list" data-value="{{ general_info.special_defense }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -153,7 +154,7 @@
                 <span class="name">SPECIAL DEFENSE</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="45">
+                <div class="value-list" data-value="{{ general_info.speed }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
