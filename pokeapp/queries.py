@@ -34,7 +34,6 @@ def pokeGlobalInfo(pokemon_id):
    }
     
     }"""
-    print(query)
     return execute_select_query(query)
 
 
