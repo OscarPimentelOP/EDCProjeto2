@@ -80,7 +80,7 @@ def getPokemonStrengths(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
-    select ?p ?o ?type ?strong
+    select DISTINCT ?strong
     where {
     {
         select ?s ?p ?o
