@@ -59,7 +59,7 @@ def getPokemonWeaknesses(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
-    select ?p ?o ?type ?weak 
+    select DISTINCT ?weak 
     where {
     {
         select ?s ?p ?o
