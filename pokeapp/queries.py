@@ -117,7 +117,7 @@ def getPokemonCategory(pokemon_id):
         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
         ?pokemon pok:category ?category .
         ?category pok:name ?categoryname .
-} """
+    } """
     return execute_select_query(query)
 
 def getPokemonType(pokemon_id):
@@ -128,28 +128,72 @@ def getPokemonType(pokemon_id):
         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """. 
         ?pokemon pok:type ?type .
         ?type pok:name ?typename .
-}"""
+    }"""
     return execute_select_query(query)
 
 def getPreEvo(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
-    select ?preEvo ?preEvoName where {
-        ?preEvo pok:evolves-to ?pokemon .
-        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ . 
-        ?preEvo pok:name ?preEvoName .    
-}"""
+    
+    select ?preEvoNumber where {
+         ?preEvo pok:evolves-to ?pokemon .
+         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.  
+         ?preEvo pok:pokedex-entry ?preEvoNumber .    
+    }"""
     return execute_select_query(query)
 
 def getEvo(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
-    select ?evolvesTo ?evoName where {
-        ?pok pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ .  
-        ?pok pok:evolves-to ?evolvesTo .
-        ?evolvesTo pok:name ?evoName .  
-}"""
+    
+    select ?evoNumber where {
+         ?pok pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """. 
+         ?pok pok:evolves-to ?evolvesTo .
+         ?evolvesTo pok:pokedex-entry ?evoNumber .  
+    }"""
     return execute_select_query(query)
+
+def getPokemonNumber(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    select ?poke where {
+         ?pok pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """. 
+         ?pok pok:pokedex-entry ?poke .  
+    }
+    """
+    return execute_select_query(query)
+
+evoLine = []
+
+def getEvolutionLine(pokemon_id):
+
+    pre_evo_raw = getPreEvo(pokemon_id)
+    pre_evo_list = list()
+    for elem in pre_evo_raw['results']['bindings']:
+        pre_evo_list.append(int(elem['preEvoNumber']['value']))
+        evoLine.append(int(elem['preEvoNumber']['value']))
+
+    evo_raw = getEvo(pokemon_id)
+    evo_list = list()
+    for elem in evo_raw['results']['bindings']:
+        evo_list.append(int(elem['evoNumber']['value']))
+        evoLine.append(int(elem['evoNumber']['value']))
+
+    for poke in pre_evo_list:
+        pre_pre_evo_raw = getPreEvo(poke)
+        for elem in pre_pre_evo_raw['results']['bindings']:
+            evoLine.append(int(elem['preEvoNumber']['value']))
+
+    for poke in evo_list:
+        second_evo_raw = getEvo(poke)
+        for elem in second_evo_raw['results']['bindings']:
+            evoLine.append(int(elem['evoNumber']['value']))
+
+    actual_pokemon_raw = getPokemonNumber(pokemon_id)
+    for elem in actual_pokemon_raw['results']['bindings']:
+        evoLine.append(int(elem['poke']['value']))
+
+    return sorted(evoLine)
 
 
 def listPokedex():
@@ -163,3 +207,6 @@ def listPokedex():
     } order by asc(xsd:integer(?number))     
     """
     return query
+
+if __name__ == '__main__':
+    print(getEvolutionLine(8))
