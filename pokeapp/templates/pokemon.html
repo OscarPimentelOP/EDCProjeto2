@@ -8,20 +8,20 @@
     <!-- next pokemon -->
 </header>
 
-<section class="info">
+<section class="info" xmlns:pok="http://edcpokedex.org/" xmlns:pokpred="http://edcpokedex.org/pred" typeof="pok:Pokemon">
 
     <!-- <h1><b>Bulbassaur</b></h1> -->
 
     <div class="card-holder">
         <div class="image-holder">
-            <img src="{{ general_info.art }}"
+            <img property="pok:art" src="{{ general_info.art }}"
                 alt="NOT FOUND">
         </div>
     </div>
 
     <div class="information">
         <div class="description">
-            <p>
+            <p property="pok:description">
                 {{ general_info.description }}
             </p>
         </div>
@@ -29,21 +29,21 @@
         <div class="basic-info">
             <div class="slot">
                 <h3>Height (centimeters)</h3>
-                <p>{{ general_info.height }}</p>
+                <p property="pok:height">{{ general_info.height }}</p>
             </div>
             <div class="slot">
                 <h3>Weight (hectogram)</h3>
-                <p>{{ general_info.weight }}</p>
+                <p property="pok:weight">{{ general_info.weight }}</p>
             </div>
             <div class="slot">
                 <h3>Category</h3>
-                <a href="Category?name=seed">Seed</a>
+                <a href="Category?name=seed" property="pok:category">Seed</a>
             </div>
             <div class="slot habilites">
                 <h3>Abilities</h3>
 
                 {% for ability in abilities %}
-                    <a href="Ability?name={{ ability.name }}">{{ ability.name }}</a>
+                    <a href="Ability?name={{ ability.name }}" property="pok:ability" >{{ ability.name }}</a>
                 {% endfor %}
 
             </div>
