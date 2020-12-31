@@ -135,7 +135,7 @@ def getPreEvo(pokemon_id):
     select ?preEvo ?preEvoName where {
         ?preEvo pok:evolves-to ?pokemon .
         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ . 
-        ?pokemon pok:name ?preEvoName .    
+        ?preEvo pok:name ?preEvoName .    
 }"""
 
 def getEvo(pokemon_id):
