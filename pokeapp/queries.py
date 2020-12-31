@@ -129,6 +129,24 @@ def getPokemonType(pokemon_id):
         ?type pok:name ?typename .
 }"""
 
+def getPreEvo(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    select ?preEvo ?preEvoName where {
+        ?preEvo pok:evolves-to ?pokemon .
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ . 
+        ?pokemon pok:name ?preEvoName .    
+}"""
+
+def getEvo(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    select ?evolvesTo ?evoName where {
+        ?pok pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """ .  
+        ?pok pok:evolves-to ?evolvesTo .
+        ?evolvesTo pok:name ?evoName .  
+}"""
+
 
 def listPokedex():
     query = """
