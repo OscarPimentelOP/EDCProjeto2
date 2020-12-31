@@ -109,6 +109,27 @@ def getEvolutionLine(pokemon):  # to be finished, test with 3 evolutionary stage
     }   """
     return execute_select_query(query)
 
+def getPokemonCategory(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+
+    select ?pokename ?categoryname where { 
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
+        ?pokemon pok:name ?pokename .
+        ?pokemon pok:category ?category .
+        ?category pok:name ?categoryname .
+} """
+
+def getPokemonType(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+
+    select ?typename where { 
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.   
+        ?pokemon pok:type ?type .
+        ?type pok:name ?typename .
+}"""
+
 
 def listPokedex():
     query = """
