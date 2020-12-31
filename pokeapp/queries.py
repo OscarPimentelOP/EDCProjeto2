@@ -1,36 +1,62 @@
+# Queries.py
+# A collection of SPARQL Queries for edc pokedex
+
+from s4api.graphdb_api import GraphDBApi
+from s4api.swagger import ApiClient
+
+import json
+
+endpoint = "http://localhost:7200"
+repo_name = "edc-pokemon"
+
+client = ApiClient(endpoint=endpoint)
+accessor = GraphDBApi(client)
+
+
+def execute_select_query(query):
+    payload_query = {"query": query}
+    res = accessor.sparql_select(body=payload_query, repo_name=repo_name)
+    res = json.loads(res)
+    return res
+
+
 def pokeGlobalInfo(pokemon):
-    return """
+    query = """
     prefix pok: <http://edcpokedex.org/pred/
     
     select ?p ?o ?oname 
     where {{
         select ?s ?p ?o
         where{
-             ?s pok:name """+"\""+str(pokemon)+"\""+""".
+             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
             ?s ?p ?o .
        }
    }
     
-}"""
+    }"""
+    return execute_select_query(query)
+
 
 def getAbilityDescription(pokemon):
-   return """
+    query = """
    prefix pok: <http://edcpokedex.org/pred/>
    select ?p ?o ?oname ?desc
     where {
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """+"\""+str(pokemon)+"\""+""".
+             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
              ?s ?p ?o .
        }
    }
     ?o pok:name ?oname .
     ?o pok:description ?desc
-}  """
+    }  """
+    return execute_select_query(query)
+
 
 def getPokemonWeaknesses(pokemon):
-    return """
+    query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
     select ?p ?o ?type ?weak 
@@ -38,7 +64,7 @@ def getPokemonWeaknesses(pokemon):
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """+"\""+str(pokemon)+"\""+""".
+             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
              ?s ?p ?o .
        }
    }
@@ -47,9 +73,11 @@ def getPokemonWeaknesses(pokemon):
     ?weakT pok:name ?weak .    
     
 } """
+    return execute_select_query(query)
+
 
 def getPokemonStrengths(pokemon):
-    return """
+    query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
     select ?p ?o ?type ?strong
@@ -57,7 +85,7 @@ def getPokemonStrengths(pokemon):
     {
         select ?s ?p ?o
         where{
-             ?s pok:name """+"\""+str(pokemon)+"\""+""".
+             ?s pok:name """ + "\"" + str(pokemon) + "\"" + """.
              ?s ?p ?o .
        }
    }
@@ -66,13 +94,15 @@ def getPokemonStrengths(pokemon):
     ?strongT pok:name ?strong .   
     
 } """
+    return execute_select_query(query)
 
-def getEvolutionLine(pokemon): #to be finished, test with 3 evolutionary stage pokemon for now
-    return """
+
+def getEvolutionLine(pokemon):  # to be finished, test with 3 evolutionary stage pokemon for now
+    query = """
     prefix pok: <http://edcpokedex.org/pred/>
     
     select ?name ?evolvesTo ?evoName ?pic ?number ?secondEvo ?secondEvoName ?secondPic ?secondNumber where {
-     ?name pok:name """+"\""+str(pokemon)+"\""+""".
+     ?name pok:name """ + "\"" + str(pokemon) + "\"" + """.
      ?name pok:evolves-to ?evolvesTo .
      ?evolvesTo pok:name ?evoName .
      ?evolvesTo pok:art ?pic .
@@ -82,9 +112,11 @@ def getEvolutionLine(pokemon): #to be finished, test with 3 evolutionary stage p
      ?secondEvo pok:art ?secondPic .
      ?secondEvo pok:pokedex-entry ?secondNumber .
     }   """
+    return execute_select_query(query)
+
 
 def listPokedex():
-    return """
+    query = """
     prefix pok: <http://edcpokedex.org/pred/>
 
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -93,3 +125,4 @@ def listPokedex():
         ?pokemonobj pok:name ?name .
     } order by asc(xsd:integer(?number))     
     """
+    return query
