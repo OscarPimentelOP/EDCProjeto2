@@ -27,8 +27,8 @@ def pokemon(request, poke_id):
         pokemon_general_info_dict[new_dict_key] = new_dict_val
 
     for elem in pokemon_abilities_raw['results']['bindings']:
-        new_list_val = {'name': elem['oname']['value'],
-                        'description': elem['desc']['value']}
+        new_list_val = {'name': elem['abilityname']['value'],
+                        'description': elem['description']['value']}
         pokemon_abilities_list.append(new_list_val)
 
     for elem in pokemon_weaknesses_raw['results']['bindings']:

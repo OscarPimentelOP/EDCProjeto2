@@ -113,9 +113,8 @@ def getPokemonCategory(pokemon_id):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
 
-    select ?pokename ?categoryname where { 
+    select ?categoryname where { 
         ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.
-        ?pokemon pok:name ?pokename .
         ?pokemon pok:category ?category .
         ?category pok:name ?categoryname .
 } """
@@ -125,7 +124,7 @@ def getPokemonType(pokemon_id):
     prefix pok: <http://edcpokedex.org/pred/>
 
     select ?typename where { 
-        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.   
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """. 
         ?pokemon pok:type ?type .
         ?type pok:name ?typename .
 }"""
