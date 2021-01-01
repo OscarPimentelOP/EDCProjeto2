@@ -39,12 +39,22 @@
                 <h3>Category</h3>
                 <a href="Category?name=seed" property="pok:category">{{ category }}</a>
             </div>
-            <div class="slot habilites">
+            <div class="slot">
                 <h3>Abilities</h3>
-
-                {% for ability in abilities %}
-                    <a href="Ability?name={{ ability.name }}" property="pok:ability" >{{ ability.name }}</a>
-                {% endfor %}
+                <div class="habilities">
+                    {% for ability in abilities %}
+                    <div class="hability">
+                        <a href="Ability?name={{ ability.name }}" property="pok:ability" >{{ ability.name }}</a>
+                        <div class="tooltip">
+                            <h3> {{ ability.name }} </h3>
+                            <p>
+                                {{ ability.description }}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                
 
             </div>
         </div>
@@ -185,14 +195,55 @@
                 </div>
             {% endfor %}
         </div>
+        <h3>Weakness</h3>
+        <div class="types-box">
+            {% for weak in weaknesses%}
+            <div class="type">
+                <span property="pok:type">{{ weak }}</span>
+            </div>
+        {% endfor %}
+        </div>
+        <h3>Strengths</h3>
+        <div class="types-box">
+            {% for strength in strengths%}
+            <div class="type">
+                <span property="pok:type">{{ strength }}</span>
+            </div>
+        {% endfor %}
+        </div>
     </div>
 </section>
 
-<!-- <section class="info">
-    <div class="weaknesses">
+<section class="evolutions">
 
+    <div class="evalution">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt=""></img>
+            <h3>Bulbasaur</h3>
+        </div>
     </div>
-</section> -->
+
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+
+    <div class="evalution">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt=""></img>
+            <h3>Ivysaur</h3>
+        </div>
+    </div>
+  
+    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+        
+    <div class="evalution">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt=""></img>
+            <h3>Venusaur</h3>
+        </div>
+    </div>
+   
+</section>
 
 <script type="text/javascript">
     $('.value-list').each(function (key, bar) {
