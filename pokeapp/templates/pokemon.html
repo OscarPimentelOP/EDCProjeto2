@@ -4,13 +4,23 @@
 
 <header class="poke-nav">
     <!-- previus pokemon -->
-
-    <!-- next pokemon -->
+        <div  id="prev" class="button">
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+            Previous
+        </div>
+        <div class="name">
+                <span>{{general_info.name}} {{general_info.pokedex_entry}}</span>
+        </div>
+        <div id="next" class="button">
+            Next
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+        </div>
+    <!-- next pokemon -->   
 </header>
 
 <section class="info" xmlns:pok="http://edcpokedex.org/" xmlns:pokpred="http://edcpokedex.org/pred" typeof="pok:Pokemon">
-
-    <!-- <h1><b>Bulbassaur</b></h1> -->
 
     <div class="card-holder">
         <div class="image-holder">
@@ -257,6 +267,33 @@
                 };
         })
     })
+</script>
+
+<script type="text/javascript">
+    
+    var index = "{{general_info.pokedex_entry}}"
+    
+    var handler = function (index,next){
+        if(!next)
+            index--;
+        else
+            index++;
+        
+        if(index<1) index = 721;
+        else if(index>721) index = 1;
+
+        var url = window.location.href.split("/");
+        url[4] = index;
+        window.location.href = url.join("/");
+    }
+
+    $("#prev").click(function(){
+        handler(index,false)
+    });
+    $("#next").click(function(){
+        handler(index,true)
+    });
+
 </script>
 
 {% endblock %}

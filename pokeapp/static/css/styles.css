@@ -13,9 +13,87 @@ body {
     align-items: center;
 }
 
+.poke-nav{
+    margin-left: -10%;
+    position: fixed;
+    top: 0;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110%;
+    overflow: collapse;
+    z-index: 9999;
+}
+
+.poke-nav .name {
+    width: 30%;   
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+}
+
+.poke-nav .button{
+    background: #a4a4a4;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.poke-nav .button:hover{
+    background: greenyellow;
+}
+
+.poke-nav .button:hover::before{
+    background: greenyellow;
+}
+
+.poke-nav .button .arrow{
+    width: 36px;
+    height: 36px;
+    align-self: center;
+    justify-self: center;
+}
+
+.poke-nav .button#prev .arrow
+{
+    transform: rotate(180deg);
+}
+
+.poke-nav .button:before{
+    position: absolute;
+    top: -200px;
+    content: '';
+    width: 50px;
+    height: 500px;
+    background: #a4a4a4;
+    transform: rotate(-90deg);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.poke-nav .button#prev:before
+{
+    left: 0;
+    border-bottom-left-radius: 100px;
+}
+
+.poke-nav .button#next:before
+{
+    right: 0;
+    border-top-left-radius: 1000px;
+}
+
 .info{
     position: relative;
-    margin-top: 75px;
+    margin-top: 5em;
     display: flex;
     flex-wrap: wrap;
     height: calc(100vh - 100px);
@@ -274,7 +352,7 @@ body {
     height: auto;
 }
 
-.arrow{
+.evalution .arrow{
     width: 48px;
     height: 48px;
     align-self: center;
