@@ -20,4 +20,6 @@ from pokeapp import views
 urlpatterns = [
     path('', views.index),
     path('pokemon/<int:poke_id>', views.pokemon),
+    path('about', views.about),
+    path('about/', views.about),
 ]

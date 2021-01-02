@@ -3,6 +3,8 @@
 
 from s4api.graphdb_api import GraphDBApi
 from s4api.swagger import ApiClient
+from SPARQLWrapper import SPARQLWrapper, JSON
+
 
 import json
 
@@ -11,6 +13,8 @@ repo_name = "edc-pokemon"
 
 client = ApiClient(endpoint=endpoint)
 accessor = GraphDBApi(client)
+
+dbpedia_wrapper = SPARQLWrapper("http://dbpedia.org/sparql")
 
 
 def execute_select_query(query):
@@ -213,6 +217,22 @@ def listPokedex():
     """
     return query
 
+def get_dbpedia_pokemon_desc_and_pic():
+    query = """
+    prefix dbpedia: <http://dbpedia.org/resource/>
+    prefix dbpedia-owl: <http://dbpedia.org/ontology/>
+
+    select ?abstract ?thumbnail where { 
+        dbpedia:Pokémon dbpedia-owl:abstract ?abstract ;
+                           dbpedia-owl:thumbnail ?thumbnail .
+        filter(langMatches(lang(?abstract),"en"))
+    }
+    """
+    dbpedia_wrapper.setQuery(query)
+    dbpedia_wrapper.setReturnFormat(JSON)
+    return dbpedia_wrapper.query().convert()
+
 
 if __name__ == '__main__':
-    print(getEvolutionLine(134))
+    #print(getEvolutionLine(134))
+    print(get_dbpedia_pokemon_desc_and_pic())

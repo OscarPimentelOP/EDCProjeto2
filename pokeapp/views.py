@@ -56,6 +56,15 @@ def pokemon(request, poke_id):
     return render(request, 'pokemon.html', tparams)
 
 
+def about(request):
+    pokemon_info_raw = query.get_dbpedia_pokemon_desc_and_pic()
+
+    tparams = {'pk_logo': pokemon_info_raw['results']['bindings'][0]['thumbnail']['value'],
+               'pk_desc': pokemon_info_raw['results']['bindings'][0]['abstract']['value']}
+
+    return render(request, 'about.html', tparams)
+
+
 def _get_last_word_from_url(url_string):
     pattern = re.compile(r"\/([^\/]+)[\/]?$")
     return re.search(pattern, url_string).group(1)
