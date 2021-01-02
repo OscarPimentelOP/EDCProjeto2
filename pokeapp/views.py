@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.template.defaulttags import register
 
 import pokeapp.queries as query
 import re
@@ -59,8 +60,20 @@ def pokemon(request, poke_id):
 def about(request):
     pokemon_info_raw = query.get_dbpedia_pokemon_desc_and_pic()
 
+    pokemon_game_info_raw = query.get_dbpedia_pokemon_game_list()
+    pokemon_game_info_dict = {}
+
+    for elem in pokemon_game_info_raw['results']['bindings']:
+        game_name = elem['gamename']['value']
+        if game_name not in pokemon_game_info_dict:
+            pokemon_game_info_dict[game_name] = {"consoles": []}
+
+        console_name = _get_last_word_from_url(elem['platform']['value']).replace("_", " ")
+        pokemon_game_info_dict[game_name]["consoles"].append(console_name)
+
     tparams = {'pk_logo': pokemon_info_raw['results']['bindings'][0]['thumbnail']['value'],
-               'pk_desc': pokemon_info_raw['results']['bindings'][0]['abstract']['value']}
+               'pk_desc': pokemon_info_raw['results']['bindings'][0]['abstract']['value'],
+               'pk_games': pokemon_game_info_dict}
 
     return render(request, 'about.html', tparams)
 
@@ -68,3 +81,9 @@ def about(request):
 def _get_last_word_from_url(url_string):
     pattern = re.compile(r"\/([^\/]+)[\/]?$")
     return re.search(pattern, url_string).group(1)
+
+
+# from stackoverflow.com/questions/8000022/django-template-how-to-look-up-a-dictionary-value-with-a-variable
+@register.filter
+def get_item(dictionary, key):
+    return dictionary.get(key)

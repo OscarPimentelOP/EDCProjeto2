@@ -5,4 +5,26 @@
     <img src="{{ pk_logo }}">
     <p>{{ pk_desc }}</p>
 
+    <table class="table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Consoles</td>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for key, value in pk_games.items %}
+            <tr>
+                <td>{{ key }}</td>
+                <td>
+                {% for console in value.consoles %}
+                    {{ console }},
+                {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+
+    </tbody>
+    </table>
 {% endblock %}

@@ -237,6 +237,46 @@ def get_dbpedia_pokemon_desc_and_pic():
     return dbpedia_query(query)
 
 
+def get_dbpedia_pokemon_all_info():
+    query = """
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    PREFIX dc: <http://purl.org/dc/elements/1.1/>
+    PREFIX : <http://dbpedia.org/resource/>
+    PREFIX dbpedia2: <http://dbpedia.org/property/>
+    PREFIX dbpedia: <http://dbpedia.org/>
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+    SELECT ?property ?hasValue ?isValueOf
+    WHERE {
+        { <http://dbpedia.org/resource/Pokémon> ?property ?hasValue }
+        UNION
+        { ?isValueOf ?property <http://dbpedia.org/resource/Pokémon> }
+    }
+    """
+    return dbpedia_query(query)
+
+
+def get_dbpedia_pokemon_game_list():
+    query = """
+    prefix dbpedia: <http://dbpedia.org/resource/>
+    prefix dbpedia-owl: <http://dbpedia.org/ontology/>
+    prefix foaf: <http://xmlns.com/foaf/0.1/>
+    
+    select ?gamename, ?platform where { 
+      ?game dbpedia-owl:series dbpedia:Pokémon_\(video_game_series\) ;
+      foaf:name ?gamename ;
+      dbpedia-owl:computingPlatform ?platform ;
+      dbpedia-owl:releaseDate ?releaseDate .
+    }
+    """
+    return dbpedia_query(query)
+
+
 if __name__ == '__main__':
     # print(getEvolutionLine(134))
     print(get_dbpedia_pokemon_desc_and_pic())
+    print(get_dbpedia_pokemon_game_list())
