@@ -52,13 +52,14 @@ def pokemon(request, poke_id):
 
     if poke_id != 133:
         first_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[0])
-        second_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[1])
+        if len(pokemon_evolutions_raw) > 1:
+            second_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[1])
+            pokemon_evolutions_dict['second'].append(second_evo)
         if len(pokemon_evolutions_raw) > 2:
             third_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[2])
             pokemon_evolutions_dict['third'].append(third_evo)
 
         pokemon_evolutions_dict['first'].append(first_evo)
-        pokemon_evolutions_dict['second'].append(second_evo)
     else:
         first_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[0])
         pokemon_evolutions_dict['first'].append(first_evo)
