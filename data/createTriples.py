@@ -112,6 +112,7 @@ def convert_pokemon_to_triples(json_path, triples_file):
 
 
 def convert_type_to_triples(triples_file):
+    type_efficacy_triples = open('triples/type_efficacy.nt', 'w', encoding='utf-8')
     with open('csv/types.csv', 'r', encoding='utf-8') as types_csv:
         types_dict = csv.DictReader(types_csv)
         types_list = list()
@@ -129,6 +130,11 @@ def convert_type_to_triples(triples_file):
 
                 for efficacy_row in types_efficacy_dict:
                     if types_list[int(efficacy_row['damage_type_id']) - 1] == poke_type:
+                        type_efficacy_triples.write('<http://edcpokedex.org/type/%s> '
+                                                    '<http://edcpokedex.org/type/%s> '
+                                                    ' "%s" .\n'
+                                                    % (poke_type, types_list[int(efficacy_row['target_type_id']) - 1], efficacy_row['damage_factor']))
+
                         if int(efficacy_row['damage_factor']) > 100:
                             triples_file.write('<http://edcpokedex.org/type/%s> '
                                                '<http://edcpokedex.org/pred/isSuperEffective> '
