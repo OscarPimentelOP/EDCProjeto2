@@ -172,6 +172,18 @@ def getPokemonNumber(pokemon_id):
     return execute_select_query(query)
 
 
+def getPokemonPicAndName(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix poko: <http://edcpokedex.org/pokemon/>
+    select ?poke_name ?poke_art  where {
+         poko:""" + str(pokemon_id) + """ pok:art ?poke_art .  
+         poko:""" + str(pokemon_id) + """ pok:name ?poke_name .
+    }
+    """
+    return execute_select_query(query)
+
+
 def getEvolutionLine(pokemon_id):
     evoLine = []
 
@@ -278,5 +290,6 @@ def get_dbpedia_pokemon_game_list():
 
 if __name__ == '__main__':
     # print(getEvolutionLine(134))
-    print(get_dbpedia_pokemon_desc_and_pic())
-    print(get_dbpedia_pokemon_game_list())
+    #print(get_dbpedia_pokemon_desc_and_pic())
+    #print(get_dbpedia_pokemon_game_list())
+    print(getPokemonPicAndName(1))

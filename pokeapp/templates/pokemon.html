@@ -227,30 +227,44 @@
 <section class="evolutions">
 
     <div class="evalution">
+        {% for value in evolutions.first %}
         <div class="card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt=""></img>
-            <h3>Bulbasaur</h3>
+            <a href="/pokemon/{{ value.id }}">
+                <img src="{{ value.art }}" alt=""></img>
+            </a>
+            <h3>{{ value.name }}</h3>
         </div>
+        {% endfor %}
     </div>
 
     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
 
     <div class="evalution">
+        {% for value in evolutions.second %}
         <div class="card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt=""></img>
-            <h3>Ivysaur</h3>
+            <a href="/pokemon/{{ value.id }}">
+                <img src="{{ value.art }}" alt=""></img>
+            </a>
+            <h3>{{ value.name }}</h3>
         </div>
+        {% endfor %}
     </div>
-  
+
+    {% if evolutions.third  %}
     <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+    {% endif %}
         
     <div class="evalution">
+        {% for value in evolutions.third %}
         <div class="card">
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt=""></img>
-            <h3>Venusaur</h3>
+            <a href="/pokemon/{{ value.id }}">
+                <img src="{{ value.art }}" alt=""></img>
+            </a>
+            <h3>{{ value.name }}</h3>
         </div>
+        {% endfor %}
     </div>
    
 </section>
