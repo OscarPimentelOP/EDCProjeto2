@@ -8,8 +8,17 @@ import re
 # Create your views here.
 
 
-def index(request): 
-    return render(request, 'pokedex.html')
+def index(request):
+    pokemon_list_raw = query.listPokedex()
+    pokemon_list = []
+
+    for elem in pokemon_list_raw['results']['bindings']:
+        pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
+
+    tparams = {
+        'pokemon_list': pokemon_list
+    }
+    return render(request, 'pokedex.html', tparams)
 
 
 def pokemon(request, poke_id):

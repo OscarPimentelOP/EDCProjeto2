@@ -221,12 +221,14 @@ def listPokedex():
     prefix pok: <http://edcpokedex.org/pred/>
 
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-    select ?pokemonobj ?name where { 
+    select ?pokemonobj ?id ?name ?art where { 
         ?pokemonobj pok:pokedex-entry ?number FILTER (xsd:integer(?number)<=721) .
         ?pokemonobj pok:name ?name .
+        ?pokemonobj pok:art ?art .
+        ?pokemonobj pok:pokedex-entry ?id .
     } order by asc(xsd:integer(?number))     
     """
-    return query
+    return execute_select_query(query)
 
 
 def dbpedia_query(query):
