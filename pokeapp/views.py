@@ -8,8 +8,8 @@ import re
 # Create your views here.
 
 
-def index(request):
-    return render(request, 'index.html')
+def index(request): 
+    return render(request, 'pokedex.html')
 
 
 def pokemon(request, poke_id):

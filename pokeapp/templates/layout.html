@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>Layout</title> -->
     {% load static %}
-    <link rel=stylesheet href="{% static 'css/styles.css' %}">
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
     <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
     <script src="{% static 'scripts/jquery-3.4.1.min.js' %}"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="header-nav">
-        <ul class="navebar">
-            <!-- <li><a href="pokedex">POKEDEX</a></li>
-            <li><a href="pokemon">POKEMON</a></li>
-            <li><a href="builder">BUILDER</a></li> -->
-        </ul>
+      <svg id="menu"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"
+        />
+      </svg>
+      <div class="navebar">
+        <a href="/">POKEDEX</a>
+        <a href="/builder">BUILDER</a>
+        <a href="/about">ABOUT</a>
+      </div>
     </header>
 
     <main role="main">
-        <div class="containter body-content">
-            {% block content %} {% endblock %}
-        </div>
-
+      <div class="containter body-content"></div>
+        {% block content %} {% endblock %}
+      </div>
     </main>
 
-</body>
-
+    <script type="text/javascript">
+                
+        $("#menu").click( () => {
+            $(".header-nav").toggleClass("active")
+        });
+    
+    </script>
+  </body>
 </html>

@@ -3,7 +3,6 @@
     /* add color base on type */
 }
 
-
 body {
     all: initial;
     margin: 0;
@@ -13,17 +12,68 @@ body {
     align-items: center;
 }
 
-.poke-nav{
-    margin-left: -10%;
+.header-nav {
     position: fixed;
     top: 0;
-    height: 2.5rem;
+    left: 0;
+    background-color: transparent;
+    z-index: 1000;
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.header-nav svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.header-nav ul {
+    all: inherit;  
+    
+}
+
+.header-nav.active{
+    background-color: white;
+}
+
+.header-nav .navebar{
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s
+}
+
+.header-nav.active .navebar{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-nav .navebar a{
+    text-emphasis: none;
+    font-size: 2em
+}
+
+.poke-nav{
+    /* margin-left: -10%; */
+    position: fixed;
+    top: 0;
+    height: 3.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 110%;
+    width: 90vw;
     overflow: collapse;
-    z-index: 9999;
+    background: white;
+    z-index: 999;
 }
 
 .poke-nav .name {
@@ -69,12 +119,11 @@ body {
 
 .poke-nav .button:before{
     position: absolute;
-    top: -200px;
+    top: 0;
     content: '';
     width: 50px;
-    height: 500px;
+    height: 200px;
     background: #a4a4a4;
-    transform: rotate(-90deg);
     z-index: -1;
     transition: 0.5s;
 }
@@ -82,13 +131,16 @@ body {
 .poke-nav .button#prev:before
 {
     left: 0;
-    border-bottom-left-radius: 100px;
+    border-bottom-left-radius: 1000px;
+    /* transform: translateX(100%); */
+    transform: translate(150%,-25%) rotate(-90deg);
 }
 
 .poke-nav .button#next:before
 {
     right: 0;
     border-top-left-radius: 1000px;
+    transform: translate(-150%,-25%) rotate(-90deg);
 }
 
 .info{
@@ -358,6 +410,45 @@ body {
     align-self: center;
     justify-self: center;
 }
+
+.pokedex{
+    margin: 50px;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.pokedex .card{
+    position: relative;
+    cursor: pointer;
+    background: red;
+}
+
+.pokedex .card .imgbox img{
+    padding: 5% 10%;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.pokedex .card a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.pokedex .card h3{
+    bottom: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
 
 
 
