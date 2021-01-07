@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.template.defaulttags import register
+from django.http import HttpResponse, JsonResponse
 
 import pokeapp.queries as query
 import re
@@ -19,6 +20,16 @@ def index(request):
         'pokemon_list': pokemon_list
     }
     return render(request, 'pokedex.html', tparams)
+
+
+def pokemonapi(request):
+    pokemon_list_raw = query.listPokedex()
+    pokemon_dictionary = {}
+
+    for elem in pokemon_list_raw['results']['bindings']:
+        pokemon_dictionary[elem['id']['value']] = {'name': elem['name']['value'], 'art': elem['art']['value']}
+
+    return JsonResponse(pokemon_dictionary)
 
 
 def pokemon(request, poke_id):

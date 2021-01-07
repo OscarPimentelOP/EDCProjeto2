@@ -230,25 +230,30 @@ def listPokedex():
     """
     return execute_select_query(query)
 
+
 def listPokemonFromType(pokemon_type):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
-    select ?poke where {
+    select ?id ?poke_name ?art where {
         ?pok pok:type ?type .
         ?type pok:name """ + "\"" + str(pokemon_type) + "\"" + """.  
-        ?pok pok:name ?poke .      
+        ?pok pok:pokedex-entry ?id .
+        ?pok pok:name ?poke_name .
+        ?pok pok:art ?art .
     }    
     """
     return execute_select_query(query)
+
 
 def search(word):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
-    select ?pokemonobj where { 
+    select ?number ?name ?art where { 
         ?pokemonobj pok:pokedex-entry ?number FILTER (xsd:integer(?number)<=721) .
         ?pokemonobj pok:name ?name .
+        ?pokemonobj pok:art ?art .
         filter contains(?name,""" + "\"" + str(word) + "\"" + """)
     } order by asc(xsd:integer(?number))     
     
@@ -317,8 +322,8 @@ def get_dbpedia_pokemon_game_list():
 
 if __name__ == '__main__':
     # print(getEvolutionLine(134))
-    #print(get_dbpedia_pokemon_desc_and_pic())
-    #print(get_dbpedia_pokemon_game_list())
-    #print(getPokemonPicAndName(1))
-    #print(listPokemonFromType("Fire"))
+    # print(get_dbpedia_pokemon_desc_and_pic())
+    # print(get_dbpedia_pokemon_game_list())
+    # print(getPokemonPicAndName(1))
+    # print(listPokemonFromType("Fire"))
     print(search("chu"))
