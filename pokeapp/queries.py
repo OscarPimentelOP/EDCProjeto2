@@ -234,13 +234,28 @@ def listPokedex():
 def listPokemonFromType(pokemon_type):
     query = """
     prefix pok: <http://edcpokedex.org/pred/>
-    select ?id ?poke_name ?art where {
+    select ?id ?name ?art where {
         ?pok pok:type ?type .
         ?type pok:name """ + "\"" + str(pokemon_type) + "\"" + """.  
         ?pok pok:pokedex-entry ?id .
-        ?pok pok:name ?poke_name .
+        ?pok pok:name ?name .
         ?pok pok:art ?art .
     }    
+    """
+    return execute_select_query(query)
+
+
+def searchListPokemonFromType(pokemon_type, word):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    select ?id ?name ?art where {
+        ?pok pok:type ?type .
+        ?type pok:name """ + "\"" + str(pokemon_type) + "\"" + """.  
+        ?pok pok:pokedex-entry ?id .
+        ?pok pok:name ?name .
+        ?pok pok:art ?art .
+        filter contains(?name,""" + "\"" + str(word) + "\"" + """)
+    }order by asc(xsd:integer(?id)) 
     """
     return execute_select_query(query)
 
@@ -250,12 +265,12 @@ def search(word):
     prefix pok: <http://edcpokedex.org/pred/>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     
-    select ?number ?name ?art where { 
-        ?pokemonobj pok:pokedex-entry ?number FILTER (xsd:integer(?number)<=721) .
+    select ?id ?name ?art where { 
+        ?pokemonobj pok:pokedex-entry ?id FILTER (xsd:integer(?id)<=721) .
         ?pokemonobj pok:name ?name .
         ?pokemonobj pok:art ?art .
         filter contains(?name,""" + "\"" + str(word) + "\"" + """)
-    } order by asc(xsd:integer(?number))     
+    } order by asc(xsd:integer(?id))     
     
     """
     return execute_select_query(query)
@@ -326,4 +341,4 @@ if __name__ == '__main__':
     # print(get_dbpedia_pokemon_game_list())
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
-    print(search("chu"))
+    print(searchListPokemonFromType("Electric", "chu"))

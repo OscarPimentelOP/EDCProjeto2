@@ -10,14 +10,30 @@ import re
 
 
 def index(request):
-    pokemon_list_raw = query.listPokedex()
+    poke_type = request.GET.get('type', '')
+    search = request.GET.get('search', '')
+    print(poke_type)
+    print(search)
+
+    if poke_type and search:
+        pokemon_list_raw = query.searchListPokemonFromType(poke_type, search)
+    elif poke_type:
+        pokemon_list_raw = query.listPokemonFromType(poke_type)
+    elif search:
+        pokemon_list_raw = query.search(search)
+    else:
+        pokemon_list_raw = query.listPokedex()
+
     pokemon_list = []
 
     for elem in pokemon_list_raw['results']['bindings']:
         pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
 
     tparams = {
-        'pokemon_list': pokemon_list
+        'pokemon_list': pokemon_list,
+        'types': ['Normal', 'Fire', 'Fighting', 'Water', 'Flying', 'Grass',
+                  'Poison', 'Electric', 'Ground', 'Psychic', 'Rock', 'Ice',
+                  'Bug', 'Dragon', 'Ghost', 'Dark', 'Steel', 'Fairy']
     }
     return render(request, 'pokedex.html', tparams)
 

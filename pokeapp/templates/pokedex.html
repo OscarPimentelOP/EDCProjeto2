@@ -5,6 +5,13 @@
 
 <body>
 
+    <select class="drop" name="forma" onchange="location = this.value;">
+        <option value="/">ALL</option>
+        {% for type in types %}
+        <option value="/?type={{ type }}">{{ type }}</option>
+        {% endfor %}
+    </select>
+
     <section class="pokedex">
 
         {% for pokemon in pokemon_list %}
