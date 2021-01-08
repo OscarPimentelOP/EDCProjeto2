@@ -185,35 +185,44 @@ def getPokemonPicAndName(pokemon_id):
 
 
 def getEvolutionLine(pokemon_id):
-    evoLine = []
+    evoLine = {
+        "firstStage" : [],
+        "secondStage": [],
+        "thirdStage" : []
+    }
 
     pre_evo_raw = getPreEvo(pokemon_id)
-    pre_evo_list = list()
-    for elem in pre_evo_raw['results']['bindings']:
-        pre_evo_list.append(int(elem['preEvoNumber']['value']))
-        evoLine.append(int(elem['preEvoNumber']['value']))
+    pre_evo = [(int(elem['preEvoNumber']['value'])) for elem in pre_evo_raw['results']['bindings']]
 
     evo_raw = getEvo(pokemon_id)
-    evo_list = list()
-    for elem in evo_raw['results']['bindings']:
-        evo_list.append(int(elem['evoNumber']['value']))
-        evoLine.append(int(elem['evoNumber']['value']))
+    evo = [int(elem['evoNumber']['value']) for elem in evo_raw['results']['bindings']]
 
-    for poke in pre_evo_list:
+    pre_list = [pre_evo, []]
+    for poke in pre_evo:
         pre_pre_evo_raw = getPreEvo(poke)
-        for elem in pre_pre_evo_raw['results']['bindings']:
-            evoLine.append(int(elem['preEvoNumber']['value']))
+        pre_list[1] = ([(int(elem['preEvoNumber']['value'])) for elem in pre_pre_evo_raw['results']['bindings']])
 
-    for poke in evo_list:
-        second_evo_raw = getEvo(poke)
-        for elem in second_evo_raw['results']['bindings']:
-            evoLine.append(int(elem['evoNumber']['value']))
+    evo_list = [evo, []]
+    for poke in evo:
+       second_evo_raw = getEvo(poke)
+       evo_list[1] = ([(int(elem['evoNumber']['value'])) for elem in second_evo_raw['results']['bindings']])
 
-    actual_pokemon_raw = getPokemonNumber(pokemon_id)
-    for elem in actual_pokemon_raw['results']['bindings']:
-        evoLine.append(int(elem['poke']['value']))
+    actual_pokemon = [pokemon_id]
 
-    return sorted(evoLine)
+    if len(evo_list[1]) > 0:
+        evoLine["firstStage"] = actual_pokemon
+        evoLine["secondStage"] = evo_list[0]
+        evoLine["thirdStage"] = evo_list[1]
+    elif len(pre_list[1]) > 0:
+        evoLine["firstStage"] = pre_list[1]
+        evoLine["secondStage"] = pre_list[0]
+        evoLine["thirdStage"] = actual_pokemon
+    else:
+        evoLine["firstStage"] = pre_list[0]
+        evoLine["secondStage"] = actual_pokemon
+        evoLine["thirdStage"] = evo_list[0]
+
+    return evoLine
 
 
 def listPokedex():
@@ -336,9 +345,9 @@ def get_dbpedia_pokemon_game_list():
 
 
 if __name__ == '__main__':
-    # print(getEvolutionLine(134))
+     print(getEvolutionLine(2))
     # print(get_dbpedia_pokemon_desc_and_pic())
     # print(get_dbpedia_pokemon_game_list())
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
-    print(searchListPokemonFromType("Electric", "chu"))
+    #print(searchListPokemonFromType("Electric", "chu"))
