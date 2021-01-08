@@ -12,8 +12,6 @@ import re
 def index(request):
     poke_type = request.GET.get('type', '')
     search = request.GET.get('search', '')
-    print(poke_type)
-    print(search)
 
     if poke_type and search:
         pokemon_list_raw = query.searchListPokemonFromType(poke_type, search)
@@ -86,23 +84,17 @@ def pokemon(request, poke_id):
     for elem in pokemon_strengths_raw['results']['bindings']:
         pokemon_strengths_list.append(elem['strong']['value'])
 
-    if poke_id != 133:
-        first_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[0])
-        if len(pokemon_evolutions_raw) > 1:
-            second_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[1])
-            pokemon_evolutions_dict['second'].append(second_evo)
-        if len(pokemon_evolutions_raw) > 2:
-            third_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[2])
-            pokemon_evolutions_dict['third'].append(third_evo)
+    for pokemon_id in pokemon_evolutions_raw['firstStage']:
+        evo = _get_pokemon_name_and_image(pokemon_id)
+        pokemon_evolutions_dict['first'].append(evo)
 
-        pokemon_evolutions_dict['first'].append(first_evo)
-    else:
-        first_evo = _get_pokemon_name_and_image(pokemon_evolutions_raw[0])
-        pokemon_evolutions_dict['first'].append(first_evo)
+    for pokemon_id in pokemon_evolutions_raw['secondStage']:
+        evo = _get_pokemon_name_and_image(pokemon_id)
+        pokemon_evolutions_dict['second'].append(evo)
 
-        for poke in pokemon_evolutions_raw[1:]:
-            second_evo = _get_pokemon_name_and_image(poke)
-            pokemon_evolutions_dict['second'].append(second_evo)
+    for pokemon_id in pokemon_evolutions_raw['thirdStage']:
+        evo = _get_pokemon_name_and_image(pokemon_id)
+        pokemon_evolutions_dict['third'].append(evo)
 
     tparams = {'general_info': pokemon_general_info_dict,
                'category': pokemon_category,
