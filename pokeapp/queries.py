@@ -217,6 +217,18 @@ def getEvolutionLine(pokemon_id):
         evoLine["firstStage"] = pre_list[1]
         evoLine["secondStage"] = pre_list[0]
         evoLine["thirdStage"] = actual_pokemon
+    elif (len(pre_list[0]) == 0) and (len(evo_list[0]) == 1):
+        evoLine["firstStage"] = actual_pokemon
+        evoLine["secondStage"] = evo_list[0]
+        evoLine["thirdStage"] = []
+    elif (len(pre_list[0]) == 1) and (len(evo_list[0]) == 0):
+        evoLine["firstStage"] = pre_list[0]
+        evoLine["secondStage"] = actual_pokemon
+        evoLine["thirdStage"] = []
+    elif (len(pre_list[0]) == 0) and (len(evo_list[0]) == 0):
+        evoLine["firstStage"] = actual_pokemon
+        evoLine["secondStage"] = []
+        evoLine["thirdStage"] = []
     else:
         evoLine["firstStage"] = pre_list[0]
         evoLine["secondStage"] = actual_pokemon
@@ -345,7 +357,7 @@ def get_dbpedia_pokemon_game_list():
 
 
 if __name__ == '__main__':
-     print(getEvolutionLine(2))
+     print(getEvolutionLine(493))
     # print(get_dbpedia_pokemon_desc_and_pic())
     # print(get_dbpedia_pokemon_game_list())
     # print(getPokemonPicAndName(1))
