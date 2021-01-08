@@ -217,11 +217,11 @@ def getEvolutionLine(pokemon_id):
         evoLine["firstStage"] = pre_list[1]
         evoLine["secondStage"] = pre_list[0]
         evoLine["thirdStage"] = actual_pokemon
-    elif (len(pre_list[0]) == 0) and (len(evo_list[0]) != 0):
+    elif (len(pre_list[0]) == 0) and (len(evo_list[0]) >= 1):
         evoLine["firstStage"] = actual_pokemon
         evoLine["secondStage"] = evo_list[0]
         evoLine["thirdStage"] = []
-    elif (len(pre_list[0]) == 1) and (len(evo_list[0]) == 0):
+    elif (len(pre_list[0]) > 1) and (len(evo_list[0]) == 0):
         evoLine["firstStage"] = pre_list[0]
         evoLine["secondStage"] = actual_pokemon
         evoLine["thirdStage"] = []
