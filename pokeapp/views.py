@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.template.defaulttags import register
 from django.http import HttpResponse, JsonResponse
+from django.core.paginator import Paginator
 
 import pokeapp.queries as query
 import re
@@ -12,6 +13,7 @@ import re
 def index(request):
     poke_type = request.GET.get('type', '')
     search = request.GET.get('search', '')
+    page_num = request.GET.get('page', 1)
 
     if poke_type and search:
         pokemon_list_raw = query.searchListPokemonFromType(poke_type, search)
@@ -27,8 +29,11 @@ def index(request):
     for elem in pokemon_list_raw['results']['bindings']:
         pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
 
+    pokemon_paginator = Paginator(pokemon_list, 20)
+    print(pokemon_paginator.num_pages)
+
     tparams = {
-        'pokemon_list': pokemon_list,
+        'pokemon_list': pokemon_paginator.page(page_num),
         'types': ['Normal', 'Fire', 'Fighting', 'Water', 'Flying', 'Grass',
                   'Poison', 'Electric', 'Ground', 'Psychic', 'Rock', 'Ice',
                   'Bug', 'Dragon', 'Ghost', 'Dark', 'Steel', 'Fairy']

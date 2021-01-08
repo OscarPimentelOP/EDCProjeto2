@@ -14,7 +14,7 @@
 
     <section class="pokedex">
 
-        {% for pokemon in pokemon_list %}
+        {% for pokemon in pokemon_list.object_list %}
         <div class="card">
             <div class="imgbox">
                 <img src="{{ pokemon.2 }}" alt=""></img>
@@ -26,6 +26,42 @@
 
 
     </section>
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if 'type' in request.GET %}
+                {% if pokemon_list.has_previous %}
+                    <a href="?type={{ request.GET.type }}&page=1">&laquo; first</a>
+                    <a href="?type={{ request.GET.type }}&page={{ pokemon_list.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
+                </span>
+
+                {% if pokemon_list.has_next %}
+                    <a href="?type={{ request.GET.type }}&page={{ pokemon_list.next_page_number }}">next</a>
+                    <a href="?type={{ request.GET.type }}&page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            {% else %}
+                {% if pokemon_list.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ pokemon_list.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
+                </span>
+
+                {% if pokemon_list.has_next %}
+                    <a href="?page={{ pokemon_list.next_page_number }}">next</a>
+                    <a href="?page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            {% endif %}
+
+
+        </span>
+    </div>
 
 
 </body>
