@@ -328,22 +328,22 @@ def getTypesPred(pokemon_id):
 
 def checkTeamExists(teamName):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/>
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix pred: <http://edcpokedex.org/pred/>
+    prefix team: <http://edcpokedex.org/team/>
 
     ask {
-        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+        team:""" + str(teamName) + """  pred:name """ + "\"" + str(teamName) + "\"" + """.   
     }
     """
     return execute_select_query(query)
 
 def insertTeam(teamName):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/>
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix pred: <http://edcpokedex.org/pred/>
+    prefix team: <http://edcpokedex.org/team/>
 
     insert data {
-        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+        team:""" + str(teamName) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
     }
     """
     payload_query = {"update": query}
@@ -353,11 +353,11 @@ def insertTeam(teamName):
 
 def deleteTeam(teamName):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/>
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix pred: <http://edcpokedex.org/pred/>
+    prefix team: <http://edcpokedex.org/team/>
 
     delete data {
-        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+        team:""" + str(teamName) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
     }
     """
     payload_query = {"update": query}
@@ -375,14 +375,12 @@ def createNewTeam(teamName):
 
 def insertPokeInTeam(pokemon_id, teamName):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pred: <http://edcpokedex.org/pred/>
     prefix pok3: <http://edcpokedex.org/pokemon/> 
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix team: <http://edcpokedex.org/team/>
 
-    insert {
-        pok:team pok2:pokemon """ + "" + str(pokemon_id) + "" + """.  
-    } WHERE { 
-       pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.  
+    insert data {
+        team:""" + str(teamName) + """ pred:member pok3:""" + str(pokemon_id) + """ .
     }
     """
     payload_query = {"update": query}
@@ -392,30 +390,30 @@ def insertPokeInTeam(pokemon_id, teamName):
 
 def deletePokemonFromTeam(pokemon_id, teamName):
     query = """
-    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pred: <http://edcpokedex.org/pred/>
     prefix pok3: <http://edcpokedex.org/pokemon/> 
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix team: <http://edcpokedex.org/team/>
     
-    delete {
-        pok:team pok2:pokemon """ + "" + str(pokemon_id) + "" + """.  
-    } WHERE { 
-       pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.  
-    }    
+    delete data {
+        team:""" + str(teamName) + """ pred:member pok3:""" + str(pokemon_id) + """ .
+    }   
     """
     payload_query = {"update": query}
     res = accessor.sparql_update(body=payload_query,
                                  repo_name=repo_name)
     return res
 
-def listTeamsAndPokemon():
+def listTeamsAndPokemon(teamName):
     query = """    
-    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pred: <http://edcpokedex.org/pred/>
     prefix pok3: <http://edcpokedex.org/pokemon/> 
-    prefix pok2: <http://edcpokedex.org/pred/team/>
+    prefix team: <http://edcpokedex.org/team/>
     
-    select ?name ?pokemon where { 
-        ?team pok2:name ?name .
-        ?team pok2:pokemon ?pokemon .        
+    select ?id ?name ?art where{    
+        team:""" + str(teamName) + """ pred:member ?pokemon .   
+        ?pokemon pred:name ?name .   
+        ?pokemon pred:pokedex-entry ?id .
+        ?pokemon pred:art ?art . 
     }
     """
     return execute_select_query(query)
@@ -487,9 +485,9 @@ if __name__ == '__main__':
     # print(listPokemonFromType("Fire"))
     #print(searchListPokemonFromType("Electric", "chu"))
     # print(getChart("pok2:rock"))
-    # print(createNewTeam("Team4"))
-    #print(checkTeamExists("Team4"))
-    #deleteTeam("Team4")
-    #insertPokeInTeam("pok3:16", "Team4")   !!!Insert/Remove pokemon is acting on all teams!!!
-    print(listTeamsAndPokemon())
+    #print(createNewTeam("TestPython"))
+    #print(checkTeamExists("TestPython"))
+    #deleteTeam("TestPython")
+    #insertPokeInTeam("18", "TestPython")
+    print(listTeamsAndPokemon("TestPython"))
 
