@@ -296,6 +296,129 @@ def search(word):
     """
     return execute_select_query(query)
 
+def getMatchups(type):
+    query = """
+    prefix pok2: <http://edcpokedex.org/type/>
+    select ?type ?val where {           
+        ?type """ + "" + str(type) + "" + """ ?val  .     
+    } 
+    """
+    return execute_select_query(query)
+
+def getChart(type):
+    matchups = getMatchups(type)
+    chart = ([(int(elem['val']['value'])) for elem in matchups['results']['bindings']])
+    a = [x if x != 200 else "2x" for x in chart]
+    a = [x if x != 100 else "1x" for x in a]
+    a = [x if x != 50 else "1/2" for x in a]
+    a = [x if x != 0 else "Immune" for x in a]
+
+    return a
+
+def getTypesPred(pokemon_id):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    select ?typename where { 
+        ?pokemon pok:pokedex-entry """ + "\"" + str(pokemon_id) + "\"" + """.   
+        ?pokemon pok:type ?typename .
+    }  
+    """
+    return execute_select_query(query)
+
+
+def checkTeamExists(teamName):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+
+    ask {
+        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+    }
+    """
+    return execute_select_query(query)
+
+def insertTeam(teamName):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+
+    insert data {
+        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+    }
+    """
+    payload_query = {"update": query}
+    res = accessor.sparql_update(body=payload_query,
+                                 repo_name=repo_name)
+    return res
+
+def deleteTeam(teamName):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+
+    delete data {
+        pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.   
+    }
+    """
+    payload_query = {"update": query}
+    res = accessor.sparql_update(body=payload_query,
+                                 repo_name=repo_name)
+    return res
+
+def createNewTeam(teamName):
+    teamExists = checkTeamExists(teamName)['boolean']
+
+    if(teamExists):
+        print("A team with that name already exists")
+    else:
+        insertTeam(teamName)
+
+def insertPokeInTeam(pokemon_id, teamName):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok3: <http://edcpokedex.org/pokemon/> 
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+
+    insert {
+        pok:team pok2:pokemon """ + "" + str(pokemon_id) + "" + """.  
+    } WHERE { 
+       pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.  
+    }
+    """
+    payload_query = {"update": query}
+    res = accessor.sparql_update(body=payload_query,
+                                 repo_name=repo_name)
+    return res
+
+def deletePokemonFromTeam(pokemon_id, teamName):
+    query = """
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok3: <http://edcpokedex.org/pokemon/> 
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+    
+    delete {
+        pok:team pok2:pokemon """ + "" + str(pokemon_id) + "" + """.  
+    } WHERE { 
+       pok:team pok2:name """ + "\"" + str(teamName) + "\"" + """.  
+    }    
+    """
+    payload_query = {"update": query}
+    res = accessor.sparql_update(body=payload_query,
+                                 repo_name=repo_name)
+    return res
+
+def listTeamsAndPokemon():
+    query = """    
+    prefix pok: <http://edcpokedex.org/pred/>
+    prefix pok3: <http://edcpokedex.org/pokemon/> 
+    prefix pok2: <http://edcpokedex.org/pred/team/>
+    
+    select ?name ?pokemon where { 
+        ?team pok2:name ?name .
+        ?team pok2:pokemon ?pokemon .        
+    }
+    """
+    return execute_select_query(query)
 
 def dbpedia_query(query):
     dbpedia_wrapper.setQuery(query)
@@ -357,9 +480,16 @@ def get_dbpedia_pokemon_game_list():
 
 
 if __name__ == '__main__':
-     print(getEvolutionLine(60))
+    # print(getEvolutionLine(493))
     # print(get_dbpedia_pokemon_desc_and_pic())
     # print(get_dbpedia_pokemon_game_list())
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
     #print(searchListPokemonFromType("Electric", "chu"))
+    # print(getChart("pok2:rock"))
+    # print(createNewTeam("Team4"))
+    #print(checkTeamExists("Team4"))
+    #deleteTeam("Team4")
+    #insertPokeInTeam("pok3:16", "Team4")   !!!Insert/Remove pokemon is acting on all teams!!!
+    print(listTeamsAndPokemon())
+
