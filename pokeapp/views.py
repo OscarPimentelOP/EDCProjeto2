@@ -62,7 +62,7 @@ def get_details(request):
                 pokemon_types = []
 
                 for pok_type in types['results']['bindings']:
-                    pokemon_types.append(pok_type)
+                    pokemon_types.append(pok_type['typename']['value'])
 
                 ret_dict[pokemon_id] = query.getChart(pokemon_types[0])
 

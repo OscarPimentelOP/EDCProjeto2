@@ -300,13 +300,13 @@ def getMatchups(type):
     query = """
     prefix pok2: <http://edcpokedex.org/type/>
     select ?type ?val where {           
-        ?type """ + "" + str(type) + "" + """ ?val  .     
+        ?type """ + "pok2:" + str(type) + "" + """ ?val  .     
     } 
     """
     return execute_select_query(query)
 
 def getChart(type):
-    matchups = getMatchups(type)
+    matchups = getMatchups(type.lower())
     chart = ([(int(elem['val']['value'])) for elem in matchups['results']['bindings']])
     a = [x if x != 200 else "2x" for x in chart]
     a = [x if x != 100 else "1x" for x in a]
@@ -484,10 +484,11 @@ if __name__ == '__main__':
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
     #print(searchListPokemonFromType("Electric", "chu"))
-    # print(getChart("pok2:rock"))
+    print(getChart("Rock"))
     #print(createNewTeam("TestPython"))
     #print(checkTeamExists("TestPython"))
     #deleteTeam("TestPython")
     #insertPokeInTeam("18", "TestPython")
-    print(listTeamsAndPokemon("TestPython"))
+    #print(listTeamsAndPokemon("TestPython"))
+    #print(getPokemonType(1))
 
