@@ -3,8 +3,10 @@ from django.template.defaulttags import register
 from django.http import HttpResponse, JsonResponse
 from django.core.paginator import Paginator
 
+
 import pokeapp.queries as query
 import re
+import json
 
 
 # Create your views here.
@@ -55,9 +57,12 @@ def get_details(request):
     if request.method == "GET":
         ret_dict = {}
 
+       
         if 'team-pokemons' in request.GET.keys():
 
-            for pokemon_id in request.GET['team-pokemons']:
+            id_list = request.GET['team-pokemons'].strip('][').split(',')
+
+            for pokemon_id in id_list:
                 types = query.getPokemonType(pokemon_id)
                 pokemon_types = []
 
@@ -66,7 +71,7 @@ def get_details(request):
 
                 ret_dict[pokemon_id] = query.getChart(pokemon_types[0])
 
-                return JsonResponse(ret_dict)
+            return JsonResponse(ret_dict)
 
         else:
             return JsonResponse({"status": False})
