@@ -3,7 +3,6 @@ from django.template.defaulttags import register
 from django.http import HttpResponse, JsonResponse
 from django.core.paginator import Paginator
 
-
 import pokeapp.queries as query
 import re
 import json
@@ -57,7 +56,6 @@ def get_details(request):
     if request.method == "GET":
         ret_dict = {}
 
-       
         if 'team-pokemons' in request.GET.keys():
 
             id_list = request.GET['team-pokemons'].strip('][').split(',')
@@ -167,7 +165,8 @@ def create_team(request):
         if 'name' in request.POST and 'team-pokemons' in request.POST:
             is_created = query.createNewTeam(request.POST.get('name'))
             if is_created:
-                for pokemon_id in request.POST.get('team-pokemons'):
+                id_list = request.GET['team-pokemons'].strip('][').split(',')
+                for pokemon_id in id_list:
                     query.insertPokeInTeam(pokemon_id, request.POST.get('name'))
 
     return redirect('/teams')
@@ -176,7 +175,8 @@ def create_team(request):
 def delete_team(request):
     if request.method == "POST":
         if 'name' in request.POST:
-            query.deleteTeam(request.POST.get('name'))
+            if query.checkTeamExists()['boolean']:
+                query.deleteTeam(request.POST.get('name'))
 
     return redirect('/teams')
 
