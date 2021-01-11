@@ -362,7 +362,7 @@ def deleteTeam(teamName):
     prefix team: <http://edcpokedex.org/team/>
 
     delete data {
-        team:""" + str(teamName) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
+        team:""" + str(teamName.lower().replace(' ', '_')) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
     }
     """
     payload_query = {"update": query}
@@ -387,7 +387,7 @@ def insertPokeInTeam(pokemon_id, teamName):
     prefix team: <http://edcpokedex.org/team/>
 
     insert data {
-        team:""" + str(teamName) + """ pred:member pok3:""" + str(pokemon_id) + """ .
+        team:""" + str(teamName.lower().replace(' ', '_')) + """ pred:member pok3:""" + str(pokemon_id) + """ .
     }
     """
     payload_query = {"update": query}
@@ -403,7 +403,7 @@ def deletePokemonFromTeam(pokemon_id, teamName):
     prefix team: <http://edcpokedex.org/team/>
     
     delete data {
-        team:""" + str(teamName) + """ pred:member pok3:""" + str(pokemon_id) + """ .
+        team:""" + str(teamName.lower().replace(' ', '_')) + """ pred:member pok3:""" + str(pokemon_id) + """ .
     }   
     """
     payload_query = {"update": query}
@@ -419,7 +419,7 @@ def listTeamsAndPokemon(teamName):
     prefix team: <http://edcpokedex.org/team/>
     
     select ?id ?name ?art where{    
-        team:""" + str(teamName) + """ pred:member ?pokemon .   
+        team:""" + str(teamName.lower().replace(' ', '_')) + """ pred:member ?pokemon .   
         ?pokemon pred:name ?name .   
         ?pokemon pred:pokedex-entry ?id .
         ?pokemon pred:art ?art . 
