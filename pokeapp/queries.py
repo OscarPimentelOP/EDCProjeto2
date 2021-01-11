@@ -186,9 +186,9 @@ def getPokemonPicAndName(pokemon_id):
 
 def getEvolutionLine(pokemon_id):
     evoLine = {
-        "firstStage" : [],
+        "firstStage": [],
         "secondStage": [],
-        "thirdStage" : []
+        "thirdStage": []
     }
 
     pre_evo_raw = getPreEvo(pokemon_id)
@@ -204,8 +204,8 @@ def getEvolutionLine(pokemon_id):
 
     evo_list = [evo, []]
     for poke in evo:
-       second_evo_raw = getEvo(poke)
-       evo_list[1] = ([(int(elem['evoNumber']['value'])) for elem in second_evo_raw['results']['bindings']])
+        second_evo_raw = getEvo(poke)
+        evo_list[1] = ([(int(elem['evoNumber']['value'])) for elem in second_evo_raw['results']['bindings']])
 
     actual_pokemon = [pokemon_id]
 
@@ -296,6 +296,7 @@ def search(word):
     """
     return execute_select_query(query)
 
+
 def getMatchups(type):
     query = """
     prefix pok2: <http://edcpokedex.org/type/>
@@ -304,6 +305,7 @@ def getMatchups(type):
     } 
     """
     return execute_select_query(query)
+
 
 def getChart(type):
     matchups = getMatchups(type.lower())
@@ -314,6 +316,7 @@ def getChart(type):
     a = [x if x != 0 else "Immune" for x in a]
 
     return a
+
 
 def getTypesPred(pokemon_id):
     query = """
@@ -337,19 +340,21 @@ def checkTeamExists(teamName):
     """
     return execute_select_query(query)
 
+
 def insertTeam(teamName):
     query = """
     prefix pred: <http://edcpokedex.org/pred/>
     prefix team: <http://edcpokedex.org/team/>
 
     insert data {
-        team:""" + str(teamName) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
+        team:""" + str(teamName.lower().replace(' ', '_')) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
     }
     """
     payload_query = {"update": query}
     res = accessor.sparql_update(body=payload_query,
                                  repo_name=repo_name)
     return res
+
 
 def deleteTeam(teamName):
     query = """
@@ -365,13 +370,15 @@ def deleteTeam(teamName):
                                  repo_name=repo_name)
     return res
 
+
 def createNewTeam(teamName):
     teamExists = checkTeamExists(teamName)['boolean']
 
-    if(teamExists):
+    if (teamExists):
         print("A team with that name already exists")
     else:
         insertTeam(teamName)
+
 
 def insertPokeInTeam(pokemon_id, teamName):
     query = """
@@ -388,6 +395,7 @@ def insertPokeInTeam(pokemon_id, teamName):
                                  repo_name=repo_name)
     return res
 
+
 def deletePokemonFromTeam(pokemon_id, teamName):
     query = """
     prefix pred: <http://edcpokedex.org/pred/>
@@ -403,6 +411,7 @@ def deletePokemonFromTeam(pokemon_id, teamName):
                                  repo_name=repo_name)
     return res
 
+
 def listTeamsAndPokemon(teamName):
     query = """    
     prefix pred: <http://edcpokedex.org/pred/>
@@ -417,6 +426,7 @@ def listTeamsAndPokemon(teamName):
     }
     """
     return execute_select_query(query)
+
 
 def dbpedia_query(query):
     dbpedia_wrapper.setQuery(query)
@@ -483,12 +493,11 @@ if __name__ == '__main__':
     # print(get_dbpedia_pokemon_game_list())
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
-    #print(searchListPokemonFromType("Electric", "chu"))
+    # print(searchListPokemonFromType("Electric", "chu"))
     print(getChart("Rock"))
-    #print(createNewTeam("TestPython"))
-    #print(checkTeamExists("TestPython"))
-    #deleteTeam("TestPython")
-    #insertPokeInTeam("18", "TestPython")
-    #print(listTeamsAndPokemon("TestPython"))
-    #print(getPokemonType(1))
-
+    # print(createNewTeam("TestPython"))
+    # print(checkTeamExists("TestPython"))
+    # deleteTeam("TestPython")
+    # insertPokeInTeam("18", "TestPython")
+    # print(listTeamsAndPokemon("TestPython"))
+    # print(getPokemonType(1))
