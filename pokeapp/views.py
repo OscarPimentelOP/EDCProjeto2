@@ -51,6 +51,27 @@ def pokemonapi(request):
     return JsonResponse(pokemon_dictionary)
 
 
+def get_details(request):
+    if request.method == "GET":
+        ret_dict = {}
+
+        if 'team-pokemons' in request.GET.keys():
+
+            for pokemon_id in request.GET['team-pokemons']:
+                types = query.getPokemonType(pokemon_id)
+                pokemon_types = []
+
+                for pok_type in types['results']['bindings']:
+                    pokemon_types.append(pok_type)
+
+                ret_dict[pokemon_id] = query.getChart(pokemon_types[0])
+
+                return JsonResponse(ret_dict)
+
+        else:
+            return JsonResponse({"status": False})
+
+
 def pokemon(request, poke_id):
     pokemon_general_info_raw = query.pokeGlobalInfo(poke_id)
     pokemon_general_info_dict = {}
@@ -131,6 +152,7 @@ def about(request):
 
     return render(request, 'about.html', tparams)
 
+
 def builder(request):
     pokemon_list_raw = query.listPokedex()
 
@@ -148,17 +170,16 @@ def builder(request):
 
     }
 
-    if(request.POST):
+    if (request.POST):
         # do something
 
-        team = request.post.get('pokemons') 
+        team = request.post.get('pokemons')
 
         print(team)
 
         tparams['pokemon_team'] = team
-    
-    return render(request, 'team_builder.html', tparams)
 
+    return render(request, 'team_builder.html', tparams)
 
 
 def _get_last_word_from_url(url_string):
