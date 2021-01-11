@@ -24,4 +24,5 @@ urlpatterns = [
     path('pokemon/<int:poke_id>', views.pokemon),
     path('about', views.about),
     path('about/', views.about),
+    path('builder/', views.builder),
 ]

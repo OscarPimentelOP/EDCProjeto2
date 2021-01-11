@@ -13,7 +13,7 @@ repo_name = "edc-pokemon"
 client = ApiClient(endpoint=endpoint)
 accessor = GraphDBApi(client)
 
-dbpedia_wrapper = SPARQLWrapper("http://dbpedia.org/sparql")
+dbpedia_wrapper = SPARQLWrapper("http://live.dbpedia.org/sparql")
 
 
 def execute_select_query(query):

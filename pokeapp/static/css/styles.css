@@ -3,6 +3,8 @@
     /* add color base on type */
 }
 
+
+
 body {
     all: initial;
     margin: 0;
@@ -377,7 +379,7 @@ body {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns:repeat(auto-fit(minmax(50px,auto))) ;
-    gap: 20px;
+    gap: 40px;
     grid-auto-rows: 1fr;
     align-items: center;
 }
@@ -413,13 +415,26 @@ body {
 
 /*********************POKEDEX*******************************/
 
+
+.search{
+    position: absolute;
+    top: 2rem;
+    right: 200px;
+}
+
+.drop{
+    position: absolute;
+    top: 2rem;
+    right: 100px;
+}
+
 .pokedex{
     margin: 75px;
     padding: 0 50px;
     max-width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    grid-auto-rows: 1fr;
     column-gap: 50px;
     row-gap: 50px;
 }
@@ -428,6 +443,10 @@ body {
     position: relative;
     cursor: pointer;
     background: red;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    align-items: center;
 }
 
 .pokedex .card .imgbox img{
@@ -445,11 +464,180 @@ body {
 }
 
 .pokedex .card h3{
+    position: absolute;
     bottom: 0;
     font-size: 2em;
     text-align: center;
 }
 
+
+/******************* BUILDER *******************************/
+
+.team_builder{
+    max-width: 100vw;
+    max-height: 100vh;
+    margin-top: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    width: 70vw;
+    height: 90vh;
+}
+
+.team .pok_list{
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-evenly;
+    max-width: 90%;
+    max-height: 30vh;
+    background: #494949;
+}
+
+.pok_list .card{
+    position: relative;
+    cursor: pointer;
+    height: 120px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+.card .imgbox{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .imgbox img{
+    padding: 10px;
+    height: 100%;
+    background: white;
+}
+
+.card a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card h3{
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.team_builder .actions{
+    width: 20vw;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.team .pokemons {
+    padding: 20px;
+    width: 90%;
+    background: pink;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,200px);
+    gap: 20px;
+}
+
+.team .pokemons .card{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content:center;
+    cursor:initial ;
+}
+
+.table-section{
+    margin-top: 50px;
+    max-width: 100vw;
+    visibility: hidden;
+    display: none;
+}
+
+.table-pokemon{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.table-pokemon .img-holder{
+    height: 40px;
+}
+
+.table-pokemon img{
+    height: 100%;
+}
+
+.table-pokemon p{
+    bottom:0;
+}
+
+tr{
+    text-align: center;
+}
+
+/************************************* ABOUT ******************************************/
+
+.about{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description{
+    padding: 50px;
+    position: relative;
+}
+
+.description:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: var(--cover);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.description p{
+    font-size: 30px;
+}
+
+.game-table{
+    width: 100%;
+    padding: 0 50px;
+    font-size: 1.2em;
+}
 
 
 

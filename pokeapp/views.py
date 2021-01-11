@@ -131,6 +131,35 @@ def about(request):
 
     return render(request, 'about.html', tparams)
 
+def builder(request):
+    pokemon_list_raw = query.listPokedex()
+
+    page = request.GET.get('page', 1)
+
+    pokemon_list = []
+
+    for elem in pokemon_list_raw['results']['bindings']:
+        pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
+
+    pokemon_paginator = Paginator(pokemon_list, 42)
+
+    tparams = {
+        'pokemon_list': pokemon_paginator.page(page),
+
+    }
+
+    if(request.POST):
+        # do something
+
+        team = request.post.get('pokemons') 
+
+        print(team)
+
+        tparams['pokemon_team'] = team
+    
+    return render(request, 'team_builder.html', tparams)
+
+
 
 def _get_last_word_from_url(url_string):
     pattern = re.compile(r"\/([^\/]+)[\/]?$")

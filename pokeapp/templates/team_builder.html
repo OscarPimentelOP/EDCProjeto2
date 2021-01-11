@@ -1,0 +1,234 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block content %}
+
+
+<body>
+
+<section class="team_builder">
+
+    <div class="team">
+        <div class="pokemons">
+            
+        </div>
+        <div class="pok_list">
+            {% for pokemon in pokemon_list %}
+                <div class="card" data-id="{{pokemon.0}}">
+                    <div class="imgbox">
+                        <img src="{{ pokemon.2 }}" alt=""></img>
+                    </div>
+                    <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
+                </div>
+            {% endfor %}
+
+        </div>
+
+        {% if pokemon_list.has_next %}
+            <a class="infinite-more-link" href="?page={{ pokemon_list.next_page_number }}">More</a>
+        {% endif %}
+
+        
+    </div>
+
+    <div class="actions">
+        <div class="name_box">
+            <input type="text" name="" id="">
+            <button id="save">SAVE</button>
+        </div>
+        <button id="details">Details</button>
+        <button id="delete">Delete</button>
+    </div>
+</section>
+
+
+<section class="table-section">
+
+    <table class="table table-striped">
+        <thead>
+                <th scope= "col"> Types </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+                <th scope="col">
+                    <div class="table-pokemon">
+                        <div class="img-holder">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="">
+                        </div>
+                        <p>bulbassaur</p>
+                    </div>
+                </th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">grass</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">poison</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">bug</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">electric</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">psychic</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">ground</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">fighting</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">normal</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">rock</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">water</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">flying</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">fairy</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+               <th scope="row">ice</th>
+               <td>1</td>
+               <td>1</td>
+               <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">fire</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">dragon</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">dark</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">ghost</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th scope="row">steal</th>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+       
+    </table>
+
+</section>
+
+
+<script type="text/javascript">
+    var total = 0;
+    const list = [];
+
+    $(".card").each((key, card) => {
+        $(card).click(() => {
+            if (total < 6 )
+            {
+                $(card).clone().appendTo($(".pokemons"))
+                const id = $(card).data('id')
+                list.push(id)
+                total++;       
+            }
+        })
+    })
+</script>
+
+
+
+</body>
+{% endblock %}
