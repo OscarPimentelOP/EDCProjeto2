@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template.defaulttags import register
 from django.http import HttpResponse, JsonResponse
 from django.core.paginator import Paginator
@@ -151,6 +151,29 @@ def about(request):
                'pk_games': pokemon_game_info_dict}
 
     return render(request, 'about.html', tparams)
+
+
+def teams(request):
+    return render(request)
+
+
+def create_team(request):
+    if request.method == "POST":
+        if 'name' in request.POST and 'team-pokemons' in request.POST:
+            is_created = query.createNewTeam(request.POST.get('name'))
+            if is_created:
+                for pokemon_id in request.POST.get('team-pokemons'):
+                    query.insertPokeInTeam(pokemon_id, request.POST.get('name'))
+
+    return redirect('/teams')
+
+
+def delete_team(request):
+    if request.method == "POST":
+        if 'name' in request.POST:
+            query.deleteTeam(request.POST.get('name'))
+
+    return redirect('/teams')
 
 
 def builder(request):

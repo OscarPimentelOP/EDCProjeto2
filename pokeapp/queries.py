@@ -375,9 +375,10 @@ def createNewTeam(teamName):
     teamExists = checkTeamExists(teamName)['boolean']
 
     if (teamExists):
-        print("A team with that name already exists")
+        return False
     else:
         insertTeam(teamName)
+        return True
 
 
 def insertPokeInTeam(pokemon_id, teamName):

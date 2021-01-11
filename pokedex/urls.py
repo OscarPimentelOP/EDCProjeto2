@@ -27,4 +27,9 @@ urlpatterns = [
     path('builder/', views.builder),
     path('builder/details/', views.get_details),
     path('builder/details', views.get_details),
+    path('teams/', views.teams),
+    path('teams/create', views.create_team),
+    path('teams/create/', views.create_team),
+    path('teams/delete', views.delete_team),
+    path('teams/delete/', views.delete_team)
 ]
