@@ -32,7 +32,7 @@
 
     <div class="actions">
         <div class="name_box">
-            <input type="text" name="" id="">
+            <input type="text" name="" id="team-name">
             <button id="save">SAVE</button>
         </div>
         <button id="details">Details</button>
@@ -211,22 +211,7 @@
 </section>
 
 
-<script type="text/javascript">
-    var total = 0;
-    const list = [];
-
-    $(".card").each((key, card) => {
-        $(card).click(() => {
-            if (total < 6 )
-            {
-                $(card).clone().appendTo($(".pokemons"))
-                const id = $(card).data('id')
-                list.push(id)
-                total++;       
-            }
-        })
-    })
-</script>
+<script src="{% static 'scripts/builder.js' %}"></script>
 
 
 
