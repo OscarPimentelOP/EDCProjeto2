@@ -384,21 +384,6 @@ def insertTeam(teamName):
     return res
 
 
-def deleteTeam(teamName):
-    query = """
-    prefix pred: <http://edcpokedex.org/pred/>
-    prefix team: <http://edcpokedex.org/team/>
-
-    delete data {
-        team:""" + str(teamName.lower().replace(' ', '_')) + """  pred:name """ + "\"" + str(teamName) + "\"" + """. 
-    }
-    """
-    payload_query = {"update": query}
-    res = accessor.sparql_update(body=payload_query,
-                                 repo_name=repo_name)
-    return res
-
-
 def createNewTeam(teamName):
     teamExists = checkTeamExists(teamName)['boolean']
 
@@ -440,6 +425,26 @@ def deletePokemonFromTeam(pokemon_id, teamName):
                                  repo_name=repo_name)
     return res
 
+def deleteTeam(teamName):
+    query = """
+        prefix pred: <http://edcpokedex.org/pred/>
+        prefix pok3: <http://edcpokedex.org/pokemon/> 
+        prefix team: <http://edcpokedex.org/team/>
+        
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        delete  {  
+            ?team pred:name ?tname .
+            ?team pred:member ?pokemon .
+        }  
+        where {
+            ?team pred:name ?tname FILTER(sameTerm(?tname, "anotherbestteam"^^xsd:string)) .
+            ?team pred:member ?pokemon .
+        }
+    """
+    payload_query = {"update": query}
+    res = accessor.sparql_update(body=payload_query,
+                                 repo_name=repo_name)
+    return res
 
 def listTeamsAndPokemon(teamName):
     query = """    
@@ -462,7 +467,8 @@ def listAllTeams():
     prefix pok3: <http://edcpokedex.org/pokemon/> 
     prefix team: <http://edcpokedex.org/team/>
     
-    select ?team ?id ?name ?art where{    
+    select ?team ?teamName ?id ?name ?art where{    
+        ?team pred:name ?teamName
         ?team pred:member ?pokemon .   
         ?pokemon pred:name ?name .   
         ?pokemon pred:pokedex-entry ?id .
@@ -539,7 +545,7 @@ if __name__ == '__main__':
     # print(searchListPokemonFromType("Electric", "chu"))
     #print(getChart("Fire"))
     #print(getChart("Flying"))
-    #print(getCompleteChart("Fire", "Flying"))
+    # print(getCompleteChart("Fire"))
     # print(createNewTeam("TestPython"))
     # print(checkTeamExists("TestPython"))
     # deleteTeam("TestPython")

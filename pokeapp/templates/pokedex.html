@@ -89,5 +89,9 @@
         localStorage.setItem("last_type",last_type)
         window.location = last_type;
     })
+
+    window.onbeforeunload = function(){
+        localStorage.setItem("last_type","/")
+    }
 </script>
 {% endblock %}

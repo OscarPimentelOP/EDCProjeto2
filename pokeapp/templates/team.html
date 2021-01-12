@@ -10,32 +10,17 @@
 
     <div class="team">
         <div class="pokemons">
-            
-        </div>
-        <div class="pok_list">
-            {% for pokemon in pokemon_list %}
-                <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
-                    <div class="imgbox">
-                        <img src="{{ pokemon.2 }}" alt=""></img>
-                    </div>
-                    <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
+            <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
+                <div class="imgbox">
+                    <img src="{{ pokemon.2 }}" alt=""></img>
                 </div>
-            {% endfor %}
-
+                <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
+            </div>
         </div>
-
-        {% if pokemon_list.has_next %}
-            <a class="infinite-more-link" href="?page={{ pokemon_list.next_page_number }}">More</a>
-        {% endif %}
-
         
     </div>
 
     <div class="actions">
-        <div class="name_box">
-            <input type="text" name="" id="team-name">
-            <button id="save">SAVE</button>
-        </div>
         <button id="details">Details</button>
         <button id="delete">Delete</button>
     </div>
@@ -110,7 +95,6 @@
 </section>
 
 <script src="{% static 'scripts/builder.js' %}"></script>
-
 
 
 </body>
