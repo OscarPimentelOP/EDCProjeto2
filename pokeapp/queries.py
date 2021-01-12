@@ -290,7 +290,7 @@ def search(word):
         ?pokemonobj pok:pokedex-entry ?id FILTER (xsd:integer(?id)<=721) .
         ?pokemonobj pok:name ?name .
         ?pokemonobj pok:art ?art .
-        filter contains(?name,""" + "\"" + str(word) + "\"" + """)
+        filter contains(lcase(str(?name)),""" + "\"" + str(word) + "\"" + """)
     } order by asc(xsd:integer(?id))     
     
     """
@@ -316,6 +316,34 @@ def getChart(type):
     a = [x if x != 0 else "Immune" for x in a]
 
     return a
+
+def getCompleteChart(*types):
+    compChart = []
+
+    if len(types) == 1:
+        compChart = getChart(types)
+    elif len(types) == 2:
+        matchupsType1 = getChart(types[0])
+        matchupsType2 = getChart(types[1])
+
+        for m in range(0, len(matchupsType1)):
+                if (matchupsType1[m] == matchupsType2[m] == "2x"):
+                    matchupsType1[m] = "x4"
+                if (matchupsType1[m] == matchupsType2[m] == "1x"):
+                    matchupsType1[m] = "1x"
+                if (matchupsType1[m] == matchupsType2[m] == "1/2"):
+                    matchupsType1[m] = "1/4"
+                if (((matchupsType1[m] == "2x") and (matchupsType2[m] == "1x")) or ((matchupsType1[m] == "1x") and (matchupsType2[m] == "2x"))):
+                    matchupsType1[m] = "2x"
+                if (((matchupsType1[m] == "1/2") and (matchupsType2[m] == "1x")) or ((matchupsType1[m] == "1x") and (matchupsType2[m] == "1/2"))):
+                    matchupsType1[m] = "1/2"
+                if (((matchupsType1[m] == "1/2") and (matchupsType2[m] == "2x")) or ((matchupsType1[m] == "2x") and (matchupsType2[m] == "1/2"))):
+                    matchupsType1[m] = "1x"
+                if ((matchupsType1[m] == "Immune") or (matchupsType2[m] == "Immune")):
+                    matchupsType1[m] = "Immune"
+        compChart = matchupsType1
+        return compChart
+
 
 
 def getTypesPred(pokemon_id):
@@ -495,7 +523,9 @@ if __name__ == '__main__':
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
     # print(searchListPokemonFromType("Electric", "chu"))
-    print(getChart("Rock"))
+    print(getChart("Fire"))
+    print(getChart("Flying"))
+    print(getCompleteChart("Fire", "Flying"))
     # print(createNewTeam("TestPython"))
     # print(checkTeamExists("TestPython"))
     # deleteTeam("TestPython")
