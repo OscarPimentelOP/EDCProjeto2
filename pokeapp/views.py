@@ -162,10 +162,12 @@ def teams(request):
 
 def create_team(request):
     if request.method == "POST":
+       
         if 'name' in request.POST and 'team-pokemons' in request.POST:
             is_created = query.createNewTeam(request.POST.get('name'))
+           
             if is_created:
-                id_list = request.GET['team-pokemons'].strip('][').split(',')
+                id_list = request.POST['team-pokemons'].strip('][').split(',')
                 for pokemon_id in id_list:
                     query.insertPokeInTeam(pokemon_id, request.POST.get('name'))
 
@@ -175,9 +177,13 @@ def create_team(request):
 
 
 def delete_team(request):
+
+    
+
     if request.method == "POST":
         if 'name' in request.POST:
-            if query.checkTeamExists()['boolean']:
+            
+            if query.checkTeamExists(request.POST.get('name'))['boolean']:
                 query.deleteTeam(request.POST.get('name'))
                 return JsonResponse({'status': True})
 

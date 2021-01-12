@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+{% csrf_token %}
 
 <body>
 
@@ -13,7 +14,7 @@
         </div>
         <div class="pok_list">
             {% for pokemon in pokemon_list %}
-                <div class="card" data-id="{{pokemon.0}}">
+                <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
                     <div class="imgbox">
                         <img src="{{ pokemon.2 }}" alt=""></img>
                     </div>
@@ -209,7 +210,6 @@
     </table>
 
 </section>
-
 
 <script src="{% static 'scripts/builder.js' %}"></script>
 

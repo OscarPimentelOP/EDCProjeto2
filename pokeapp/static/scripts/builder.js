@@ -1,3 +1,20 @@
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+
 var total = 0;
 const list = [];
 
@@ -15,22 +32,30 @@ $(".card").each((key, card) => {
 
 $('#save').click( () => {
 
-    const name = $('team-name').val();
+    const name = $('#team-name').val();
+    console.log(name)
 
     $.ajax({
         type: "POST",
-        url: "/teams",
+        url: "/teams/create",
         dataType: "json",
+        headers: {
+            'X-CSRFToken': csrftoken
+        },
         data: {
-            "team-pokemons" : list,
-            "team-name" : name,
+            "team-pokemons" : JSON.stringify(list),
+            name: name,
         },
-        success: () => {
-            confirm(` Team ${name} saved with success`)
-            window.location = '/teams'                
-        },
-        failure: () => {
-            alert("Couldn't save team. Name invalid or team already exist ")
+        success: (data) => {
+            if(data['status'])
+            {
+                confirm(` Team ${name} saved with success`)
+                // window.location = '/teams' 
+            }
+            else
+            {
+                alert("Couldn't save")
+            }
         }
     
     })
@@ -38,22 +63,29 @@ $('#save').click( () => {
 
 $('#delete').click( () => {
 
-    const name = $('team-name').val();
+    const tname = $('#team-name').val();
+    console.log(tname)
 
     $.ajax({
         type: "POST",
-        url: "teams",
-        dataType: "json",
+        url: "/teams/delete",
+        headers: {
+            'X-CSRFToken': csrftoken
+        },
         data: {
-            "name" : name,
+            name : tname,
         },
         success: function(data){
-            console.log(data)
-            openDetails(data)
+            if(data['status'])
+            {
+                confirm(` Team ${tname} deleted success`)
+                // window.location = '/teams' 
+            }
+            else
+            {
+                alert("Couldn't delete")
+            }
         },
-        failure: () => {
-            alert("Couldn't get details")
-        }
     })
 })
 
@@ -77,6 +109,14 @@ $('#details').click( () => {
     })
 })
 
-function openDetails(table_data){
-    //write details
+function openDetails(tableData){
+
+    const ids = Object.keys(tableData)
+
+    console.log(ids)
+
+    var pokemons = $('.card', $('.pokemons'))
+
+    console.log(pokemons)
+
 }
