@@ -169,7 +169,9 @@ def create_team(request):
                 for pokemon_id in id_list:
                     query.insertPokeInTeam(pokemon_id, request.POST.get('name'))
 
-    return redirect('/teams')
+                return JsonResponse({'status': True})
+
+    return JsonResponse({'status': False})
 
 
 def delete_team(request):
@@ -177,8 +179,9 @@ def delete_team(request):
         if 'name' in request.POST:
             if query.checkTeamExists()['boolean']:
                 query.deleteTeam(request.POST.get('name'))
+                return JsonResponse({'status': True})
 
-    return redirect('/teams')
+    return JsonResponse({'status': False})
 
 
 def builder(request):
