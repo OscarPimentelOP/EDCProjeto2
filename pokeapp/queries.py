@@ -456,6 +456,20 @@ def listTeamsAndPokemon(teamName):
     """
     return execute_select_query(query)
 
+def listAllTeams():
+    query = """
+    prefix pred: <http://edcpokedex.org/pred/>
+    prefix pok3: <http://edcpokedex.org/pokemon/> 
+    prefix team: <http://edcpokedex.org/team/>
+    
+    select ?team ?id ?name ?art where{    
+        ?team pred:member ?pokemon .   
+        ?pokemon pred:name ?name .   
+        ?pokemon pred:pokedex-entry ?id .
+        ?pokemon pred:art ?art . 
+    }    
+    """
+    return execute_select_query(query)
 
 def dbpedia_query(query):
     dbpedia_wrapper.setQuery(query)
@@ -523,12 +537,13 @@ if __name__ == '__main__':
     # print(getPokemonPicAndName(1))
     # print(listPokemonFromType("Fire"))
     # print(searchListPokemonFromType("Electric", "chu"))
-    print(getChart("Fire"))
-    print(getChart("Flying"))
-    print(getCompleteChart("Fire", "Flying"))
+    #print(getChart("Fire"))
+    #print(getChart("Flying"))
+    #print(getCompleteChart("Fire", "Flying"))
     # print(createNewTeam("TestPython"))
     # print(checkTeamExists("TestPython"))
     # deleteTeam("TestPython")
     # insertPokeInTeam("18", "TestPython")
     # print(listTeamsAndPokemon("TestPython"))
     # print(getPokemonType(1))
+    print(listAllTeams())
