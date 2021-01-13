@@ -67,7 +67,10 @@ def get_details(request):
                 for pok_type in types['results']['bindings']:
                     pokemon_types.append(pok_type['typename']['value'])
 
-                ret_dict[pokemon_id] = query.getChart(pokemon_types[0])
+                if len(pokemon_types) > 1:
+                    ret_dict[pokemon_id] = query.getCompleteChart(pokemon_types[0], pokemon_types[1])
+                else:
+                    ret_dict[pokemon_id] = query.getCompleteChart(pokemon_types[0])
 
             return JsonResponse(ret_dict)
 
@@ -170,6 +173,20 @@ def teams(request):
     }
 
     return render(request, "teams.html", tparams)
+
+
+def team(request, team_name):
+    team_data_raw = query.listTeamsAndPokemon(team_name)
+    team_pokemons = []
+
+    for elem in team_data_raw['results']['bindings']:
+        team_pokemons.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
+
+    tparams = {
+        'team_name': team_name,
+        'team_pokemon': team_pokemons
+    }
+    return render(request, "team.html", tparams)
 
 
 def create_team(request):

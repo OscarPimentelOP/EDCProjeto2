@@ -7,17 +7,19 @@
 <body>
 
 <section class="team_builder">
-
+    <h3>{{ team_name }}</h3>
     <div class="team">
         <div class="pokemons">
+            {% for pokemon in team_pokemon %}
             <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
                 <div class="imgbox">
                     <img src="{{ pokemon.2 }}" alt=""></img>
+                    <a href="pokemon/{{ pokemon.0 }}"></a>
                 </div>
                 <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
             </div>
+            {% endfor %}
         </div>
-        
     </div>
 
     <div class="actions">

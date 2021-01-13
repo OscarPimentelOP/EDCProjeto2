@@ -106,7 +106,7 @@ $('#details').click( () => {
 
      $.ajax({
         type: "GET",
-        url: "details",
+        url: "/builder/details",
         dataType: "json",
         contentType: "application/json",
         data: {"team-pokemons" : data_to_send} ,
