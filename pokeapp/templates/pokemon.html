@@ -20,7 +20,7 @@
     <!-- next pokemon -->   
 </header>
 
-<section class="info" xmlns:pok="http://edcpokedex.org/" xmlns:pokpred="http://edcpokedex.org/pred" typeof="pok:Pokemon">
+<section class="info" xmlns:pok="http://edcpokedex.org/" xmlns:pokpred="http://edcpokedex.org/pred" typeof="pok:Pokemon" about="pok:pokemon/{{ general_info.name }}">
 
     <div class="card-holder">
         <div class="image-holder">
@@ -45,19 +45,19 @@
                 <h3>Weight (hectogram)</h3>
                 <p property="pok:weight">{{ general_info.weight }}</p>
             </div>
-            <div class="slot">
+            <div class="slot" rel="pok:pred/category">
                 <h3>Category</h3>
-                <a href="Category?name=seed" property="pok:category">{{ category }}</a>
+                <p about="pok:category/{{ category }}" property="pok:category/name">{{ category }}</p>
             </div>
-            <div class="slot">
+            <div class="slot" rel="pok:pred/ability">
                 <h3>Abilities</h3>
                 <div class="habilities">
                     {% for ability in abilities %}
-                    <div class="hability">
-                        <a href="Ability?name={{ ability.name }}" property="pok:ability" >{{ ability.name }}</a>
+                    <div about="pok:ability/{{ ability.name }}" class="hability">
+                        <p property="pok:pred/name" >{{ ability.name }}</p>
                         <div class="tooltip">
                             <h3> {{ ability.name }} </h3>
-                            <p>
+                            <p property="pok:pred/description">
                                 {{ ability.description }}
                             </p>
                         </div>
@@ -74,7 +74,7 @@
         <h3>Stats</h3>
         <div class="stats">
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.hp }}">
+                <div resource="pok:hp" class="value-list" data-value="{{ general_info.hp }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -94,7 +94,7 @@
                 <span class="name">HP</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.attack }}">
+                <div resource="pok:attack" class="value-list" data-value="{{ general_info.attack }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -114,7 +114,7 @@
                 <span class="name">ATTACK</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.defense }}">
+                <div resource="pok:defense" class="value-list" data-value="{{ general_info.defense }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -134,7 +134,7 @@
                 <span class="name">DEFENSE</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.special_attack }}">
+                <div resource="pok:special_attack" class="value-list" data-value="{{ general_info.special_attack }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -154,7 +154,7 @@
                 <span class="name">SPECIAL ATTACK</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.special_defense }}">
+                <div resource="pok:special_defense" class="value-list" data-value="{{ general_info.special_defense }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -174,7 +174,7 @@
                 <span class="name">SPECIAL DEFENSE</span>
             </div>
             <div class="stat">
-                <div class="value-list" data-value="{{ general_info.speed }}">
+                <div resource="pok:speed" class="value-list" data-value="{{ general_info.speed }}">
                     <span class="value"></span>
                     <span class="value"></span>
                     <span class="value"></span>
@@ -198,10 +198,10 @@
 
     <div class="types">
         <h3>Types</h3>
-        <div class="types-box">
+        <div class="types-box" rel="pok:pred/type">
             {% for type in types %}
                 <div class="type">
-                    <span property="pok:type">{{ type }}</span>
+                    <span about="pok:type/{{ type }}" property="pok:pred/name">{{ type }}</span>
                 </div>
             {% endfor %}
         </div>
@@ -209,7 +209,9 @@
         <div class="types-box">
             {% for weak in weaknesses%}
             <div class="type">
-                <span property="pok:type">{{ weak }}</span>
+            <a href="/?type={{ weak }}">
+                <span about="pok:type/{{ types.0 }}" property="pok:pred/weakness">{{ weak }}</span>
+            </a>
             </div>
         {% endfor %}
         </div>
@@ -217,14 +219,16 @@
         <div class="types-box">
             {% for strength in strengths%}
             <div class="type">
-                <span property="pok:type">{{ strength }}</span>
+            <a href="/?type={{ strength }}">
+                <span about="pok:type/{{ types.0 }}"  property="pok:pred/super_effective">{{ strength }}</span>
+            </a>
             </div>
         {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="evolutions">
+<section class="evolutions" xmlns:pok="http://edcpokedex.org/" xmlns:pokpred="http://edcpokedex.org/pred" typeof="pok:Pokemon" about="pok:pokemon/{{ evolutions.first.0.name }}">
 
     <div class="evalution">
         {% for value in evolutions.first %}
@@ -232,7 +236,7 @@
             <a href="/pokemon/{{ value.id }}">
                 <img src="{{ value.art }}" alt=""></img>
             </a>
-            <h3>{{ value.name }}</h3>
+            <h3 property="pok:pred/name">{{ value.name }}</h3>
         </div>
         {% endfor %}
     </div>
@@ -243,13 +247,13 @@
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
     {% endif %}
 
-    <div class="evalution">
+    <div class="evalution" rel="pok:pred/evolves_to">
         {% for value in evolutions.second %}
-        <div class="card">
+        <div class="card" about="pok:pokemon/{{ value.name }}">
             <a href="/pokemon/{{ value.id }}">
                 <img src="{{ value.art }}" alt=""></img>
             </a>
-            <h3>{{ value.name }}</h3>
+            <h3 property="pok:pred/name">{{ value.name }}</h3>
         </div>
         {% endfor %}
     </div>
@@ -260,13 +264,13 @@
         <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
     {% endif %}
         
-    <div class="evalution">
+    <div class="evalution" about="pok:pokemon/{{ evolutions.second.0.name }}" rel="pok:pred/evolves_to">
         {% for value in evolutions.third %}
-        <div class="card">
+        <div class="card" about="pok:pokemon/{{ value.name }}" typeof="pok:Pokemon">
             <a href="/pokemon/{{ value.id }}">
                 <img src="{{ value.art }}" alt=""></img>
             </a>
-            <h3>{{ value.name }}</h3>
+            <h3 property="pok:pred/name">{{ value.name }}</h3>
         </div>
         {% endfor %}
     </div>
