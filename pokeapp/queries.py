@@ -468,7 +468,7 @@ def listAllTeams():
     prefix team: <http://edcpokedex.org/team/>
     
     select ?team ?teamName ?id ?name ?art where{    
-        ?team pred:name ?teamName
+        ?team pred:name ?teamName .
         ?team pred:member ?pokemon .   
         ?pokemon pred:name ?name .   
         ?pokemon pred:pokedex-entry ?id .
