@@ -417,7 +417,7 @@ def deletePokemonFromTeam(pokemon_id, teamName):
     prefix team: <http://edcpokedex.org/team/>
     
     delete data {
-        team:""" + str(teamName.lower().replace(' ', '_')) + """ pred:member pok3:""" + str(pokemon_id) + """ .
+        team:""" + teamName + """ pred:member pok3:""" + str(pokemon_id) + """ .
     }   
     """
     payload_query = {"update": query}
@@ -437,10 +437,12 @@ def deleteTeam(teamName):
             ?team pred:member ?pokemon .
         }  
         where {
-            ?team pred:name ?tname FILTER(sameTerm(?tname, "anotherbestteam"^^xsd:string)) .
+            ?team pred:name ?tname FILTER(sameTerm(?tname,
+            """ + "\"" + teamName + "\"" + """^^xsd:string)) .
             ?team pred:member ?pokemon .
         }
     """
+    print(query)
     payload_query = {"update": query}
     res = accessor.sparql_update(body=payload_query,
                                  repo_name=repo_name)

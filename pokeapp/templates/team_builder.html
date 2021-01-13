@@ -4,10 +4,34 @@
 
 {% csrf_token %}
 
+<script>
+</script>
+
 <body>
-
+    <div class="actions">
+        <button id="details">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            width="20" height="20" viewBox="0 0 24 24">
+            <path d="M12 1c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 9.236 2.247 15.968-3.405 15.968-9.457 0-5.812-5.701-10.007-12-10.007zm1 15h-2v-6h2v6zm-1-7.75c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/>
+            </svg>
+        </button>
+        <button id="delete">
+            <svg xmlns="http://www.w3.org/2000/svg"
+             width="20" height="20" viewBox="0 0 24 24">
+             <path d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z"/>
+            </svg>
+        </button>
+        <div class="name_box">
+            <input type="text" name="" id="team-name">
+            <button id="save">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                width="20" height="20" viewBox="0 0 24 24">
+                 <path d="M7 2v-2h10v2h-10zm0 4h10v-2h-10v2zm10 7v-5h-10v5h-6l11 11 11-11h-6z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
 <section class="team_builder">
-
     <div class="team">
         <div class="pokemons">
             
@@ -24,20 +48,22 @@
 
         </div>
 
-        {% if pokemon_list.has_next %}
-            <a class="infinite-more-link" href="?page={{ pokemon_list.next_page_number }}">More</a>
-        {% endif %}
+        <div class="pagination">
+            <a class="previus">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path d="M17.026 22.957c10.957-11.421-2.326-20.865-10.384-13.309l2.464 2.352h-9.106v-8.947l2.232 2.229c14.794-13.203 31.51 7.051 14.794 17.675z"/>
+                </svg>
+            </a>
+            <a class="next" >
+                <svg xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path d="M6.974 22.957c-10.957-11.421 2.326-20.865 10.384-13.309l-2.464 2.352h9.106v-8.947l-2.232 2.229c-14.794-13.203-31.51 7.051-14.794 17.675z"/>
+                </svg>
+            </a>
+        </div>
 
         
-    </div>
-
-    <div class="actions">
-        <div class="name_box">
-            <input type="text" name="" id="team-name">
-            <button id="save">SAVE</button>
-        </div>
-        <button id="details">Details</button>
-        <button id="delete">Delete</button>
     </div>
 </section>
 

@@ -5,96 +5,106 @@
 {% csrf_token %}
 
 <body>
-
-<section class="team_builder">
-    <h3>{{ team_name }}</h3>
-    <div class="team">
-        <div class="pokemons">
-            {% for pokemon in team_pokemon %}
-            <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
-                <div class="imgbox">
-                    <img src="{{ pokemon.2 }}" alt=""></img>
-                    <a href="pokemon/{{ pokemon.0 }}"></a>
-                </div>
-                <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-
     <div class="actions">
-        <button id="details">Details</button>
-        <button id="delete">Delete</button>
+        <button id="details">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            width="20" height="20" viewBox="0 0 24 24">
+            <path d="M12 1c-6.338 0-12 4.226-12 10.007 0 2.05.739 4.063 2.047 5.625.055 1.83-1.023 4.456-1.993 6.368 2.602-.47 6.301-1.508 7.978-2.536 9.236 2.247 15.968-3.405 15.968-9.457 0-5.812-5.701-10.007-12-10.007zm1 15h-2v-6h2v6zm-1-7.75c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/>
+            </svg>
+        </button>
+        <button id="delete">
+            <svg xmlns="http://www.w3.org/2000/svg"
+             width="20" height="20" viewBox="0 0 24 24">
+             <path d="M3 6l3 18h12l3-18h-18zm19-4v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.316c0 .901.73 2 1.631 2h5.711z"/>
+            </svg>
+        </button>
     </div>
-</section>
+
+    <section class="team_details">
+        <h3>{{ team_name }}</h3>
+        <div class="team">
+            <div class="pokemons">
+                {% for pokemon in team_pokemon %}
+                <div class="card" data-id="{{pokemon.0}}" data-name="{{pokemon.1}}" data-pic="{{ pokemon.2 }}">
+                    <div class="imgbox">
+                        <img src="{{ pokemon.2 }}" alt=""></img>
+                        <a href="pokemon/{{ pokemon.0 }}"></a>
+                    </div>
+                    <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </section>
 
 
-<section class="table-section" id="table">
+    <section class="table-section" id="table">
 
-    <table class="table table-striped" >
-        <thead id="tableHead">
-            <th scope= "col"> Types </th>
-        </thead>
-        <tbody id="tableBody">
-            <tr>
-                <th scope="row">grass</th>
-            </tr>
-            <tr>
-                <th scope="row">poison</th>
-            </tr>
-            <tr>
-                <th scope="row">bug</th>
-            </tr>
-            <tr>
-                <th scope="row">electric</th>
-            </tr>
-            <tr>
-                <th scope="row">psychic</th>
-            </tr>
-            <tr>
-                <th scope="row">ground</th>
-            </tr>
-            <tr>
-                <th scope="row">fighting</th>
-            </tr>
-            <tr>
-                <th scope="row">normal</th>
-            </tr>
-            <tr>
-                <th scope="row">rock</th>
-            </tr>
-            <tr>
-                <th scope="row">water</th>
-            </tr>
-            <tr>
-                <th scope="row">flying</th>
-            </tr>
-            <tr>
-                <th scope="row">fairy</th>
-            </tr>
-            <tr>
-               <th scope="row">ice</th>
-            </tr>
-            <tr>
-                <th scope="row">fire</th>
-            </tr>
-            <tr>
-                <th scope="row">dragon</th>
-            </tr>
-            <tr>
-                <th scope="row">dark</th>
-            </tr>
-            <tr>
-                <th scope="row">ghost</th>
-            </tr>
-            <tr>
-                <th scope="row">steal</th>
-            </tr>
-        </tbody>
-       
-    </table>
+        <table class="table table-striped" >
+            <thead id="tableHead">
+                <th scope= "col"> Types </th>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <th scope="row">grass</th>
+                </tr>
+                <tr>
+                    <th scope="row">poison</th>
+                </tr>
+                <tr>
+                    <th scope="row">bug</th>
+                </tr>
+                <tr>
+                    <th scope="row">electric</th>
+                </tr>
+                <tr>
+                    <th scope="row">psychic</th>
+                </tr>
+                <tr>
+                    <th scope="row">ground</th>
+                </tr>
+                <tr>
+                    <th scope="row">fighting</th>
+                </tr>
+                <tr>
+                    <th scope="row">normal</th>
+                </tr>
+                <tr>
+                    <th scope="row">rock</th>
+                </tr>
+                <tr>
+                    <th scope="row">water</th>
+                </tr>
+                <tr>
+                    <th scope="row">flying</th>
+                </tr>
+                <tr>
+                    <th scope="row">fairy</th>
+                </tr>
+                <tr>
+                <th scope="row">ice</th>
+                </tr>
+                <tr>
+                    <th scope="row">fire</th>
+                </tr>
+                <tr>
+                    <th scope="row">dragon</th>
+                </tr>
+                <tr>
+                    <th scope="row">dark</th>
+                </tr>
+                <tr>
+                    <th scope="row">ghost</th>
+                </tr>
+                <tr>
+                    <th scope="row">steal</th>
+                </tr>
+            </tbody>
+        
+        </table>
 
-</section>
+    </section>
 
 <script src="{% static 'scripts/builder.js' %}"></script>
 

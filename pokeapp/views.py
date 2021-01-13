@@ -28,9 +28,10 @@ def index(request):
     pokemon_list = []
 
     for elem in pokemon_list_raw['results']['bindings']:
-        pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
+        pokemon_list.append((int(elem['id']['value']), elem['name']['value'], elem['art']['value']))
 
-    pokemon_paginator = Paginator(pokemon_list, 20)
+    pokemon_list.sort(key=lambda pokemon : pokemon[0])
+    pokemon_paginator = Paginator(pokemon_list, 40)
     print(pokemon_paginator.num_pages)
 
     tparams = {
@@ -191,9 +192,9 @@ def team(request, team_name):
 
 def create_team(request):
     if request.method == "POST":
-
         if 'name' in request.POST and 'team-pokemons' in request.POST:
-            is_created = query.createNewTeam(request.POST.get('name'))
+            name = request.POST.get('name').replace(' ', '_')
+            is_created = query.createNewTeam(name)
 
             if is_created:
                 id_list = request.POST['team-pokemons'].strip('][').split(',')
@@ -208,8 +209,8 @@ def create_team(request):
 def delete_team(request):
     if request.method == "POST":
         if 'name' in request.POST:
-
-            if query.checkTeamExists(request.POST.get('name'))['boolean']:
+            name = request.POST.get('name').replace(' ', '_')
+            if query.checkTeamExists(name)['boolean']:
                 query.deleteTeam(request.POST.get('name'))
                 return JsonResponse({'status': True})
 
@@ -217,32 +218,35 @@ def delete_team(request):
 
 
 def builder(request):
-    pokemon_list_raw = query.listPokedex()
 
-    page = request.GET.get('page', 1)
+    pokemon_list_raw = query.listPokedex()
 
     pokemon_list = []
 
     for elem in pokemon_list_raw['results']['bindings']:
         pokemon_list.append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
 
-    pokemon_paginator = Paginator(pokemon_list, 42)
+    pokemon_paginator = Paginator(pokemon_list, 15)
 
-    tparams = {
-        'pokemon_list': pokemon_paginator.page(page),
+    if request.is_ajax():
 
-    }
+        page = request.GET.get('page', 1)
 
-    if (request.POST):
-        # do something
+        pokemon_list = pokemon_paginator.page(int(page))
 
-        team = request.post.get('pokemons')
+        pokemon_list_values = pokemon_list.object_list
 
-        print(team)
+        result = {'has_previous': pokemon_list.has_previous(),
+                  'has_next': pokemon_list.has_next(),
+                  'poke_li': pokemon_list_values}
+        return JsonResponse(result)
+    elif request.method == 'GET':
 
-        tparams['pokemon_team'] = team
+        tparams = {
+            'pokemon_list': pokemon_paginator.page(1),
+        }
 
-    return render(request, 'team_builder.html', tparams)
+        return render(request, 'team_builder.html', tparams)
 
 
 def _get_last_word_from_url(url_string):
