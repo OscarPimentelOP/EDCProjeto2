@@ -157,15 +157,27 @@ def about(request):
 
 
 def teams(request):
-    return render(request)
+    teams_list_raw = query.listAllTeams()
+    teams_dict = {}
+
+    for elem in teams_list_raw['results']['bindings']:
+        if elem['teamName']['value'] not in teams_dict.keys():
+            teams_dict[elem['teamName']['value']] = []
+        teams_dict[elem['teamName']['value']].append((elem['id']['value'], elem['name']['value'], elem['art']['value']))
+
+    tparams = {
+        'teams_dict': teams_dict
+    }
+
+    return render(request, "teams.html", tparams)
 
 
 def create_team(request):
     if request.method == "POST":
-       
+
         if 'name' in request.POST and 'team-pokemons' in request.POST:
             is_created = query.createNewTeam(request.POST.get('name'))
-           
+
             if is_created:
                 id_list = request.POST['team-pokemons'].strip('][').split(',')
                 for pokemon_id in id_list:
@@ -177,12 +189,9 @@ def create_team(request):
 
 
 def delete_team(request):
-
-    
-
     if request.method == "POST":
         if 'name' in request.POST:
-            
+
             if query.checkTeamExists(request.POST.get('name'))['boolean']:
                 query.deleteTeam(request.POST.get('name'))
                 return JsonResponse({'status': True})

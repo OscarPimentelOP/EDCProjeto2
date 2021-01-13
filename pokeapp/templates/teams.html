@@ -12,18 +12,19 @@
     </div>
 
     <section class="teams">
-
+        {% for team_name, pokemon_list in teams_dict.items %}
         <div class="team-info">
             <div class="team">
-                <h3>{{team_name}}</h3>
-                <img src="{{ pokemon.2 }}" alt="" srcset="">
-                <a href="/team/{{team_name}}"></a>
+                <a href="/teams/{{team_name}}">
+                    <h3>{{team_name}}</h3>
+                </a>
             </div>
-    
+
             <div class="team-pokemons">
-                {% for pokemon in team_pokemons.object_list %}
+                {% for pokemon in pokemon_list %}
                 <div class="card" >
                     <div class="imgbox">
+                        <a href="/pokemon/{{ pokemon.0 }}"></a>
                         <img src="{{ pokemon.2 }}" alt=""></img>
                     </div>
                     <h3>{{ pokemon.0 }} - {{pokemon.1}}</h3>
@@ -31,6 +32,7 @@
                 {% endfor %}
             </div>
         </div>
+        {% endfor %}
 
     </section>
 
