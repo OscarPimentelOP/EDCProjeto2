@@ -31,6 +31,9 @@ Os dados da DBPedia são recolhidos em runtime, através de um pedido para o end
 ### Sobre as páginas
 
 Todas as páginas da aplicação utilizam uma ou mais queries SELECT em SPARQL.
+
+A pesquisa na página Index (ou Pokédex) é feita a partir de uma query SPARQL que filtra os Pókemons pelo termo inserido pelo utilizador.
+
 Nas páginas relacionadas as equipas (Builder, Team), são utilizadas queries diversas
 como ASK, INSERT, DELETE.
 
