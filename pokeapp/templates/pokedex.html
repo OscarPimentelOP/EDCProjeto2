@@ -144,14 +144,18 @@
     $("#search").click(() => {
         search_value = `/?search=${$("#search-input").val()}`;
         localStorage.setItem("last_search",search_value);
-        window.location = search_value + '&' + last_type.replace('/?','');
+        if(last_type != null && last_type.length > 2)
+            window.location = search_value + '&' + last_type.replace('/?','');
+        else window.location = search_value
     })
     
     $(".drop").change(() => {
         last_type = $(".drop").val();
         localStorage.setItem("last_type",last_type)
-
-        window.location = search_value + '&' + last_type.replace('/?','');
+        if(search_value!= null && search_value.length > 2)
+            window.location = last_type + '&' + search_value.replace('/?','');
+        else window.location = last_type
+        
     })
 
 </script>

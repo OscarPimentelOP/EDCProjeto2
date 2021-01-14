@@ -24,7 +24,7 @@
         />
       </svg>
       <div class="navebar">
-        <a href="/">POKEDEX</a>
+        <a href="/" onclick=deleteSave()>POKEDEX</a>
         <a href="/builder">BUILDER</a>
         <a href="/about">ABOUT</a>
         <a href="/teams">TEAMS</a>
@@ -43,6 +43,13 @@
             $(".header-nav").toggleClass("active")
         });
     
+
+        function deleteSave(){
+
+          localStorage.clear("last_search");
+
+          localStorage.clear("last_type");
+        }
     </script>
   </body>
 </html>
