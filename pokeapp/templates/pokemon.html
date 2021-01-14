@@ -212,7 +212,9 @@
             <div class="types-box">
                 {% for weak in weaknesses%}
                 <div class="type">
-                    <span about="pok:type/{{ types.0 }}" property="pok:pred/weakness">{{ weak }}</span>
+                    <a href="/?type={{ weak }}">
+                        <span about="pok:type/{{ types.0 }}" property="pok:pred/weakness">{{ weak }}</span>
+                    </a>
                 </div>
             {% endfor %}
             </div>
@@ -288,7 +290,7 @@
             $(this).children().each(function (key, bar) {   
                     if (key < result) {
                         $(bar).delay(200*key).animate(
-                            { opacity: 1 },
+                            { opacity: 1 },1000
                         )
                     };
             })

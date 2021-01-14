@@ -431,6 +431,20 @@ body {
     right: 100px;
 }
 
+.pagination .next {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    transform: translate(5%,-50%);
+}
+
+.pagination .previous {
+    position: fixed;
+    top: 50%;
+    left: 2.5%;
+    transform: translate(-2.5%,-50%) rotate(180deg);
+}
+
 .pokedex{
     margin: 75px;
     padding: 0 50px;
