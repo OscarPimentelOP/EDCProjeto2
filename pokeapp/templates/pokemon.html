@@ -50,13 +50,13 @@
                 </div>
                 <div class="slot" rel="pok:pred/category">
                     <h3>Category</h3>
-                    <p about="pok:category/{{ category }}" property="pok:category/name">{{ category }}</p>
+                    <p about="pok:category/{{ category }}" typeof="pok:category" property="pok:category/name">{{ category }}</p>
                 </div>
                 <div class="slot" rel="pok:pred/ability">
                     <h3>Abilities</h3>
                     <div class="habilities">
                         {% for ability in abilities %}
-                        <div about="pok:ability/{{ ability.name }}" class="hability">
+                        <div about="pok:ability/{{ ability.name }}" typeof="pok:ability" class="hability">
                             <p property="pok:pred/name" >{{ ability.name }}</p>
                             <div class="tooltip">
                                 <h3> {{ ability.name }} </h3>
@@ -251,7 +251,7 @@
     
         <div class="evalution" rel="pok:pred/evolves_to">
             {% for value in evolutions.second %}
-            <div class="card" about="pok:pokemon/{{ value.name }}">
+            <div class="card" about="pok:pokemon/{{ value.name }}" typeof="pok:Pokemon">
                 <a href="/pokemon/{{ value.id }}">
                     <img src="{{ value.art }}" alt=""></img>
                 </a>
