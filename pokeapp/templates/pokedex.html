@@ -34,7 +34,21 @@
 
     <div class="pagination">
         <span class="step-links">
-            {% if 'type' in request.GET %}
+            {% if 'search' in request.GET and 'type' in request.GET %}
+                {% if pokemon_list.has_previous %}
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page=1">&laquo; first</a>
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
+                </span>
+
+                {% if pokemon_list.has_next %}
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">next</a>
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            {% elif 'type' in request.GET %}
                 {% if pokemon_list.has_previous %}
                 <div class="previous">
                     <a href="?type={{ request.GET.type }}&page={{ pokemon_list.previous_page_number }}">
@@ -57,7 +71,20 @@
                     </a>
                 </div>
                 {% endif %}
-                
+            {% elif 'search' in request.GET %}
+                {% if pokemon_list.has_previous %}
+                    <a href="?search={{ request.GET.search }}&page=1">&laquo; first</a>
+                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">previous</a>
+                {% endif %}
+
+                <span class="current">
+                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
+                </span>
+
+                {% if pokemon_list.has_next %}
+                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">next</a>
+                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
             {% else %}
                 {% if pokemon_list.has_previous %}
                     <div class="previous">
