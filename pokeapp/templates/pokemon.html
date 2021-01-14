@@ -41,12 +41,12 @@
     
             <div class="basic-info">
                 <div class="slot">
-                    <h3>Height (decimeter)</h3>
-                    <p property="pok:height">{{ general_info.height }}</p>
+                    <h3>Height (centimeter)</h3>
+                    <p id="height" property="pok:height">{{ general_info.height }} </p>
                 </div>
                 <div class="slot">
-                    <h3>Weight (hectogram)</h3>
-                    <p property="pok:weight">{{ general_info.weight }}</p>
+                    <h3>Weight (kilogram)</h3>
+                    <p id="weight" property="pok:weight">{{ general_info.weight }}</p>
                 </div>
                 <div class="slot" rel="pok:pred/category">
                     <h3>Category</h3>
@@ -295,6 +295,14 @@
                     };
             })
         })
+
+    
+
+        const height = $("#height").text().trim()
+        $("#height").text(height * 10)
+
+        const weight = $("#weight").text().trim()
+        $("#weight").text(weight / 10)
     </script>
     
     <script type="text/javascript">
