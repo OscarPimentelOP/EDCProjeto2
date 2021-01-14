@@ -90,21 +90,25 @@
 </body>
 
 <script type="text/javascript">
-    $("#search").click(() => {
-        const search_value = $("#search-input").val();
-        window.location = `/?search=${search_value}`
-    })
+    
+    let search_value = localStorage.getItem("last_search");
 
-    let last_type = localStorage.getItem("last_type")
+    let last_type = localStorage.getItem("last_type");
 
     if(last_type != null)
         $(".drop").val(last_type)
 
+    $("#search").click(() => {
+        search_value = `/?search=${$("#search-input").val()}`;
+        localStorage.setItem("last_search",search_value);
+        window.location = search_value + '&' + last_type.replace('/?','');
+    })
     
     $(".drop").change(() => {
         last_type = $(".drop").val();
         localStorage.setItem("last_type",last_type)
-        window.location = last_type;
+
+        window.location = search_value + '&' + last_type.replace('/?','');
     })
 
 </script>
