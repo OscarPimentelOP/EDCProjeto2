@@ -19,11 +19,32 @@ Projeto de EDC - Pokédex
 
 ## Notas
 
+### Sobre os Dados
+
+Todos os dados usados nesta aplicação provém da [PokéAPI](https://pokeapi.co/),
+excepto os que se encontram na página About, que são retirados da [DBPedia](https://wiki.dbpedia.org/).
+
+Os dados da PokéAPI foram retirados previamente em formato JSON e CSV, e convertidos para N-Triples usando um script (createTriples.py) em Python.
+
+Os dados da DBPedia são recolhidos em runtime, através de um pedido para o endpoint SPARQL disponibilizado.
+
+### Sobre as páginas
+
+Todas as páginas da aplicação utilizam uma ou mais queries SELECT em SPARQL.
+Nas páginas relacionadas as equipas (Builder, Team), são utilizadas queries diversas
+como ASK, INSERT, DELETE.
+
+As páginas de cada Pokémon individual (i.e /pokemon/1) estão anotadas com RDFa.
+
+Na página About podemos ver exemplos de dados retirados da DBPedia, em runtime.
+
 ### Inferências na página de Pokémon - Linha Evolutiva
 Na página de um Pokémon, se ele tiver evoluções, é apresentada a linha evolutiva.
 No dataset original, apenas existe a relação A evolui para B (evolves_to).
+
 Para apresentar a linha evolutiva completa, nos casos em que o Pokémon selecionado não é a primeira
 evolução, foi necessário deduzir os Pokémons de estágios anteriores a esse.
+
 Para tal foi preciso compreender que Pokémons é que evoluiam para o selecionado, criando
 assim, virtualmente, uma relação de B evolui de A (evolves_from).
 
@@ -31,6 +52,7 @@ assim, virtualmente, uma relação de B evolui de A (evolves_from).
 ### Inferências na página de Equipa
 Na página de uma equipa, ao carregar no botão de informação (no canto superior direito),
 é possível gerar a tabela de vantagens/desvantagens de todos os pokémons dessa equipa.
+
 Esta tabela é inferida porque:
 
 - Um Pokémon tem um ou dois tipos.
