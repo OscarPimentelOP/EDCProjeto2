@@ -36,17 +36,25 @@
         <span class="step-links">
             {% if 'search' in request.GET and 'type' in request.GET %}
                 {% if pokemon_list.has_previous %}
-                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page=1">&laquo; first</a>
-                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">previous</a>
+                <div class="previous">
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="64" height="64" viewBox="0 0 24 24">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                        </svg>
+                    </a>
+                </div>
                 {% endif %}
 
-                <span class="current">
-                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
-                </span>
-
                 {% if pokemon_list.has_next %}
-                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">next</a>
-                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                <div class="next">                    
+                    <a href="?type={{ request.GET.type }}&search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="64" height="64" viewBox="0 0 24 24">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                        </svg>                                
+                    </a>
+                </div>
                 {% endif %}
             {% elif 'type' in request.GET %}
                 {% if pokemon_list.has_previous %}
@@ -73,17 +81,25 @@
                 {% endif %}
             {% elif 'search' in request.GET %}
                 {% if pokemon_list.has_previous %}
-                    <a href="?search={{ request.GET.search }}&page=1">&laquo; first</a>
-                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">previous</a>
+                <div class="previous">
+                            <a href="?search={{ request.GET.search }}&page={{ pokemon_list.previous_page_number }}">           
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="64" height="64" viewBox="0 0 24 24">
+                                    <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                                    </svg>                                
+                                </a>
+                            </div>
                 {% endif %}
 
-                <span class="current">
-                    Page {{ pokemon_list.number }} of {{ pokemon_list.paginator.num_pages }}.
-                </span>
-
                 {% if pokemon_list.has_next %}
-                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">next</a>
-                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.paginator.num_pages }}">last &raquo;</a>
+                <div class="next">
+                    <a href="?search={{ request.GET.search }}&page={{ pokemon_list.next_page_number }}">                           
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="64" height="64" viewBox="0 0 24 24">
+                        <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/>
+                        </svg>                
+                    </a>
+                </div>
                 {% endif %}
             {% else %}
                 {% if pokemon_list.has_previous %}
